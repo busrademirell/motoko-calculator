@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)https://m7sm4-2iaaa-aaaab-qabra-cai.raw.ic0.app/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="icon" href="https://m7sm4-2iaaa-aaaab-qabra-cai.raw.ic0.app/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="A playground for the Internet Computer&#39;s native Motoko language, brought to you by DFINITY">
+    <link rel="apple-touch-icon" href="https://m7sm4-2iaaa-aaaab-qabra-cai.raw.ic0.app/logo192.png">
+    <link rel="manifest" href="https://m7sm4-2iaaa-aaaab-qabra-cai.raw.ic0.app/manifest.json">
+    <title>Motoko Playground - DFINITY</title>  <script type="module" crossorigin="" src="./Motoko Playground - DFINITY_files/index-_GT4ThM_.js.indir"></script>
+  <link rel="modulepreload" crossorigin="" href="https://m7sm4-2iaaa-aaaab-qabra-cai.raw.ic0.app/assets/vendor-DNRRDiIM.js">
+  <link rel="modulepreload" crossorigin="" href="https://m7sm4-2iaaa-aaaab-qabra-cai.raw.ic0.app/assets/agent-B-g8yqna.js">
+  <link rel="modulepreload" crossorigin="" href="https://m7sm4-2iaaa-aaaab-qabra-cai.raw.ic0.app/assets/xterm-CR_sKhrS.js">
+  <link rel="stylesheet" crossorigin="" href="./Motoko Playground - DFINITY_files/index-CmZLBCGw.css">
+<style data-styled="active" data-styled-version="6.1.13"></style><script async="async" type="text/javascript" src="./Motoko Playground - DFINITY_files/editor.main.js.indir"></script><link rel="stylesheet" type="text/css" data-name="vs/editor/editor.main" href="./Motoko Playground - DFINITY_files/editor.main.css"><script async="async" type="text/javascript" src="./Motoko Playground - DFINITY_files/editor.main.nls.js.indir"></script><style type="text/css" media="screen" class="monaco-colors">.codicon-add:before { content: '\ea60'; }
+.codicon-plus:before { content: '\ea60'; }
+.codicon-gist-new:before { content: '\ea60'; }
+.codicon-repo-create:before { content: '\ea60'; }
+.codicon-lightbulb:before { content: '\ea61'; }
+.codicon-light-bulb:before { content: '\ea61'; }
+.codicon-repo:before { content: '\ea62'; }
+.codicon-repo-delete:before { content: '\ea62'; }
+.codicon-gist-fork:before { content: '\ea63'; }
+.codicon-repo-forked:before { content: '\ea63'; }
+.codicon-git-pull-request:before { content: '\ea64'; }
+.codicon-git-pull-request-abandoned:before { content: '\ea64'; }
+.codicon-record-keys:before { content: '\ea65'; }
+.codicon-keyboard:before { content: '\ea65'; }
+.codicon-tag:before { content: '\ea66'; }
+.codicon-tag-add:before { content: '\ea66'; }
+.codicon-tag-remove:before { content: '\ea66'; }
+.codicon-git-pull-request-label:before { content: '\ea66'; }
+.codicon-person:before { content: '\ea67'; }
+.codicon-person-follow:before { content: '\ea67'; }
+.codicon-person-outline:before { content: '\ea67'; }
+.codicon-person-filled:before { content: '\ea67'; }
+.codicon-git-branch:before { content: '\ea68'; }
+.codicon-git-branch-create:before { content: '\ea68'; }
+.codicon-git-branch-delete:before { content: '\ea68'; }
+.codicon-source-control:before { content: '\ea68'; }
+.codicon-mirror:before { content: '\ea69'; }
+.codicon-mirror-public:before { content: '\ea69'; }
+.codicon-star:before { content: '\ea6a'; }
+.codicon-star-add:before { content: '\ea6a'; }
+.codicon-star-delete:before { content: '\ea6a'; }
+.codicon-star-empty:before { content: '\ea6a'; }
+.codicon-comment:before { content: '\ea6b'; }
+.codicon-comment-add:before { content: '\ea6b'; }
+.codicon-alert:before { content: '\ea6c'; }
+.codicon-warning:before { content: '\ea6c'; }
+.codicon-search:before { content: '\ea6d'; }
+.codicon-search-save:before { content: '\ea6d'; }
+.codicon-log-out:before { content: '\ea6e'; }
+.codicon-sign-out:before { content: '\ea6e'; }
+.codicon-log-in:before { content: '\ea6f'; }
+.codicon-sign-in:before { content: '\ea6f'; }
+.codicon-eye:before { content: '\ea70'; }
+.codicon-eye-unwatch:before { content: '\ea70'; }
+.codicon-eye-watch:before { content: '\ea70'; }
+.codicon-circle-filled:before { content: '\ea71'; }
+.codicon-primitive-dot:before { content: '\ea71'; }
+.codicon-close-dirty:before { content: '\ea71'; }
+.codicon-debug-breakpoint:before { content: '\ea71'; }
+.codicon-debug-breakpoint-disabled:before { content: '\ea71'; }
+.codicon-debug-hint:before { content: '\ea71'; }
+.codicon-primitive-square:before { content: '\ea72'; }
+.codicon-edit:before { content: '\ea73'; }
+.codicon-pencil:before { content: '\ea73'; }
+.codicon-info:before { content: '\ea74'; }
+.codicon-issue-opened:before { content: '\ea74'; }
+.codicon-gist-private:before { content: '\ea75'; }
+.codicon-git-fork-private:before { content: '\ea75'; }
+.codicon-lock:before { content: '\ea75'; }
+.codicon-mirror-private:before { content: '\ea75'; }
+.codicon-close:before { content: '\ea76'; }
+.codicon-remove-close:before { content: '\ea76'; }
+.codicon-x:before { content: '\ea76'; }
+.codicon-repo-sync:before { content: '\ea77'; }
+.codicon-sync:before { content: '\ea77'; }
+.codicon-clone:before { content: '\ea78'; }
+.codicon-desktop-download:before { content: '\ea78'; }
+.codicon-beaker:before { content: '\ea79'; }
+.codicon-microscope:before { content: '\ea79'; }
+.codicon-vm:before { content: '\ea7a'; }
+.codicon-device-desktop:before { content: '\ea7a'; }
+.codicon-file:before { content: '\ea7b'; }
+.codicon-file-text:before { content: '\ea7b'; }
+.codicon-more:before { content: '\ea7c'; }
+.codicon-ellipsis:before { content: '\ea7c'; }
+.codicon-kebab-horizontal:before { content: '\ea7c'; }
+.codicon-mail-reply:before { content: '\ea7d'; }
+.codicon-reply:before { content: '\ea7d'; }
+.codicon-organization:before { content: '\ea7e'; }
+.codicon-organization-filled:before { content: '\ea7e'; }
+.codicon-organization-outline:before { content: '\ea7e'; }
+.codicon-new-file:before { content: '\ea7f'; }
+.codicon-file-add:before { content: '\ea7f'; }
+.codicon-new-folder:before { content: '\ea80'; }
+.codicon-file-directory-create:before { content: '\ea80'; }
+.codicon-trash:before { content: '\ea81'; }
+.codicon-trashcan:before { content: '\ea81'; }
+.codicon-history:before { content: '\ea82'; }
+.codicon-clock:before { content: '\ea82'; }
+.codicon-folder:before { content: '\ea83'; }
+.codicon-file-directory:before { content: '\ea83'; }
+.codicon-symbol-folder:before { content: '\ea83'; }
+.codicon-logo-github:before { content: '\ea84'; }
+.codicon-mark-github:before { content: '\ea84'; }
+.codicon-github:before { content: '\ea84'; }
+.codicon-terminal:before { content: '\ea85'; }
+.codicon-console:before { content: '\ea85'; }
+.codicon-repl:before { content: '\ea85'; }
+.codicon-zap:before { content: '\ea86'; }
+.codicon-symbol-event:before { content: '\ea86'; }
+.codicon-error:before { content: '\ea87'; }
+.codicon-stop:before { content: '\ea87'; }
+.codicon-variable:before { content: '\ea88'; }
+.codicon-symbol-variable:before { content: '\ea88'; }
+.codicon-array:before { content: '\ea8a'; }
+.codicon-symbol-array:before { content: '\ea8a'; }
+.codicon-symbol-module:before { content: '\ea8b'; }
+.codicon-symbol-package:before { content: '\ea8b'; }
+.codicon-symbol-namespace:before { content: '\ea8b'; }
+.codicon-symbol-object:before { content: '\ea8b'; }
+.codicon-symbol-method:before { content: '\ea8c'; }
+.codicon-symbol-function:before { content: '\ea8c'; }
+.codicon-symbol-constructor:before { content: '\ea8c'; }
+.codicon-symbol-boolean:before { content: '\ea8f'; }
+.codicon-symbol-null:before { content: '\ea8f'; }
+.codicon-symbol-numeric:before { content: '\ea90'; }
+.codicon-symbol-number:before { content: '\ea90'; }
+.codicon-symbol-structure:before { content: '\ea91'; }
+.codicon-symbol-struct:before { content: '\ea91'; }
+.codicon-symbol-parameter:before { content: '\ea92'; }
+.codicon-symbol-type-parameter:before { content: '\ea92'; }
+.codicon-symbol-key:before { content: '\ea93'; }
+.codicon-symbol-text:before { content: '\ea93'; }
+.codicon-symbol-reference:before { content: '\ea94'; }
+.codicon-go-to-file:before { content: '\ea94'; }
+.codicon-symbol-enum:before { content: '\ea95'; }
+.codicon-symbol-value:before { content: '\ea95'; }
+.codicon-symbol-ruler:before { content: '\ea96'; }
+.codicon-symbol-unit:before { content: '\ea96'; }
+.codicon-activate-breakpoints:before { content: '\ea97'; }
+.codicon-archive:before { content: '\ea98'; }
+.codicon-arrow-both:before { content: '\ea99'; }
+.codicon-arrow-down:before { content: '\ea9a'; }
+.codicon-arrow-left:before { content: '\ea9b'; }
+.codicon-arrow-right:before { content: '\ea9c'; }
+.codicon-arrow-small-down:before { content: '\ea9d'; }
+.codicon-arrow-small-left:before { content: '\ea9e'; }
+.codicon-arrow-small-right:before { content: '\ea9f'; }
+.codicon-arrow-small-up:before { content: '\eaa0'; }
+.codicon-arrow-up:before { content: '\eaa1'; }
+.codicon-bell:before { content: '\eaa2'; }
+.codicon-bold:before { content: '\eaa3'; }
+.codicon-book:before { content: '\eaa4'; }
+.codicon-bookmark:before { content: '\eaa5'; }
+.codicon-debug-breakpoint-conditional-unverified:before { content: '\eaa6'; }
+.codicon-debug-breakpoint-conditional:before { content: '\eaa7'; }
+.codicon-debug-breakpoint-conditional-disabled:before { content: '\eaa7'; }
+.codicon-debug-breakpoint-data-unverified:before { content: '\eaa8'; }
+.codicon-debug-breakpoint-data:before { content: '\eaa9'; }
+.codicon-debug-breakpoint-data-disabled:before { content: '\eaa9'; }
+.codicon-debug-breakpoint-log-unverified:before { content: '\eaaa'; }
+.codicon-debug-breakpoint-log:before { content: '\eaab'; }
+.codicon-debug-breakpoint-log-disabled:before { content: '\eaab'; }
+.codicon-briefcase:before { content: '\eaac'; }
+.codicon-broadcast:before { content: '\eaad'; }
+.codicon-browser:before { content: '\eaae'; }
+.codicon-bug:before { content: '\eaaf'; }
+.codicon-calendar:before { content: '\eab0'; }
+.codicon-case-sensitive:before { content: '\eab1'; }
+.codicon-check:before { content: '\eab2'; }
+.codicon-checklist:before { content: '\eab3'; }
+.codicon-chevron-down:before { content: '\eab4'; }
+.codicon-drop-down-button:before { content: '\eab4'; }
+.codicon-chevron-left:before { content: '\eab5'; }
+.codicon-chevron-right:before { content: '\eab6'; }
+.codicon-chevron-up:before { content: '\eab7'; }
+.codicon-chrome-close:before { content: '\eab8'; }
+.codicon-chrome-maximize:before { content: '\eab9'; }
+.codicon-chrome-minimize:before { content: '\eaba'; }
+.codicon-chrome-restore:before { content: '\eabb'; }
+.codicon-circle:before { content: '\eabc'; }
+.codicon-circle-outline:before { content: '\eabc'; }
+.codicon-debug-breakpoint-unverified:before { content: '\eabc'; }
+.codicon-circle-slash:before { content: '\eabd'; }
+.codicon-circuit-board:before { content: '\eabe'; }
+.codicon-clear-all:before { content: '\eabf'; }
+.codicon-clippy:before { content: '\eac0'; }
+.codicon-close-all:before { content: '\eac1'; }
+.codicon-cloud-download:before { content: '\eac2'; }
+.codicon-cloud-upload:before { content: '\eac3'; }
+.codicon-code:before { content: '\eac4'; }
+.codicon-collapse-all:before { content: '\eac5'; }
+.codicon-color-mode:before { content: '\eac6'; }
+.codicon-comment-discussion:before { content: '\eac7'; }
+.codicon-compare-changes:before { content: '\eafd'; }
+.codicon-credit-card:before { content: '\eac9'; }
+.codicon-dash:before { content: '\eacc'; }
+.codicon-dashboard:before { content: '\eacd'; }
+.codicon-database:before { content: '\eace'; }
+.codicon-debug-continue:before { content: '\eacf'; }
+.codicon-debug-disconnect:before { content: '\ead0'; }
+.codicon-debug-pause:before { content: '\ead1'; }
+.codicon-debug-restart:before { content: '\ead2'; }
+.codicon-debug-start:before { content: '\ead3'; }
+.codicon-debug-step-into:before { content: '\ead4'; }
+.codicon-debug-step-out:before { content: '\ead5'; }
+.codicon-debug-step-over:before { content: '\ead6'; }
+.codicon-debug-stop:before { content: '\ead7'; }
+.codicon-debug:before { content: '\ead8'; }
+.codicon-device-camera-video:before { content: '\ead9'; }
+.codicon-device-camera:before { content: '\eada'; }
+.codicon-device-mobile:before { content: '\eadb'; }
+.codicon-diff-added:before { content: '\eadc'; }
+.codicon-diff-ignored:before { content: '\eadd'; }
+.codicon-diff-modified:before { content: '\eade'; }
+.codicon-diff-removed:before { content: '\eadf'; }
+.codicon-diff-renamed:before { content: '\eae0'; }
+.codicon-diff:before { content: '\eae1'; }
+.codicon-discard:before { content: '\eae2'; }
+.codicon-editor-layout:before { content: '\eae3'; }
+.codicon-empty-window:before { content: '\eae4'; }
+.codicon-exclude:before { content: '\eae5'; }
+.codicon-extensions:before { content: '\eae6'; }
+.codicon-eye-closed:before { content: '\eae7'; }
+.codicon-file-binary:before { content: '\eae8'; }
+.codicon-file-code:before { content: '\eae9'; }
+.codicon-file-media:before { content: '\eaea'; }
+.codicon-file-pdf:before { content: '\eaeb'; }
+.codicon-file-submodule:before { content: '\eaec'; }
+.codicon-file-symlink-directory:before { content: '\eaed'; }
+.codicon-file-symlink-file:before { content: '\eaee'; }
+.codicon-file-zip:before { content: '\eaef'; }
+.codicon-files:before { content: '\eaf0'; }
+.codicon-filter:before { content: '\eaf1'; }
+.codicon-flame:before { content: '\eaf2'; }
+.codicon-fold-down:before { content: '\eaf3'; }
+.codicon-fold-up:before { content: '\eaf4'; }
+.codicon-fold:before { content: '\eaf5'; }
+.codicon-folder-active:before { content: '\eaf6'; }
+.codicon-folder-opened:before { content: '\eaf7'; }
+.codicon-gear:before { content: '\eaf8'; }
+.codicon-gift:before { content: '\eaf9'; }
+.codicon-gist-secret:before { content: '\eafa'; }
+.codicon-gist:before { content: '\eafb'; }
+.codicon-git-commit:before { content: '\eafc'; }
+.codicon-git-compare:before { content: '\eafd'; }
+.codicon-git-merge:before { content: '\eafe'; }
+.codicon-github-action:before { content: '\eaff'; }
+.codicon-github-alt:before { content: '\eb00'; }
+.codicon-globe:before { content: '\eb01'; }
+.codicon-grabber:before { content: '\eb02'; }
+.codicon-graph:before { content: '\eb03'; }
+.codicon-gripper:before { content: '\eb04'; }
+.codicon-heart:before { content: '\eb05'; }
+.codicon-home:before { content: '\eb06'; }
+.codicon-horizontal-rule:before { content: '\eb07'; }
+.codicon-hubot:before { content: '\eb08'; }
+.codicon-inbox:before { content: '\eb09'; }
+.codicon-issue-closed:before { content: '\eba4'; }
+.codicon-issue-reopened:before { content: '\eb0b'; }
+.codicon-issues:before { content: '\eb0c'; }
+.codicon-italic:before { content: '\eb0d'; }
+.codicon-jersey:before { content: '\eb0e'; }
+.codicon-json:before { content: '\eb0f'; }
+.codicon-bracket:before { content: '\eb0f'; }
+.codicon-kebab-vertical:before { content: '\eb10'; }
+.codicon-key:before { content: '\eb11'; }
+.codicon-law:before { content: '\eb12'; }
+.codicon-lightbulb-autofix:before { content: '\eb13'; }
+.codicon-link-external:before { content: '\eb14'; }
+.codicon-link:before { content: '\eb15'; }
+.codicon-list-ordered:before { content: '\eb16'; }
+.codicon-list-unordered:before { content: '\eb17'; }
+.codicon-live-share:before { content: '\eb18'; }
+.codicon-loading:before { content: '\eb19'; }
+.codicon-location:before { content: '\eb1a'; }
+.codicon-mail-read:before { content: '\eb1b'; }
+.codicon-mail:before { content: '\eb1c'; }
+.codicon-markdown:before { content: '\eb1d'; }
+.codicon-megaphone:before { content: '\eb1e'; }
+.codicon-mention:before { content: '\eb1f'; }
+.codicon-milestone:before { content: '\eb20'; }
+.codicon-git-pull-request-milestone:before { content: '\eb20'; }
+.codicon-mortar-board:before { content: '\eb21'; }
+.codicon-move:before { content: '\eb22'; }
+.codicon-multiple-windows:before { content: '\eb23'; }
+.codicon-mute:before { content: '\eb24'; }
+.codicon-no-newline:before { content: '\eb25'; }
+.codicon-note:before { content: '\eb26'; }
+.codicon-octoface:before { content: '\eb27'; }
+.codicon-open-preview:before { content: '\eb28'; }
+.codicon-package:before { content: '\eb29'; }
+.codicon-paintcan:before { content: '\eb2a'; }
+.codicon-pin:before { content: '\eb2b'; }
+.codicon-play:before { content: '\eb2c'; }
+.codicon-run:before { content: '\eb2c'; }
+.codicon-plug:before { content: '\eb2d'; }
+.codicon-preserve-case:before { content: '\eb2e'; }
+.codicon-preview:before { content: '\eb2f'; }
+.codicon-project:before { content: '\eb30'; }
+.codicon-pulse:before { content: '\eb31'; }
+.codicon-question:before { content: '\eb32'; }
+.codicon-quote:before { content: '\eb33'; }
+.codicon-radio-tower:before { content: '\eb34'; }
+.codicon-reactions:before { content: '\eb35'; }
+.codicon-references:before { content: '\eb36'; }
+.codicon-refresh:before { content: '\eb37'; }
+.codicon-regex:before { content: '\eb38'; }
+.codicon-remote-explorer:before { content: '\eb39'; }
+.codicon-remote:before { content: '\eb3a'; }
+.codicon-remove:before { content: '\eb3b'; }
+.codicon-replace-all:before { content: '\eb3c'; }
+.codicon-replace:before { content: '\eb3d'; }
+.codicon-repo-clone:before { content: '\eb3e'; }
+.codicon-repo-force-push:before { content: '\eb3f'; }
+.codicon-repo-pull:before { content: '\eb40'; }
+.codicon-repo-push:before { content: '\eb41'; }
+.codicon-report:before { content: '\eb42'; }
+.codicon-request-changes:before { content: '\eb43'; }
+.codicon-rocket:before { content: '\eb44'; }
+.codicon-root-folder-opened:before { content: '\eb45'; }
+.codicon-root-folder:before { content: '\eb46'; }
+.codicon-rss:before { content: '\eb47'; }
+.codicon-ruby:before { content: '\eb48'; }
+.codicon-save-all:before { content: '\eb49'; }
+.codicon-save-as:before { content: '\eb4a'; }
+.codicon-save:before { content: '\eb4b'; }
+.codicon-screen-full:before { content: '\eb4c'; }
+.codicon-screen-normal:before { content: '\eb4d'; }
+.codicon-search-stop:before { content: '\eb4e'; }
+.codicon-server:before { content: '\eb50'; }
+.codicon-settings-gear:before { content: '\eb51'; }
+.codicon-settings:before { content: '\eb52'; }
+.codicon-shield:before { content: '\eb53'; }
+.codicon-smiley:before { content: '\eb54'; }
+.codicon-sort-precedence:before { content: '\eb55'; }
+.codicon-split-horizontal:before { content: '\eb56'; }
+.codicon-split-vertical:before { content: '\eb57'; }
+.codicon-squirrel:before { content: '\eb58'; }
+.codicon-star-full:before { content: '\eb59'; }
+.codicon-star-half:before { content: '\eb5a'; }
+.codicon-symbol-class:before { content: '\eb5b'; }
+.codicon-symbol-color:before { content: '\eb5c'; }
+.codicon-symbol-customcolor:before { content: '\eb5c'; }
+.codicon-symbol-constant:before { content: '\eb5d'; }
+.codicon-symbol-enum-member:before { content: '\eb5e'; }
+.codicon-symbol-field:before { content: '\eb5f'; }
+.codicon-symbol-file:before { content: '\eb60'; }
+.codicon-symbol-interface:before { content: '\eb61'; }
+.codicon-symbol-keyword:before { content: '\eb62'; }
+.codicon-symbol-misc:before { content: '\eb63'; }
+.codicon-symbol-operator:before { content: '\eb64'; }
+.codicon-symbol-property:before { content: '\eb65'; }
+.codicon-wrench:before { content: '\eb65'; }
+.codicon-wrench-subaction:before { content: '\eb65'; }
+.codicon-symbol-snippet:before { content: '\eb66'; }
+.codicon-tasklist:before { content: '\eb67'; }
+.codicon-telescope:before { content: '\eb68'; }
+.codicon-text-size:before { content: '\eb69'; }
+.codicon-three-bars:before { content: '\eb6a'; }
+.codicon-thumbsdown:before { content: '\eb6b'; }
+.codicon-thumbsup:before { content: '\eb6c'; }
+.codicon-tools:before { content: '\eb6d'; }
+.codicon-triangle-down:before { content: '\eb6e'; }
+.codicon-triangle-left:before { content: '\eb6f'; }
+.codicon-triangle-right:before { content: '\eb70'; }
+.codicon-triangle-up:before { content: '\eb71'; }
+.codicon-twitter:before { content: '\eb72'; }
+.codicon-unfold:before { content: '\eb73'; }
+.codicon-unlock:before { content: '\eb74'; }
+.codicon-unmute:before { content: '\eb75'; }
+.codicon-unverified:before { content: '\eb76'; }
+.codicon-verified:before { content: '\eb77'; }
+.codicon-versions:before { content: '\eb78'; }
+.codicon-vm-active:before { content: '\eb79'; }
+.codicon-vm-outline:before { content: '\eb7a'; }
+.codicon-vm-running:before { content: '\eb7b'; }
+.codicon-watch:before { content: '\eb7c'; }
+.codicon-whitespace:before { content: '\eb7d'; }
+.codicon-whole-word:before { content: '\eb7e'; }
+.codicon-window:before { content: '\eb7f'; }
+.codicon-word-wrap:before { content: '\eb80'; }
+.codicon-zoom-in:before { content: '\eb81'; }
+.codicon-zoom-out:before { content: '\eb82'; }
+.codicon-list-filter:before { content: '\eb83'; }
+.codicon-list-flat:before { content: '\eb84'; }
+.codicon-list-selection:before { content: '\eb85'; }
+.codicon-selection:before { content: '\eb85'; }
+.codicon-list-tree:before { content: '\eb86'; }
+.codicon-debug-breakpoint-function-unverified:before { content: '\eb87'; }
+.codicon-debug-breakpoint-function:before { content: '\eb88'; }
+.codicon-debug-breakpoint-function-disabled:before { content: '\eb88'; }
+.codicon-debug-stackframe-active:before { content: '\eb89'; }
+.codicon-circle-small-filled:before { content: '\eb8a'; }
+.codicon-debug-stackframe-dot:before { content: '\eb8a'; }
+.codicon-debug-stackframe:before { content: '\eb8b'; }
+.codicon-debug-stackframe-focused:before { content: '\eb8b'; }
+.codicon-debug-breakpoint-unsupported:before { content: '\eb8c'; }
+.codicon-symbol-string:before { content: '\eb8d'; }
+.codicon-debug-reverse-continue:before { content: '\eb8e'; }
+.codicon-debug-step-back:before { content: '\eb8f'; }
+.codicon-debug-restart-frame:before { content: '\eb90'; }
+.codicon-call-incoming:before { content: '\eb92'; }
+.codicon-call-outgoing:before { content: '\eb93'; }
+.codicon-menu:before { content: '\eb94'; }
+.codicon-expand-all:before { content: '\eb95'; }
+.codicon-feedback:before { content: '\eb96'; }
+.codicon-git-pull-request-reviewer:before { content: '\eb96'; }
+.codicon-group-by-ref-type:before { content: '\eb97'; }
+.codicon-ungroup-by-ref-type:before { content: '\eb98'; }
+.codicon-account:before { content: '\eb99'; }
+.codicon-git-pull-request-assignee:before { content: '\eb99'; }
+.codicon-bell-dot:before { content: '\eb9a'; }
+.codicon-debug-console:before { content: '\eb9b'; }
+.codicon-library:before { content: '\eb9c'; }
+.codicon-output:before { content: '\eb9d'; }
+.codicon-run-all:before { content: '\eb9e'; }
+.codicon-sync-ignored:before { content: '\eb9f'; }
+.codicon-pinned:before { content: '\eba0'; }
+.codicon-github-inverted:before { content: '\eba1'; }
+.codicon-debug-alt:before { content: '\eb91'; }
+.codicon-server-process:before { content: '\eba2'; }
+.codicon-server-environment:before { content: '\eba3'; }
+.codicon-pass:before { content: '\eba4'; }
+.codicon-stop-circle:before { content: '\eba5'; }
+.codicon-play-circle:before { content: '\eba6'; }
+.codicon-record:before { content: '\eba7'; }
+.codicon-debug-alt-small:before { content: '\eba8'; }
+.codicon-vm-connect:before { content: '\eba9'; }
+.codicon-cloud:before { content: '\ebaa'; }
+.codicon-merge:before { content: '\ebab'; }
+.codicon-export:before { content: '\ebac'; }
+.codicon-graph-left:before { content: '\ebad'; }
+.codicon-magnet:before { content: '\ebae'; }
+.codicon-notebook:before { content: '\ebaf'; }
+.codicon-redo:before { content: '\ebb0'; }
+.codicon-check-all:before { content: '\ebb1'; }
+.codicon-pinned-dirty:before { content: '\ebb2'; }
+.codicon-pass-filled:before { content: '\ebb3'; }
+.codicon-circle-large-filled:before { content: '\ebb4'; }
+.codicon-circle-large:before { content: '\ebb5'; }
+.codicon-circle-large-outline:before { content: '\ebb5'; }
+.codicon-combine:before { content: '\ebb6'; }
+.codicon-gather:before { content: '\ebb6'; }
+.codicon-table:before { content: '\ebb7'; }
+.codicon-variable-group:before { content: '\ebb8'; }
+.codicon-type-hierarchy:before { content: '\ebb9'; }
+.codicon-type-hierarchy-sub:before { content: '\ebba'; }
+.codicon-type-hierarchy-super:before { content: '\ebbb'; }
+.codicon-git-pull-request-create:before { content: '\ebbc'; }
+.codicon-run-above:before { content: '\ebbd'; }
+.codicon-run-below:before { content: '\ebbe'; }
+.codicon-notebook-template:before { content: '\ebbf'; }
+.codicon-debug-rerun:before { content: '\ebc0'; }
+.codicon-workspace-trusted:before { content: '\ebc1'; }
+.codicon-workspace-untrusted:before { content: '\ebc2'; }
+.codicon-workspace-unspecified:before { content: '\ebc3'; }
+.codicon-terminal-cmd:before { content: '\ebc4'; }
+.codicon-terminal-debian:before { content: '\ebc5'; }
+.codicon-terminal-linux:before { content: '\ebc6'; }
+.codicon-terminal-powershell:before { content: '\ebc7'; }
+.codicon-terminal-tmux:before { content: '\ebc8'; }
+.codicon-terminal-ubuntu:before { content: '\ebc9'; }
+.codicon-terminal-bash:before { content: '\ebca'; }
+.codicon-arrow-swap:before { content: '\ebcb'; }
+.codicon-copy:before { content: '\ebcc'; }
+.codicon-person-add:before { content: '\ebcd'; }
+.codicon-filter-filled:before { content: '\ebce'; }
+.codicon-wand:before { content: '\ebcf'; }
+.codicon-debug-line-by-line:before { content: '\ebd0'; }
+.codicon-inspect:before { content: '\ebd1'; }
+.codicon-layers:before { content: '\ebd2'; }
+.codicon-layers-dot:before { content: '\ebd3'; }
+.codicon-layers-active:before { content: '\ebd4'; }
+.codicon-compass:before { content: '\ebd5'; }
+.codicon-compass-dot:before { content: '\ebd6'; }
+.codicon-compass-active:before { content: '\ebd7'; }
+.codicon-azure:before { content: '\ebd8'; }
+.codicon-issue-draft:before { content: '\ebd9'; }
+.codicon-git-pull-request-closed:before { content: '\ebda'; }
+.codicon-git-pull-request-draft:before { content: '\ebdb'; }
+.codicon-debug-all:before { content: '\ebdc'; }
+.codicon-debug-coverage:before { content: '\ebdd'; }
+.codicon-run-errors:before { content: '\ebde'; }
+.codicon-folder-library:before { content: '\ebdf'; }
+.codicon-debug-continue-small:before { content: '\ebe0'; }
+.codicon-beaker-stop:before { content: '\ebe1'; }
+.codicon-graph-line:before { content: '\ebe2'; }
+.codicon-graph-scatter:before { content: '\ebe3'; }
+.codicon-pie-chart:before { content: '\ebe4'; }
+.codicon-bracket-dot:before { content: '\ebe5'; }
+.codicon-bracket-error:before { content: '\ebe6'; }
+.codicon-lock-small:before { content: '\ebe7'; }
+.codicon-azure-devops:before { content: '\ebe8'; }
+.codicon-verified-filled:before { content: '\ebe9'; }
+.codicon-newline:before { content: '\ebea'; }
+.codicon-layout:before { content: '\ebeb'; }
+.codicon-layout-activitybar-left:before { content: '\ebec'; }
+.codicon-layout-activitybar-right:before { content: '\ebed'; }
+.codicon-layout-panel-left:before { content: '\ebee'; }
+.codicon-layout-panel-center:before { content: '\ebef'; }
+.codicon-layout-panel-justify:before { content: '\ebf0'; }
+.codicon-layout-panel-right:before { content: '\ebf1'; }
+.codicon-layout-panel:before { content: '\ebf2'; }
+.codicon-layout-sidebar-left:before { content: '\ebf3'; }
+.codicon-layout-sidebar-right:before { content: '\ebf4'; }
+.codicon-layout-statusbar:before { content: '\ebf5'; }
+.codicon-layout-menubar:before { content: '\ebf6'; }
+.codicon-layout-centered:before { content: '\ebf7'; }
+.codicon-layout-sidebar-right-off:before { content: '\ec00'; }
+.codicon-layout-panel-off:before { content: '\ec01'; }
+.codicon-layout-sidebar-left-off:before { content: '\ec02'; }
+.codicon-target:before { content: '\ebf8'; }
+.codicon-indent:before { content: '\ebf9'; }
+.codicon-record-small:before { content: '\ebfa'; }
+.codicon-error-small:before { content: '\ebfb'; }
+.codicon-arrow-circle-down:before { content: '\ebfc'; }
+.codicon-arrow-circle-left:before { content: '\ebfd'; }
+.codicon-arrow-circle-right:before { content: '\ebfe'; }
+.codicon-arrow-circle-up:before { content: '\ebff'; }
+.codicon-heart-filled:before { content: '\ec04'; }
+.codicon-map:before { content: '\ec05'; }
+.codicon-map-filled:before { content: '\ec06'; }
+.codicon-circle-small:before { content: '\ec07'; }
+.codicon-bell-slash:before { content: '\ec08'; }
+.codicon-bell-slash-dot:before { content: '\ec09'; }
+.codicon-comment-unresolved:before { content: '\ec0a'; }
+.codicon-git-pull-request-go-to-changes:before { content: '\ec0b'; }
+.codicon-git-pull-request-new-changes:before { content: '\ec0c'; }
+.codicon-search-fuzzy:before { content: '\ec0d'; }
+.codicon-comment-draft:before { content: '\ec0e'; }
+.codicon-send:before { content: '\ec0f'; }
+.codicon-sparkle:before { content: '\ec10'; }
+.codicon-insert:before { content: '\ec11'; }
+.codicon-mic:before { content: '\ec12'; }
+.codicon-dialog-error:before { content: '\ea87'; }
+.codicon-dialog-warning:before { content: '\ea6c'; }
+.codicon-dialog-info:before { content: '\ea74'; }
+.codicon-dialog-close:before { content: '\ea76'; }
+.codicon-tree-item-expanded:before { content: '\eab4'; }
+.codicon-tree-filter-on-type-on:before { content: '\eb83'; }
+.codicon-tree-filter-on-type-off:before { content: '\eb85'; }
+.codicon-tree-filter-clear:before { content: '\ea76'; }
+.codicon-tree-item-loading:before { content: '\eb19'; }
+.codicon-menu-selection:before { content: '\eab2'; }
+.codicon-menu-submenu:before { content: '\eab6'; }
+.codicon-menubar-more:before { content: '\ea7c'; }
+.codicon-scrollbar-button-left:before { content: '\eb6f'; }
+.codicon-scrollbar-button-right:before { content: '\eb70'; }
+.codicon-scrollbar-button-up:before { content: '\eb71'; }
+.codicon-scrollbar-button-down:before { content: '\eb6e'; }
+.codicon-toolbar-more:before { content: '\ea7c'; }
+.codicon-quick-input-back:before { content: '\ea9b'; }
+.codicon-widget-close:before { content: '\ea76'; }
+.codicon-goto-previous-location:before { content: '\eaa1'; }
+.codicon-goto-next-location:before { content: '\ea9a'; }
+.codicon-diff-review-insert:before { content: '\ea60'; }
+.codicon-diff-review-remove:before { content: '\eb3b'; }
+.codicon-diff-review-close:before { content: '\ea76'; }
+.codicon-parameter-hints-next:before { content: '\eab4'; }
+.codicon-parameter-hints-previous:before { content: '\eab7'; }
+.codicon-suggest-more-info:before { content: '\eab6'; }
+.codicon-inline-suggestion-hints-next:before { content: '\eab6'; }
+.codicon-inline-suggestion-hints-previous:before { content: '\eab5'; }
+.codicon-diff-insert:before { content: '\ea60'; }
+.codicon-diff-remove:before { content: '\eb3b'; }
+.codicon-find-selection:before { content: '\eb85'; }
+.codicon-find-collapsed:before { content: '\eab6'; }
+.codicon-find-expanded:before { content: '\eab4'; }
+.codicon-find-replace:before { content: '\eb3d'; }
+.codicon-find-replace-all:before { content: '\eb3c'; }
+.codicon-find-previous-match:before { content: '\eaa1'; }
+.codicon-find-next-match:before { content: '\ea9a'; }
+.codicon-folding-expanded:before { content: '\eab4'; }
+.codicon-folding-collapsed:before { content: '\eab6'; }
+.codicon-folding-manual-collapsed:before { content: '\eab6'; }
+.codicon-folding-manual-expanded:before { content: '\eab4'; }
+.codicon-marker-navigation-next:before { content: '\ea9a'; }
+.codicon-marker-navigation-previous:before { content: '\eaa1'; }
+.codicon-extensions-warning-message:before { content: '\ea6c'; }
+.monaco-editor .inputarea.ime-input { background-color: #fffffe; }
+.monaco-editor .view-overlays .current-line { border: 2px solid #eeeeee; }
+.monaco-editor .margin-view-overlays .current-line-margin { border: 2px solid #eeeeee; }
+.monaco-editor .bracket-indent-guide.lvl-0 { --guide-color: rgba(4, 49, 250, 0.3); --guide-color-active: #0431fa; }
+.monaco-editor .bracket-indent-guide.lvl-1 { --guide-color: rgba(49, 147, 49, 0.3); --guide-color-active: #319331; }
+.monaco-editor .bracket-indent-guide.lvl-2 { --guide-color: rgba(123, 56, 20, 0.3); --guide-color-active: #7b3814; }
+.monaco-editor .bracket-indent-guide.lvl-3 { --guide-color: rgba(4, 49, 250, 0.3); --guide-color-active: #0431fa; }
+.monaco-editor .bracket-indent-guide.lvl-4 { --guide-color: rgba(49, 147, 49, 0.3); --guide-color-active: #319331; }
+.monaco-editor .bracket-indent-guide.lvl-5 { --guide-color: rgba(123, 56, 20, 0.3); --guide-color-active: #7b3814; }
+.monaco-editor .bracket-indent-guide.lvl-6 { --guide-color: rgba(4, 49, 250, 0.3); --guide-color-active: #0431fa; }
+.monaco-editor .bracket-indent-guide.lvl-7 { --guide-color: rgba(49, 147, 49, 0.3); --guide-color-active: #319331; }
+.monaco-editor .bracket-indent-guide.lvl-8 { --guide-color: rgba(123, 56, 20, 0.3); --guide-color-active: #7b3814; }
+.monaco-editor .bracket-indent-guide.lvl-9 { --guide-color: rgba(4, 49, 250, 0.3); --guide-color-active: #0431fa; }
+.monaco-editor .bracket-indent-guide.lvl-10 { --guide-color: rgba(49, 147, 49, 0.3); --guide-color-active: #319331; }
+.monaco-editor .bracket-indent-guide.lvl-11 { --guide-color: rgba(123, 56, 20, 0.3); --guide-color-active: #7b3814; }
+.monaco-editor .bracket-indent-guide.lvl-12 { --guide-color: rgba(4, 49, 250, 0.3); --guide-color-active: #0431fa; }
+.monaco-editor .bracket-indent-guide.lvl-13 { --guide-color: rgba(49, 147, 49, 0.3); --guide-color-active: #319331; }
+.monaco-editor .bracket-indent-guide.lvl-14 { --guide-color: rgba(123, 56, 20, 0.3); --guide-color-active: #7b3814; }
+.monaco-editor .bracket-indent-guide.lvl-15 { --guide-color: rgba(4, 49, 250, 0.3); --guide-color-active: #0431fa; }
+.monaco-editor .bracket-indent-guide.lvl-16 { --guide-color: rgba(49, 147, 49, 0.3); --guide-color-active: #319331; }
+.monaco-editor .bracket-indent-guide.lvl-17 { --guide-color: rgba(123, 56, 20, 0.3); --guide-color-active: #7b3814; }
+.monaco-editor .bracket-indent-guide.lvl-18 { --guide-color: rgba(4, 49, 250, 0.3); --guide-color-active: #0431fa; }
+.monaco-editor .bracket-indent-guide.lvl-19 { --guide-color: rgba(49, 147, 49, 0.3); --guide-color-active: #319331; }
+.monaco-editor .bracket-indent-guide.lvl-20 { --guide-color: rgba(123, 56, 20, 0.3); --guide-color-active: #7b3814; }
+.monaco-editor .bracket-indent-guide.lvl-21 { --guide-color: rgba(4, 49, 250, 0.3); --guide-color-active: #0431fa; }
+.monaco-editor .bracket-indent-guide.lvl-22 { --guide-color: rgba(49, 147, 49, 0.3); --guide-color-active: #319331; }
+.monaco-editor .bracket-indent-guide.lvl-23 { --guide-color: rgba(123, 56, 20, 0.3); --guide-color-active: #7b3814; }
+.monaco-editor .bracket-indent-guide.lvl-24 { --guide-color: rgba(4, 49, 250, 0.3); --guide-color-active: #0431fa; }
+.monaco-editor .bracket-indent-guide.lvl-25 { --guide-color: rgba(49, 147, 49, 0.3); --guide-color-active: #319331; }
+.monaco-editor .bracket-indent-guide.lvl-26 { --guide-color: rgba(123, 56, 20, 0.3); --guide-color-active: #7b3814; }
+.monaco-editor .bracket-indent-guide.lvl-27 { --guide-color: rgba(4, 49, 250, 0.3); --guide-color-active: #0431fa; }
+.monaco-editor .bracket-indent-guide.lvl-28 { --guide-color: rgba(49, 147, 49, 0.3); --guide-color-active: #319331; }
+.monaco-editor .bracket-indent-guide.lvl-29 { --guide-color: rgba(123, 56, 20, 0.3); --guide-color-active: #7b3814; }
+.monaco-editor .vertical { box-shadow: 1px 0 0 0 var(--guide-color) inset; }
+.monaco-editor .horizontal-top { border-top: 1px solid var(--guide-color); }
+.monaco-editor .horizontal-bottom { border-bottom: 1px solid var(--guide-color); }
+.monaco-editor .vertical.indent-active { box-shadow: 1px 0 0 0 var(--guide-color-active) inset; }
+.monaco-editor .horizontal-top.indent-active { border-top: 1px solid var(--guide-color-active); }
+.monaco-editor .horizontal-bottom.indent-active { border-bottom: 1px solid var(--guide-color-active); }
+.monaco-editor .lines-content .core-guide-indent.lvl-0 { --indent-color: #d3d3d3; --indent-color-active: #939393; }
+.monaco-editor .lines-content .core-guide-indent.lvl-1 { --indent-color: #d3d3d3; --indent-color-active: #939393; }
+.monaco-editor .lines-content .core-guide-indent.lvl-2 { --indent-color: #d3d3d3; --indent-color-active: #939393; }
+.monaco-editor .lines-content .core-guide-indent.lvl-3 { --indent-color: #d3d3d3; --indent-color-active: #939393; }
+.monaco-editor .lines-content .core-guide-indent.lvl-4 { --indent-color: #d3d3d3; --indent-color-active: #939393; }
+.monaco-editor .lines-content .core-guide-indent.lvl-5 { --indent-color: #d3d3d3; --indent-color-active: #939393; }
+.monaco-editor .lines-content .core-guide-indent.lvl-6 { --indent-color: #d3d3d3; --indent-color-active: #939393; }
+.monaco-editor .lines-content .core-guide-indent.lvl-7 { --indent-color: #d3d3d3; --indent-color-active: #939393; }
+.monaco-editor .lines-content .core-guide-indent.lvl-8 { --indent-color: #d3d3d3; --indent-color-active: #939393; }
+.monaco-editor .lines-content .core-guide-indent.lvl-9 { --indent-color: #d3d3d3; --indent-color-active: #939393; }
+.monaco-editor .lines-content .core-guide-indent.lvl-10 { --indent-color: #d3d3d3; --indent-color-active: #939393; }
+.monaco-editor .lines-content .core-guide-indent.lvl-11 { --indent-color: #d3d3d3; --indent-color-active: #939393; }
+.monaco-editor .lines-content .core-guide-indent.lvl-12 { --indent-color: #d3d3d3; --indent-color-active: #939393; }
+.monaco-editor .lines-content .core-guide-indent.lvl-13 { --indent-color: #d3d3d3; --indent-color-active: #939393; }
+.monaco-editor .lines-content .core-guide-indent.lvl-14 { --indent-color: #d3d3d3; --indent-color-active: #939393; }
+.monaco-editor .lines-content .core-guide-indent.lvl-15 { --indent-color: #d3d3d3; --indent-color-active: #939393; }
+.monaco-editor .lines-content .core-guide-indent.lvl-16 { --indent-color: #d3d3d3; --indent-color-active: #939393; }
+.monaco-editor .lines-content .core-guide-indent.lvl-17 { --indent-color: #d3d3d3; --indent-color-active: #939393; }
+.monaco-editor .lines-content .core-guide-indent.lvl-18 { --indent-color: #d3d3d3; --indent-color-active: #939393; }
+.monaco-editor .lines-content .core-guide-indent.lvl-19 { --indent-color: #d3d3d3; --indent-color-active: #939393; }
+.monaco-editor .lines-content .core-guide-indent.lvl-20 { --indent-color: #d3d3d3; --indent-color-active: #939393; }
+.monaco-editor .lines-content .core-guide-indent.lvl-21 { --indent-color: #d3d3d3; --indent-color-active: #939393; }
+.monaco-editor .lines-content .core-guide-indent.lvl-22 { --indent-color: #d3d3d3; --indent-color-active: #939393; }
+.monaco-editor .lines-content .core-guide-indent.lvl-23 { --indent-color: #d3d3d3; --indent-color-active: #939393; }
+.monaco-editor .lines-content .core-guide-indent.lvl-24 { --indent-color: #d3d3d3; --indent-color-active: #939393; }
+.monaco-editor .lines-content .core-guide-indent.lvl-25 { --indent-color: #d3d3d3; --indent-color-active: #939393; }
+.monaco-editor .lines-content .core-guide-indent.lvl-26 { --indent-color: #d3d3d3; --indent-color-active: #939393; }
+.monaco-editor .lines-content .core-guide-indent.lvl-27 { --indent-color: #d3d3d3; --indent-color-active: #939393; }
+.monaco-editor .lines-content .core-guide-indent.lvl-28 { --indent-color: #d3d3d3; --indent-color-active: #939393; }
+.monaco-editor .lines-content .core-guide-indent.lvl-29 { --indent-color: #d3d3d3; --indent-color-active: #939393; }
+.monaco-editor .lines-content .core-guide-indent { box-shadow: 1px 0 0 0 var(--indent-color) inset; }
+.monaco-editor .lines-content .core-guide-indent.indent-active { box-shadow: 1px 0 0 0 var(--indent-color-active) inset; }
+.monaco-editor .line-numbers.dimmed-line-number { color: rgba(35, 120, 147, 0.4); }
+.monaco-editor .cursors-layer .cursor { background-color: #000000; border-color: #000000; color: #ffffff; }
+.monaco-editor .unexpected-closing-bracket { color: rgba(255, 18, 18, 0.8); }
+.monaco-editor .bracket-highlighting-0 { color: #0431fa; }
+.monaco-editor .bracket-highlighting-1 { color: #319331; }
+.monaco-editor .bracket-highlighting-2 { color: #7b3814; }
+.monaco-editor .bracket-highlighting-3 { color: #0431fa; }
+.monaco-editor .bracket-highlighting-4 { color: #319331; }
+.monaco-editor .bracket-highlighting-5 { color: #7b3814; }
+.monaco-editor .bracket-highlighting-6 { color: #0431fa; }
+.monaco-editor .bracket-highlighting-7 { color: #319331; }
+.monaco-editor .bracket-highlighting-8 { color: #7b3814; }
+.monaco-editor .bracket-highlighting-9 { color: #0431fa; }
+.monaco-editor .bracket-highlighting-10 { color: #319331; }
+.monaco-editor .bracket-highlighting-11 { color: #7b3814; }
+.monaco-editor .bracket-highlighting-12 { color: #0431fa; }
+.monaco-editor .bracket-highlighting-13 { color: #319331; }
+.monaco-editor .bracket-highlighting-14 { color: #7b3814; }
+.monaco-editor .bracket-highlighting-15 { color: #0431fa; }
+.monaco-editor .bracket-highlighting-16 { color: #319331; }
+.monaco-editor .bracket-highlighting-17 { color: #7b3814; }
+.monaco-editor .bracket-highlighting-18 { color: #0431fa; }
+.monaco-editor .bracket-highlighting-19 { color: #319331; }
+.monaco-editor .bracket-highlighting-20 { color: #7b3814; }
+.monaco-editor .bracket-highlighting-21 { color: #0431fa; }
+.monaco-editor .bracket-highlighting-22 { color: #319331; }
+.monaco-editor .bracket-highlighting-23 { color: #7b3814; }
+.monaco-editor .bracket-highlighting-24 { color: #0431fa; }
+.monaco-editor .bracket-highlighting-25 { color: #319331; }
+.monaco-editor .bracket-highlighting-26 { color: #7b3814; }
+.monaco-editor .bracket-highlighting-27 { color: #0431fa; }
+.monaco-editor .bracket-highlighting-28 { color: #319331; }
+.monaco-editor .bracket-highlighting-29 { color: #7b3814; }
+.monaco-editor .squiggly-error { background: url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%206%203'%20enable-background%3D'new%200%200%206%203'%20height%3D'3'%20width%3D'6'%3E%3Cg%20fill%3D'%23e51400'%3E%3Cpolygon%20points%3D'5.5%2C0%202.5%2C3%201.1%2C3%204.1%2C0'%2F%3E%3Cpolygon%20points%3D'4%2C0%206%2C2%206%2C0.6%205.4%2C0'%2F%3E%3Cpolygon%20points%3D'0%2C2%201%2C3%202.4%2C3%200%2C0.6'%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") repeat-x bottom left; }
+.monaco-editor .squiggly-warning { background: url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%206%203'%20enable-background%3D'new%200%200%206%203'%20height%3D'3'%20width%3D'6'%3E%3Cg%20fill%3D'%23bf8803'%3E%3Cpolygon%20points%3D'5.5%2C0%202.5%2C3%201.1%2C3%204.1%2C0'%2F%3E%3Cpolygon%20points%3D'4%2C0%206%2C2%206%2C0.6%205.4%2C0'%2F%3E%3Cpolygon%20points%3D'0%2C2%201%2C3%202.4%2C3%200%2C0.6'%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") repeat-x bottom left; }
+.monaco-editor .squiggly-info { background: url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%206%203'%20enable-background%3D'new%200%200%206%203'%20height%3D'3'%20width%3D'6'%3E%3Cg%20fill%3D'%231a85ff'%3E%3Cpolygon%20points%3D'5.5%2C0%202.5%2C3%201.1%2C3%204.1%2C0'%2F%3E%3Cpolygon%20points%3D'4%2C0%206%2C2%206%2C0.6%205.4%2C0'%2F%3E%3Cpolygon%20points%3D'0%2C2%201%2C3%202.4%2C3%200%2C0.6'%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") repeat-x bottom left; }
+.monaco-editor .squiggly-hint { background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20height%3D%223%22%20width%3D%2212%22%3E%3Cg%20fill%3D%22%236c6c6c%22%3E%3Ccircle%20cx%3D%221%22%20cy%3D%221%22%20r%3D%221%22%2F%3E%3Ccircle%20cx%3D%225%22%20cy%3D%221%22%20r%3D%221%22%2F%3E%3Ccircle%20cx%3D%229%22%20cy%3D%221%22%20r%3D%221%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") no-repeat bottom left; }
+.monaco-editor.showUnused .squiggly-inline-unnecessary { opacity: 0.467; }
+.monaco-editor .selectionHighlight { background-color: rgba(173, 214, 255, 0.15); }
+
+	.monaco-editor .diagonal-fill {
+		background-image: linear-gradient(
+			-45deg,
+			rgba(34, 34, 34, 0.2) 12.5%,
+			#0000 12.5%, #0000 50%,
+			rgba(34, 34, 34, 0.2) 50%, rgba(34, 34, 34, 0.2) 62.5%,
+			#0000 62.5%, #0000 100%
+		);
+		background-size: 8px 8px;
+	}
+	
+.monaco-editor .findMatch { background-color: rgba(234, 92, 0, 0.33); }
+.monaco-editor .currentFindMatch { background-color: #a8ac94; }
+.monaco-editor .findScope { background-color: rgba(180, 180, 180, 0.3); }
+.monaco-editor .find-widget { background-color: #f3f3f3; }
+.monaco-editor .find-widget { box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.16); }
+.monaco-editor .find-widget { color: #616161; }
+.monaco-editor .find-widget.no-results .matchesCount { color: #a1260d; }
+.monaco-editor .find-widget .monaco-sash { background-color: #c8c8c8; }
+
+		.monaco-editor .find-widget .button:not(.disabled):hover,
+		.monaco-editor .find-widget .codicon-find-selection:hover {
+			background-color: rgba(184, 184, 184, 0.31) !important;
+		}
+	
+.monaco-editor .find-widget .monaco-inputbox.synthetic-focus { outline-color: #0090f1; }
+.monaco-editor .monaco-hover .hover-row:not(:first-child):not(:empty) { border-top: 1px solid rgba(200, 200, 200, 0.5); }
+.monaco-editor .monaco-hover hr { border-top: 1px solid rgba(200, 200, 200, 0.5); }
+.monaco-editor .monaco-hover hr { border-bottom: 0px solid rgba(200, 200, 200, 0.5); }
+.monaco-editor, .monaco-diff-editor { --vscode-foreground: #616161;
+--vscode-disabledForeground: rgba(97, 97, 97, 0.5);
+--vscode-errorForeground: #a1260d;
+--vscode-descriptionForeground: #717171;
+--vscode-icon-foreground: #424242;
+--vscode-focusBorder: #0090f1;
+--vscode-textSeparator-foreground: rgba(0, 0, 0, 0.18);
+--vscode-textLink-foreground: #006ab1;
+--vscode-textLink-activeForeground: #006ab1;
+--vscode-textPreformat-foreground: #a31515;
+--vscode-textBlockQuote-background: rgba(127, 127, 127, 0.1);
+--vscode-textBlockQuote-border: rgba(0, 122, 204, 0.5);
+--vscode-textCodeBlock-background: rgba(220, 220, 220, 0.4);
+--vscode-widget-shadow: rgba(0, 0, 0, 0.16);
+--vscode-input-background: #ffffff;
+--vscode-input-foreground: #616161;
+--vscode-inputOption-activeBorder: #007acc;
+--vscode-inputOption-hoverBackground: rgba(184, 184, 184, 0.31);
+--vscode-inputOption-activeBackground: rgba(0, 144, 241, 0.2);
+--vscode-inputOption-activeForeground: #000000;
+--vscode-input-placeholderForeground: rgba(97, 97, 97, 0.5);
+--vscode-inputValidation-infoBackground: #d6ecf2;
+--vscode-inputValidation-infoBorder: #007acc;
+--vscode-inputValidation-warningBackground: #f6f5d2;
+--vscode-inputValidation-warningBorder: #b89500;
+--vscode-inputValidation-errorBackground: #f2dede;
+--vscode-inputValidation-errorBorder: #be1100;
+--vscode-dropdown-background: #ffffff;
+--vscode-dropdown-foreground: #616161;
+--vscode-dropdown-border: #cecece;
+--vscode-button-foreground: #ffffff;
+--vscode-button-separator: rgba(255, 255, 255, 0.4);
+--vscode-button-background: #007acc;
+--vscode-button-hoverBackground: #0062a3;
+--vscode-button-secondaryForeground: #ffffff;
+--vscode-button-secondaryBackground: #5f6a79;
+--vscode-button-secondaryHoverBackground: #4c5561;
+--vscode-badge-background: #c4c4c4;
+--vscode-badge-foreground: #333333;
+--vscode-scrollbar-shadow: #dddddd;
+--vscode-scrollbarSlider-background: rgba(100, 100, 100, 0.4);
+--vscode-scrollbarSlider-hoverBackground: rgba(100, 100, 100, 0.7);
+--vscode-scrollbarSlider-activeBackground: rgba(0, 0, 0, 0.6);
+--vscode-progressBar-background: #0e70c0;
+--vscode-editorError-foreground: #e51400;
+--vscode-editorWarning-foreground: #bf8803;
+--vscode-editorInfo-foreground: #1a85ff;
+--vscode-editorHint-foreground: #6c6c6c;
+--vscode-sash-hoverBorder: #0090f1;
+--vscode-editor-background: #fffffe;
+--vscode-editor-foreground: #000000;
+--vscode-editorStickyScroll-background: #fffffe;
+--vscode-editorStickyScrollHover-background: #f0f0f0;
+--vscode-editorWidget-background: #f3f3f3;
+--vscode-editorWidget-foreground: #616161;
+--vscode-editorWidget-border: #c8c8c8;
+--vscode-quickInput-background: #f3f3f3;
+--vscode-quickInput-foreground: #616161;
+--vscode-quickInputTitle-background: rgba(0, 0, 0, 0.06);
+--vscode-pickerGroup-foreground: #0066bf;
+--vscode-pickerGroup-border: #cccedb;
+--vscode-keybindingLabel-background: rgba(221, 221, 221, 0.4);
+--vscode-keybindingLabel-foreground: #555555;
+--vscode-keybindingLabel-border: rgba(204, 204, 204, 0.4);
+--vscode-keybindingLabel-bottomBorder: rgba(187, 187, 187, 0.4);
+--vscode-editor-selectionBackground: #add6ff;
+--vscode-editor-inactiveSelectionBackground: #e5ebf1;
+--vscode-editor-selectionHighlightBackground: rgba(173, 214, 255, 0.3);
+--vscode-editor-findMatchBackground: #a8ac94;
+--vscode-editor-findMatchHighlightBackground: rgba(234, 92, 0, 0.33);
+--vscode-editor-findRangeHighlightBackground: rgba(180, 180, 180, 0.3);
+--vscode-searchEditor-findMatchBackground: rgba(234, 92, 0, 0.22);
+--vscode-search-resultsInfoForeground: #616161;
+--vscode-editor-hoverHighlightBackground: rgba(173, 214, 255, 0.15);
+--vscode-editorHoverWidget-background: #f3f3f3;
+--vscode-editorHoverWidget-foreground: #616161;
+--vscode-editorHoverWidget-border: #c8c8c8;
+--vscode-editorHoverWidget-statusBarBackground: #e7e7e7;
+--vscode-editorLink-activeForeground: #0000ff;
+--vscode-editorInlayHint-foreground: #969696;
+--vscode-editorInlayHint-background: rgba(196, 196, 196, 0.1);
+--vscode-editorInlayHint-typeForeground: #969696;
+--vscode-editorInlayHint-typeBackground: rgba(196, 196, 196, 0.1);
+--vscode-editorInlayHint-parameterForeground: #969696;
+--vscode-editorInlayHint-parameterBackground: rgba(196, 196, 196, 0.1);
+--vscode-editorLightBulb-foreground: #ddb100;
+--vscode-editorLightBulbAutoFix-foreground: #007acc;
+--vscode-diffEditor-insertedTextBackground: rgba(156, 204, 44, 0.25);
+--vscode-diffEditor-removedTextBackground: rgba(255, 0, 0, 0.2);
+--vscode-diffEditor-insertedLineBackground: rgba(155, 185, 85, 0.2);
+--vscode-diffEditor-removedLineBackground: rgba(255, 0, 0, 0.2);
+--vscode-diffEditor-diagonalFill: rgba(34, 34, 34, 0.2);
+--vscode-diffEditor-unchangedRegionBackground: #e4e4e4;
+--vscode-diffEditor-unchangedRegionForeground: #4d4c4c;
+--vscode-diffEditor-unchangedCodeBackground: rgba(184, 184, 184, 0.16);
+--vscode-list-focusOutline: #0090f1;
+--vscode-list-activeSelectionBackground: #0060c0;
+--vscode-list-activeSelectionForeground: #ffffff;
+--vscode-list-inactiveSelectionBackground: #e4e6f1;
+--vscode-list-hoverBackground: #f0f0f0;
+--vscode-list-dropBackground: #d6ebff;
+--vscode-list-highlightForeground: #0066bf;
+--vscode-list-focusHighlightForeground: #bbe7ff;
+--vscode-list-invalidItemForeground: #b89500;
+--vscode-list-errorForeground: #b01011;
+--vscode-list-warningForeground: #855f00;
+--vscode-listFilterWidget-background: #f3f3f3;
+--vscode-listFilterWidget-outline: rgba(0, 0, 0, 0);
+--vscode-listFilterWidget-noMatchesOutline: #be1100;
+--vscode-listFilterWidget-shadow: rgba(0, 0, 0, 0.16);
+--vscode-list-filterMatchBackground: rgba(234, 92, 0, 0.33);
+--vscode-tree-indentGuidesStroke: #a9a9a9;
+--vscode-tree-inactiveIndentGuidesStroke: rgba(169, 169, 169, 0.4);
+--vscode-tree-tableColumnsBorder: rgba(97, 97, 97, 0.13);
+--vscode-tree-tableOddRowsBackground: rgba(97, 97, 97, 0.04);
+--vscode-list-deemphasizedForeground: #8e8e90;
+--vscode-checkbox-background: #ffffff;
+--vscode-checkbox-selectBackground: #f3f3f3;
+--vscode-checkbox-foreground: #616161;
+--vscode-checkbox-border: #cecece;
+--vscode-checkbox-selectBorder: #424242;
+--vscode-quickInputList-focusForeground: #ffffff;
+--vscode-quickInputList-focusBackground: #0060c0;
+--vscode-menu-foreground: #616161;
+--vscode-menu-background: #ffffff;
+--vscode-menu-selectionForeground: #ffffff;
+--vscode-menu-selectionBackground: #0060c0;
+--vscode-menu-separatorBackground: #d4d4d4;
+--vscode-toolbar-hoverBackground: rgba(184, 184, 184, 0.31);
+--vscode-toolbar-activeBackground: rgba(166, 166, 166, 0.31);
+--vscode-editor-snippetTabstopHighlightBackground: rgba(10, 50, 100, 0.2);
+--vscode-editor-snippetFinalTabstopHighlightBorder: rgba(10, 50, 100, 0.5);
+--vscode-breadcrumb-foreground: rgba(97, 97, 97, 0.8);
+--vscode-breadcrumb-background: #fffffe;
+--vscode-breadcrumb-focusForeground: #4e4e4e;
+--vscode-breadcrumb-activeSelectionForeground: #4e4e4e;
+--vscode-breadcrumbPicker-background: #f3f3f3;
+--vscode-merge-currentHeaderBackground: rgba(64, 200, 174, 0.5);
+--vscode-merge-currentContentBackground: rgba(64, 200, 174, 0.2);
+--vscode-merge-incomingHeaderBackground: rgba(64, 166, 255, 0.5);
+--vscode-merge-incomingContentBackground: rgba(64, 166, 255, 0.2);
+--vscode-merge-commonHeaderBackground: rgba(96, 96, 96, 0.4);
+--vscode-merge-commonContentBackground: rgba(96, 96, 96, 0.16);
+--vscode-editorOverviewRuler-currentContentForeground: rgba(64, 200, 174, 0.5);
+--vscode-editorOverviewRuler-incomingContentForeground: rgba(64, 166, 255, 0.5);
+--vscode-editorOverviewRuler-commonContentForeground: rgba(96, 96, 96, 0.4);
+--vscode-editorOverviewRuler-findMatchForeground: rgba(209, 134, 22, 0.49);
+--vscode-editorOverviewRuler-selectionHighlightForeground: rgba(160, 160, 160, 0.8);
+--vscode-minimap-findMatchHighlight: #d18616;
+--vscode-minimap-selectionOccurrenceHighlight: #c9c9c9;
+--vscode-minimap-selectionHighlight: #add6ff;
+--vscode-minimap-errorHighlight: rgba(255, 18, 18, 0.7);
+--vscode-minimap-warningHighlight: #bf8803;
+--vscode-minimap-foregroundOpacity: #000000;
+--vscode-minimapSlider-background: rgba(100, 100, 100, 0.2);
+--vscode-minimapSlider-hoverBackground: rgba(100, 100, 100, 0.35);
+--vscode-minimapSlider-activeBackground: rgba(0, 0, 0, 0.3);
+--vscode-problemsErrorIcon-foreground: #e51400;
+--vscode-problemsWarningIcon-foreground: #bf8803;
+--vscode-problemsInfoIcon-foreground: #1a85ff;
+--vscode-charts-foreground: #616161;
+--vscode-charts-lines: rgba(97, 97, 97, 0.5);
+--vscode-charts-red: #e51400;
+--vscode-charts-blue: #1a85ff;
+--vscode-charts-yellow: #bf8803;
+--vscode-charts-orange: #d18616;
+--vscode-charts-green: #388a34;
+--vscode-charts-purple: #652d90;
+--vscode-diffEditor-move-border: rgba(139, 139, 139, 0.61);
+--vscode-diffEditor-moveActive-border: #ffa500;
+--vscode-symbolIcon-arrayForeground: #616161;
+--vscode-symbolIcon-booleanForeground: #616161;
+--vscode-symbolIcon-classForeground: #d67e00;
+--vscode-symbolIcon-colorForeground: #616161;
+--vscode-symbolIcon-constantForeground: #616161;
+--vscode-symbolIcon-constructorForeground: #652d90;
+--vscode-symbolIcon-enumeratorForeground: #d67e00;
+--vscode-symbolIcon-enumeratorMemberForeground: #007acc;
+--vscode-symbolIcon-eventForeground: #d67e00;
+--vscode-symbolIcon-fieldForeground: #007acc;
+--vscode-symbolIcon-fileForeground: #616161;
+--vscode-symbolIcon-folderForeground: #616161;
+--vscode-symbolIcon-functionForeground: #652d90;
+--vscode-symbolIcon-interfaceForeground: #007acc;
+--vscode-symbolIcon-keyForeground: #616161;
+--vscode-symbolIcon-keywordForeground: #616161;
+--vscode-symbolIcon-methodForeground: #652d90;
+--vscode-symbolIcon-moduleForeground: #616161;
+--vscode-symbolIcon-namespaceForeground: #616161;
+--vscode-symbolIcon-nullForeground: #616161;
+--vscode-symbolIcon-numberForeground: #616161;
+--vscode-symbolIcon-objectForeground: #616161;
+--vscode-symbolIcon-operatorForeground: #616161;
+--vscode-symbolIcon-packageForeground: #616161;
+--vscode-symbolIcon-propertyForeground: #616161;
+--vscode-symbolIcon-referenceForeground: #616161;
+--vscode-symbolIcon-snippetForeground: #616161;
+--vscode-symbolIcon-stringForeground: #616161;
+--vscode-symbolIcon-structForeground: #616161;
+--vscode-symbolIcon-textForeground: #616161;
+--vscode-symbolIcon-typeParameterForeground: #616161;
+--vscode-symbolIcon-unitForeground: #616161;
+--vscode-symbolIcon-variableForeground: #007acc;
+--vscode-actionBar-toggledBackground: rgba(0, 144, 241, 0.2);
+--vscode-editor-lineHighlightBorder: #eeeeee;
+--vscode-editor-rangeHighlightBackground: rgba(253, 255, 0, 0.2);
+--vscode-editor-symbolHighlightBackground: rgba(234, 92, 0, 0.33);
+--vscode-editorCursor-foreground: #000000;
+--vscode-editorWhitespace-foreground: rgba(51, 51, 51, 0.2);
+--vscode-editorLineNumber-foreground: #237893;
+--vscode-editorIndentGuide-background: rgba(51, 51, 51, 0.2);
+--vscode-editorIndentGuide-activeBackground: rgba(51, 51, 51, 0.2);
+--vscode-editorIndentGuide-background1: #d3d3d3;
+--vscode-editorIndentGuide-background2: rgba(0, 0, 0, 0);
+--vscode-editorIndentGuide-background3: rgba(0, 0, 0, 0);
+--vscode-editorIndentGuide-background4: rgba(0, 0, 0, 0);
+--vscode-editorIndentGuide-background5: rgba(0, 0, 0, 0);
+--vscode-editorIndentGuide-background6: rgba(0, 0, 0, 0);
+--vscode-editorIndentGuide-activeBackground1: #939393;
+--vscode-editorIndentGuide-activeBackground2: rgba(0, 0, 0, 0);
+--vscode-editorIndentGuide-activeBackground3: rgba(0, 0, 0, 0);
+--vscode-editorIndentGuide-activeBackground4: rgba(0, 0, 0, 0);
+--vscode-editorIndentGuide-activeBackground5: rgba(0, 0, 0, 0);
+--vscode-editorIndentGuide-activeBackground6: rgba(0, 0, 0, 0);
+--vscode-editorActiveLineNumber-foreground: #0b216f;
+--vscode-editorLineNumber-activeForeground: #0b216f;
+--vscode-editorRuler-foreground: #d3d3d3;
+--vscode-editorCodeLens-foreground: #919191;
+--vscode-editorBracketMatch-background: rgba(0, 100, 0, 0.1);
+--vscode-editorBracketMatch-border: #b9b9b9;
+--vscode-editorOverviewRuler-border: rgba(127, 127, 127, 0.3);
+--vscode-editorGutter-background: #fffffe;
+--vscode-editorUnnecessaryCode-opacity: rgba(0, 0, 0, 0.47);
+--vscode-editorGhostText-foreground: rgba(0, 0, 0, 0.47);
+--vscode-editorOverviewRuler-rangeHighlightForeground: rgba(0, 122, 204, 0.6);
+--vscode-editorOverviewRuler-errorForeground: rgba(255, 18, 18, 0.7);
+--vscode-editorOverviewRuler-warningForeground: #bf8803;
+--vscode-editorOverviewRuler-infoForeground: #1a85ff;
+--vscode-editorBracketHighlight-foreground1: #0431fa;
+--vscode-editorBracketHighlight-foreground2: #319331;
+--vscode-editorBracketHighlight-foreground3: #7b3814;
+--vscode-editorBracketHighlight-foreground4: rgba(0, 0, 0, 0);
+--vscode-editorBracketHighlight-foreground5: rgba(0, 0, 0, 0);
+--vscode-editorBracketHighlight-foreground6: rgba(0, 0, 0, 0);
+--vscode-editorBracketHighlight-unexpectedBracket-foreground: rgba(255, 18, 18, 0.8);
+--vscode-editorBracketPairGuide-background1: rgba(0, 0, 0, 0);
+--vscode-editorBracketPairGuide-background2: rgba(0, 0, 0, 0);
+--vscode-editorBracketPairGuide-background3: rgba(0, 0, 0, 0);
+--vscode-editorBracketPairGuide-background4: rgba(0, 0, 0, 0);
+--vscode-editorBracketPairGuide-background5: rgba(0, 0, 0, 0);
+--vscode-editorBracketPairGuide-background6: rgba(0, 0, 0, 0);
+--vscode-editorBracketPairGuide-activeBackground1: rgba(0, 0, 0, 0);
+--vscode-editorBracketPairGuide-activeBackground2: rgba(0, 0, 0, 0);
+--vscode-editorBracketPairGuide-activeBackground3: rgba(0, 0, 0, 0);
+--vscode-editorBracketPairGuide-activeBackground4: rgba(0, 0, 0, 0);
+--vscode-editorBracketPairGuide-activeBackground5: rgba(0, 0, 0, 0);
+--vscode-editorBracketPairGuide-activeBackground6: rgba(0, 0, 0, 0);
+--vscode-editorUnicodeHighlight-border: #cea33d;
+--vscode-editorUnicodeHighlight-background: rgba(206, 163, 61, 0.08);
+--vscode-editorOverviewRuler-bracketMatchForeground: #a0a0a0;
+--vscode-editor-linkedEditingBackground: rgba(255, 0, 0, 0.3);
+--vscode-editor-wordHighlightBackground: rgba(87, 87, 87, 0.25);
+--vscode-editor-wordHighlightStrongBackground: rgba(14, 99, 156, 0.25);
+--vscode-editor-wordHighlightTextBackground: rgba(87, 87, 87, 0.25);
+--vscode-editorOverviewRuler-wordHighlightForeground: rgba(160, 160, 160, 0.8);
+--vscode-editorOverviewRuler-wordHighlightStrongForeground: rgba(192, 160, 192, 0.8);
+--vscode-editorOverviewRuler-wordHighlightTextForeground: rgba(160, 160, 160, 0.8);
+--vscode-peekViewTitle-background: #f3f3f3;
+--vscode-peekViewTitleLabel-foreground: #000000;
+--vscode-peekViewTitleDescription-foreground: #616161;
+--vscode-peekView-border: #1a85ff;
+--vscode-peekViewResult-background: #f3f3f3;
+--vscode-peekViewResult-lineForeground: #646465;
+--vscode-peekViewResult-fileForeground: #1e1e1e;
+--vscode-peekViewResult-selectionBackground: rgba(51, 153, 255, 0.2);
+--vscode-peekViewResult-selectionForeground: #6c6c6c;
+--vscode-peekViewEditor-background: #f2f8fc;
+--vscode-peekViewEditorGutter-background: #f2f8fc;
+--vscode-peekViewEditorStickyScroll-background: #f2f8fc;
+--vscode-peekViewResult-matchHighlightBackground: rgba(234, 92, 0, 0.3);
+--vscode-peekViewEditor-matchHighlightBackground: rgba(245, 216, 2, 0.87);
+--vscode-editorMarkerNavigationError-background: #e51400;
+--vscode-editorMarkerNavigationError-headerBackground: rgba(229, 20, 0, 0.1);
+--vscode-editorMarkerNavigationWarning-background: #bf8803;
+--vscode-editorMarkerNavigationWarning-headerBackground: rgba(191, 136, 3, 0.1);
+--vscode-editorMarkerNavigationInfo-background: #1a85ff;
+--vscode-editorMarkerNavigationInfo-headerBackground: rgba(26, 133, 255, 0.1);
+--vscode-editorMarkerNavigation-background: #fffffe;
+--vscode-editorHoverWidget-highlightForeground: #0066bf;
+--vscode-editorSuggestWidget-background: #f3f3f3;
+--vscode-editorSuggestWidget-border: #c8c8c8;
+--vscode-editorSuggestWidget-foreground: #000000;
+--vscode-editorSuggestWidget-selectedForeground: #ffffff;
+--vscode-editorSuggestWidget-selectedBackground: #0060c0;
+--vscode-editorSuggestWidget-highlightForeground: #0066bf;
+--vscode-editorSuggestWidget-focusHighlightForeground: #bbe7ff;
+--vscode-editorSuggestWidgetStatus-foreground: rgba(0, 0, 0, 0.5);
+--vscode-editor-foldBackground: rgba(173, 214, 255, 0.3);
+--vscode-editorGutter-foldingControlForeground: #424242; }
+
+.mtk1 { color: #000000; }
+.mtk2 { color: #fffffe; }
+.mtk3 { color: #808080; }
+.mtk4 { color: #ff0000; }
+.mtk5 { color: #0451a5; }
+.mtk6 { color: #0000ff; }
+.mtk7 { color: #098658; }
+.mtk8 { color: #008000; }
+.mtk9 { color: #dd0000; }
+.mtk10 { color: #383838; }
+.mtk11 { color: #cd3131; }
+.mtk12 { color: #863b00; }
+.mtk13 { color: #af00db; }
+.mtk14 { color: #800000; }
+.mtk15 { color: #e00000; }
+.mtk16 { color: #3030c0; }
+.mtk17 { color: #666666; }
+.mtk18 { color: #778899; }
+.mtk19 { color: #c700c7; }
+.mtk20 { color: #a31515; }
+.mtk21 { color: #4f76ac; }
+.mtk22 { color: #008080; }
+.mtk23 { color: #001188; }
+.mtk24 { color: #4864aa; }
+.mtki { font-style: italic; }
+.mtkb { font-weight: bold; }
+.mtku { text-decoration: underline; text-underline-position: under; }
+.mtks { text-decoration: line-through; }
+.mtks.mtku { text-decoration: underline line-through; text-underline-position: under; }</style></head>
+  <body class="">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"><main><header class="sc-kwFycn cczown"><div class="sc-bnGbuY fvOISs"><img src="./Motoko Playground - DFINITY_files/motoko-lab-logo-5-yKxzip.png" alt="Motoko Ghost Logo in wireframe" class="sc-hGZxvd drJQng"><img src="./Motoko Playground - DFINITY_files/motoko-lab-wordmark-DNGS6W4E.svg" alt="Motoko Playground" class="sc-iRLAEC hEFfiS"></div><div class="sc-kLhKbu sc-cSzYSJ dsvRXz hTihyd"><a href="https://internetcomputer.org/docs/current/developer-docs/build/cdks/motoko-dfinity/motoko/" target="_blank" rel="noopener noreferrer" class="sc-edmcci jZHbCZ">Motoko Docs</a><a href="https://internetcomputer.org/docs/current/developer-docs/quickstart/hello10mins" target="_blank" rel="noopener noreferrer" class="sc-edmcci jZHbCZ">Internet Computer SDK</a><button width="15.6rem" class="sc-ghWlax cPOzhR"><img src="data:image/svg+xml,%3csvg%20width=&#39;26&#39;%20height=&#39;25&#39;%20viewBox=&#39;0%200%2026%2025&#39;%20fill=&#39;none&#39;%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%3e%3cpath%20d=&#39;M13%2024.9609C19.8086%2024.9609%2025.4102%2019.3594%2025.4102%2012.5508C25.4102%205.73047%2019.8086%200.128906%2012.9883%200.128906C6.16797%200.128906%200.578125%205.73047%200.578125%2012.5508C0.578125%2019.3594%206.17969%2024.9609%2013%2024.9609ZM13%206.11719C13.8203%206.11719%2014.4531%206.67969%2014.4531%207.47656V12.6211L14.3008%2015.0234L15.1797%2013.793L16.3984%2012.4453C16.6211%2012.1875%2016.9727%2012.0352%2017.3242%2012.0352C18.0625%2012.0352%2018.5781%2012.5391%2018.5781%2013.2305C18.5781%2013.6172%2018.4609%2013.8867%2018.1914%2014.1914L14.1836%2018.3867C13.8555%2018.7383%2013.4688%2018.9141%2013%2018.9141C12.5195%2018.9141%2012.1445%2018.75%2011.8164%2018.3867L7.80859%2014.1914C7.52734%2013.8867%207.42188%2013.6172%207.42188%2013.2305C7.42188%2012.5391%207.9375%2012.0352%208.66406%2012.0352C9.02734%2012.0352%209.37891%2012.1875%209.60156%2012.4453L10.8203%2013.8281L11.6875%2015.0117L11.5469%2012.6211V7.47656C11.5469%206.67969%2012.168%206.11719%2013%206.11719Z&#39;%20fill=&#39;url(%23paint0_linear)&#39;/%3e%3cdefs%3e%3clinearGradient%20id=&#39;paint0_linear&#39;%20x1=&#39;2.30147&#39;%20y1=&#39;2.65809&#39;%20x2=&#39;22.8669&#39;%20y2=&#39;23.9326&#39;%20gradientUnits=&#39;userSpaceOnUse&#39;%3e%3cstop%20stop-color=&#39;%23767679&#39;/%3e%3cstop%20offset=&#39;1&#39;%20stop-color=&#39;%23414245&#39;/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" alt="Save icon"><p>Save &amp; Share</p></button><button width="16.4rem" class="sc-ghWlax leYCyg"><img src="data:image/svg+xml,%3csvg%20width=&#39;26&#39;%20height=&#39;26&#39;%20viewBox=&#39;0%200%2026%2026&#39;%20fill=&#39;none&#39;%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%3e%3cpath%20d=&#39;M13%2025.4609C19.8086%2025.4609%2025.4102%2019.8594%2025.4102%2013.0508C25.4102%206.23047%2019.8086%200.628906%2012.9883%200.628906C6.16797%200.628906%200.578125%206.23047%200.578125%2013.0508C0.578125%2019.8594%206.17969%2025.4609%2013%2025.4609ZM7.29297%2013.0391C7.29297%2012.2305%207.87891%2011.6211%208.6875%2011.6211H11.582V8.72656C11.582%207.92969%2012.1797%207.33203%2012.9883%207.33203C13.7969%207.33203%2014.4062%207.92969%2014.4062%208.72656V11.6211H17.3008C18.0977%2011.6211%2018.6953%2012.2305%2018.6953%2013.0391C18.6953%2013.8477%2018.0977%2014.4453%2017.3008%2014.4453H14.4062V17.3516C14.4062%2018.1484%2013.7969%2018.7344%2012.9883%2018.7344C12.1797%2018.7344%2011.582%2018.1484%2011.582%2017.3516V14.4453H8.6875C7.87891%2014.4453%207.29297%2013.8477%207.29297%2013.0391Z&#39;%20fill=&#39;url(%23paint0_linear)&#39;/%3e%3cdefs%3e%3clinearGradient%20id=&#39;paint0_linear&#39;%20x1=&#39;2.30147&#39;%20y1=&#39;2.65809&#39;%20x2=&#39;22.8669&#39;%20y2=&#39;23.9326&#39;%20gradientUnits=&#39;userSpaceOnUse&#39;%3e%3cstop%20stop-color=&#39;%23767679&#39;/%3e%3cstop%20offset=&#39;1&#39;%20stop-color=&#39;%23414245&#39;/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" alt="Plus icon"><p>Open Example</p></button></div></header><div candidwidth="30vw" consoleheight="24rem" class="sc-jwaPLR jHmUhh"><div class="sc-FFETS fCHmAG"><div class="sc-hsfCcR gUrKfS">Files<button aria-label="Add file" class="sc-CNKsk eOWRai"><img src="data:image/svg+xml,%3csvg%20width=&#39;26&#39;%20height=&#39;26&#39;%20viewBox=&#39;0%200%2026%2026&#39;%20fill=&#39;none&#39;%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%3e%3cpath%20d=&#39;M13%2025.4609C19.8086%2025.4609%2025.4102%2019.8594%2025.4102%2013.0508C25.4102%206.23047%2019.8086%200.628906%2012.9883%200.628906C6.16797%200.628906%200.578125%206.23047%200.578125%2013.0508C0.578125%2019.8594%206.17969%2025.4609%2013%2025.4609ZM7.29297%2013.0391C7.29297%2012.2305%207.87891%2011.6211%208.6875%2011.6211H11.582V8.72656C11.582%207.92969%2012.1797%207.33203%2012.9883%207.33203C13.7969%207.33203%2014.4062%207.92969%2014.4062%208.72656V11.6211H17.3008C18.0977%2011.6211%2018.6953%2012.2305%2018.6953%2013.0391C18.6953%2013.8477%2018.0977%2014.4453%2017.3008%2014.4453H14.4062V17.3516C14.4062%2018.1484%2013.7969%2018.7344%2012.9883%2018.7344C12.1797%2018.7344%2011.582%2018.1484%2011.582%2017.3516V14.4453H8.6875C7.87891%2014.4453%207.29297%2013.8477%207.29297%2013.0391Z&#39;%20fill=&#39;url(%23paint0_linear)&#39;/%3e%3cdefs%3e%3clinearGradient%20id=&#39;paint0_linear&#39;%20x1=&#39;2.30147&#39;%20y1=&#39;2.65809&#39;%20x2=&#39;22.8669&#39;%20y2=&#39;23.9326&#39;%20gradientUnits=&#39;userSpaceOnUse&#39;%3e%3cstop%20stop-color=&#39;%23767679&#39;/%3e%3cstop%20offset=&#39;1&#39;%20stop-color=&#39;%23414245&#39;/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" alt="" style="width: 1.6rem;"></button></div><button nestdepth="0" disabled="" aria-label="File" title="Main.mo" class="sc-eOzmre sc-Rjrgp gvgCFl grZNyW"><img src="data:image/svg+xml,%3c?xml%20version=%271.0%27%20standalone=%27no%27?%3e%3csvg%20width=%271024px%27%20height=%271024px%27%20viewBox=%270%200%201024%201024%27%20xmlns=%27http://www.w3.org/2000/svg%27%20class=%27icon%27%3e%3cpath%20d=%27M854.6%20288.6L639.4%2073.4c-6-6-14.1-9.4-22.6-9.4H192c-17.7%200-32%2014.3-32%2032v832c0%2017.7%2014.3%2032%2032%2032h640c17.7%200%2032-14.3%2032-32V311.3c0-8.5-3.4-16.7-9.4-22.7zM790.2%20326H602V137.8L790.2%20326zm1.8%20562H232V136h302v216a42%2042%200%200%200%2042%2042h216v494z%27/%3e%3c/svg%3e" alt="" class="sc-huXwEz gFKoSq"><span class="sc-frniUE kOcYRO">Main.mo</span></button><div class="sc-hsfCcR gUrKfS">Packages<button aria-label="Add package" class="sc-CNKsk eOWRai"><img src="data:image/svg+xml,%3csvg%20width=&#39;26&#39;%20height=&#39;26&#39;%20viewBox=&#39;0%200%2026%2026&#39;%20fill=&#39;none&#39;%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%3e%3cpath%20d=&#39;M13%2025.4609C19.8086%2025.4609%2025.4102%2019.8594%2025.4102%2013.0508C25.4102%206.23047%2019.8086%200.628906%2012.9883%200.628906C6.16797%200.628906%200.578125%206.23047%200.578125%2013.0508C0.578125%2019.8594%206.17969%2025.4609%2013%2025.4609ZM7.29297%2013.0391C7.29297%2012.2305%207.87891%2011.6211%208.6875%2011.6211H11.582V8.72656C11.582%207.92969%2012.1797%207.33203%2012.9883%207.33203C13.7969%207.33203%2014.4062%207.92969%2014.4062%208.72656V11.6211H17.3008C18.0977%2011.6211%2018.6953%2012.2305%2018.6953%2013.0391C18.6953%2013.8477%2018.0977%2014.4453%2017.3008%2014.4453H14.4062V17.3516C14.4062%2018.1484%2013.7969%2018.7344%2012.9883%2018.7344C12.1797%2018.7344%2011.582%2018.1484%2011.582%2017.3516V14.4453H8.6875C7.87891%2014.4453%207.29297%2013.8477%207.29297%2013.0391Z&#39;%20fill=&#39;url(%23paint0_linear)&#39;/%3e%3cdefs%3e%3clinearGradient%20id=&#39;paint0_linear&#39;%20x1=&#39;2.30147&#39;%20y1=&#39;2.65809&#39;%20x2=&#39;22.8669&#39;%20y2=&#39;23.9326&#39;%20gradientUnits=&#39;userSpaceOnUse&#39;%3e%3cstop%20stop-color=&#39;%23767679&#39;/%3e%3cstop%20offset=&#39;1&#39;%20stop-color=&#39;%23414245&#39;/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" alt="" style="width: 1.6rem;"></button></div><button disabled="" aria-label="Select motoko package" class="sc-eOzmre IXeFM"><img src="data:image/svg+xml,%3csvg%20width=&#39;15&#39;%20height=&#39;16&#39;%20viewBox=&#39;0%200%2015%2016&#39;%20fill=&#39;none&#39;%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%3e%3cpath%20d=&#39;M1.40527%2012.3779L6.78516%2015.4268C7.16797%2015.6455%207.53027%2015.6455%207.91992%2015.4268L13.293%2012.3779C13.9219%2012.0156%2014.25%2011.6602%2014.25%2010.6826V5.26855C14.25%204.55762%2013.9902%204.12012%2013.416%203.78516L8.57617%201.03711C7.74902%200.56543%206.94922%200.56543%206.12207%201.03711L1.28906%203.78516C0.708008%204.12012%200.448242%204.55762%200.448242%205.26855V10.6826C0.448242%2011.6602%200.783203%2012.0156%201.40527%2012.3779ZM10.5654%205.75391L5.26758%202.75977L6.58008%202.01465C7.10645%201.71387%207.5918%201.70703%208.125%202.01465L12.6299%204.58496L10.5654%205.75391ZM7.35254%207.57227L2.0752%204.58496L4.1875%203.375L9.46484%206.37598L7.35254%207.57227ZM2.02051%2011.4756C1.62402%2011.25%201.4873%2011.0244%201.4873%2010.6484V5.4873L6.8125%208.5293V14.2031L2.02051%2011.4756ZM12.6846%2011.4756L7.88574%2014.2031V8.5293L13.2109%205.4873V10.6484C13.2109%2011.0244%2013.0742%2011.25%2012.6846%2011.4756Z&#39;%20fill=&#39;%23555659&#39;/%3e%3c/svg%3e" alt=""><p>mo:base</p></button><div class="sc-hsfCcR gUrKfS">Canisters<button aria-label="Add canister" class="sc-CNKsk eOWRai"><img src="data:image/svg+xml,%3csvg%20width=&#39;26&#39;%20height=&#39;26&#39;%20viewBox=&#39;0%200%2026%2026&#39;%20fill=&#39;none&#39;%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%3e%3cpath%20d=&#39;M13%2025.4609C19.8086%2025.4609%2025.4102%2019.8594%2025.4102%2013.0508C25.4102%206.23047%2019.8086%200.628906%2012.9883%200.628906C6.16797%200.628906%200.578125%206.23047%200.578125%2013.0508C0.578125%2019.8594%206.17969%2025.4609%2013%2025.4609ZM7.29297%2013.0391C7.29297%2012.2305%207.87891%2011.6211%208.6875%2011.6211H11.582V8.72656C11.582%207.92969%2012.1797%207.33203%2012.9883%207.33203C13.7969%207.33203%2014.4062%207.92969%2014.4062%208.72656V11.6211H17.3008C18.0977%2011.6211%2018.6953%2012.2305%2018.6953%2013.0391C18.6953%2013.8477%2018.0977%2014.4453%2017.3008%2014.4453H14.4062V17.3516C14.4062%2018.1484%2013.7969%2018.7344%2012.9883%2018.7344C12.1797%2018.7344%2011.582%2018.1484%2011.582%2017.3516V14.4453H8.6875C7.87891%2014.4453%207.29297%2013.8477%207.29297%2013.0391Z&#39;%20fill=&#39;url(%23paint0_linear)&#39;/%3e%3cdefs%3e%3clinearGradient%20id=&#39;paint0_linear&#39;%20x1=&#39;2.30147&#39;%20y1=&#39;2.65809&#39;%20x2=&#39;22.8669&#39;%20y2=&#39;23.9326&#39;%20gradientUnits=&#39;userSpaceOnUse&#39;%3e%3cstop%20stop-color=&#39;%23767679&#39;/%3e%3cstop%20offset=&#39;1&#39;%20stop-color=&#39;%23414245&#39;/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" alt="" style="width: 1.6rem;"></button></div><button disabled="" aria-label="Select canister" title="main" class="sc-eOzmre gvgCFl"><img src="./Motoko Playground - DFINITY_files/icon-canister-CxWenUiJ.svg" alt="" style="width: 2rem;"><span class="sc-gQkENW DFPzw">main</span><div class="sc-gcfzXs jIQCqC"><div style="margin-left: auto;"><span style="font-variant-numeric: tabular-nums;">15</span>:<span style="font-variant-numeric: tabular-nums;">28</span></div></div><button aria-label="Delete canister main" class="sc-CNKsk sc-cqgMZH eOWRai ihLEcN"><img src="data:image/svg+xml,%3csvg%20width=&#39;18&#39;%20height=&#39;17&#39;%20viewBox=&#39;0%200%2018%2017&#39;%20fill=&#39;none&#39;%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%3e%3cpath%20d=&#39;M8.74121%2016.6406C13.2803%2016.6406%2017.0146%2012.9062%2017.0146%208.36719C17.0146%203.82031%2013.2803%200.0859375%208.7334%200.0859375C4.18652%200.0859375%200.459961%203.82031%200.459961%208.36719C0.459961%2012.9062%204.19434%2016.6406%208.74121%2016.6406ZM6.2334%2011.7734C5.71777%2011.7734%205.31934%2011.375%205.31934%2010.8516C5.31934%2010.6172%205.4209%2010.3906%205.59277%2010.2188L7.43652%208.375L5.59277%206.53125C5.4209%206.35938%205.31934%206.125%205.31934%205.89844C5.31934%205.375%205.71777%204.97656%206.2334%204.97656C6.51465%204.97656%206.72559%205.0625%206.90527%205.25L8.7334%207.07031L10.5771%205.24219C10.7646%205.05469%2010.9756%204.96875%2011.249%204.96875C11.7646%204.96875%2012.1631%205.36719%2012.1631%205.89062C12.1631%206.125%2012.0693%206.34375%2011.8896%206.52344L10.0537%208.375L11.8818%2010.2109C12.0615%2010.3906%2012.1631%2010.6172%2012.1631%2010.8516C12.1631%2011.375%2011.7568%2011.7734%2011.2412%2011.7734C10.9678%2011.7734%2010.7412%2011.6875%2010.5615%2011.5078L8.7334%209.6875L6.9209%2011.5078C6.7334%2011.6875%206.51465%2011.7734%206.2334%2011.7734Z&#39;%20fill=&#39;%23818284&#39;/%3e%3c/svg%3e" alt=""></button></button></div><div class="sc-cHqXqK fHGCFl"><header class="sc-blHHSb gpFTzw">Editor<div class="sc-kLhKbu dsvRXz"><button variant="secondary" class="sc-ghWlax dHcyWM"><p>Format</p></button><button variant="primary" class="sc-ghWlax hzFbPD"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAhCAYAAABN2CLhAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANYSURBVHgBzVjRcdswDIXu+l93gioT1J2gygTxBsoGcSawN4g3sDNBugGzgTNB6S4QuwsYJY5QDUGgTNlOk3eHkw2C4CMIQqQKeGMgYhUe34J8YdVLkOeiKHbw0RDI3gXZYhrLICV8FAQyM8yDDzKGgSjgwuDoeaGiNHiEmBbUdhNEE70O6fIM7wWKnIrm2LC55Sg32L5rqoTBR9jO5bVFiHSK+Dp3jEHpQYTCYwJxmb+y+jeoisDRdUFGbLMJMg/tj8of+VkLu0WwuYdLgKPi8DiWGEucFcmmvVS+K2VTwbnA46XLgmvIhedctfkgtRpjqtpHcCrQLl0uyALjZrplUs7mHiOL9kotUUQd25Nz/H8yhC85mRhkqx77ErtVoYnclG10u5c+w+8VdkE2M8iBcr6CAeAoWeRrnpwm94Cx6pDQKj4Z/R32pQ1H5N9gcAIS5AhUAmkVZ0p/k+DhJXHSF4kBiWjJf69CGdqodippJJ+D/IFY0l6sQxDbPgl/Fjah71WCSwmxfDb977UBzX6rZ6ZsJpjGEhNvNrTzHXm8sWFbi/+VtJeGD2gsozF4hf0gElNIgPtTGZ3zc9Tj/0boXaOUxhIV9AAPZYxkzJFxykcNJwDjZvSoziMoarkkIXFSccd2re0s+0DiegUmLdKslLnsmcDgQRVxBxeCTBupnGIXHk84MqpUqRI2FM07tqVxZn1joSifusHKTXI4KD+xvZmsCtR3nnG8Ws0x4U5xeoWeKHiD/BJjbhGpZiOOEj7kQCPW0aZdGySfMA97mkhftKyjpQWyKY9Em8ppjd19Uwl7mtBCTGov5Bf7yNtjaJ8jcolvM/otMX2zSa5kLvkKD4cZxyJJWW+2OeaB+mbvm6zrFsZlJKFZ07mErlh0zqA3lnz7kY5u1i/cj+znEK9jGxZCyVKz3waXuZVj/jeMZMSP+F+IvufXdey+KT1283TLA3ulqzL8F0G+S/+QgU9H2kvxm27b13JC4bETN/AVxJs1gdLCBd2z+N9sqB3LBuKx9ocYYwvnAtsfXswPKnh4s3k8D1TaTjpkWcSdcr7GQ/XwxuCkXxl6mjTV21ds1+A966ZwKeCwl0xt9DVrLcZVpDL6dh8gMb4+K4hflko45CWVv5//8wPiXyySzE5+FvwCAAAAAElFTkSuQmCC" alt="Rabbit icon"><p>Deploy Backend</p></button></div></header><div class="sc-jtQUzJ sc-cEzcPc iiuvHt dTiTYz"></div><div class="sc-jtQUzJ fFaa-dk"><section style="display: flex; position: relative; text-align: initial; width: 100%; height: 100%;"><div data-keybinding-context="1" data-mode-id="motoko" style="width: 100%; --vscode-editorCodeLens-lineHeight: 19px; --vscode-editorCodeLens-fontSize: 14px; --vscode-editorCodeLens-fontFeatureSettings: &quot;liga&quot; off, &quot;calt&quot; off;"><div class="monaco-editor no-user-select  showUnused showDeprecated vs" role="code" data-uri="file:///Main.mo" style="width: 749px; height: 199px;"><div data-mprt="3" class="overflow-guard" style="width: 749px; height: 199px;"><div class="margin" role="presentation" aria-hidden="true" style="position: absolute; transform: translate3d(0px, 0px, 0px); contain: strict; top: -550px; height: 946px; width: 70px;"><div class="glyph-margin" style="left: 0px; width: 0px; height: 946px;"></div><div class="margin-view-zones" role="presentation" aria-hidden="true" style="position: absolute;"></div><div class="margin-view-overlays" role="presentation" aria-hidden="true" style="position: absolute; font-family: Consolas, &quot;Courier New&quot;, monospace; font-weight: normal; font-size: 16px; font-feature-settings: &quot;liga&quot; 0, &quot;calt&quot; 0; font-variation-settings: normal; line-height: 22px; letter-spacing: 0px; width: 70px; height: 946px;"><div style="position:absolute;top:682px;width:100%;height:22px;"><div class="cldr codicon codicon-folding-expanded" style="left:44px;width:26px;"></div><div class="line-numbers" style="left:0px;width:44px;">32</div></div><div style="position:absolute;top:704px;width:100%;height:22px;"><div class="line-numbers" style="left:0px;width:44px;">33</div></div><div style="position:absolute;top:726px;width:100%;height:22px;"><div class="line-numbers" style="left:0px;width:44px;">34</div></div><div style="position:absolute;top:748px;width:100%;height:22px;"><div class="line-numbers" style="left:0px;width:44px;">35</div></div><div style="position:absolute;top:638px;width:100%;height:22px;"><div class="cldr codicon codicon-folding-expanded" style="left:44px;width:26px;"></div><div class="line-numbers" style="left:0px;width:44px;">30</div></div><div style="position:absolute;top:660px;width:100%;height:22px;"><div class="line-numbers" style="left:0px;width:44px;">31</div></div><div style="position:absolute;top:594px;width:100%;height:22px;"><div class="line-numbers" style="left:0px;width:44px;">28</div></div><div style="position:absolute;top:616px;width:100%;height:22px;"><div class="current-line current-line-margin-both" style="width:70px; height:22px;"></div><div class="cldr codicon codicon-folding-expanded" style="left:44px;width:26px;"></div><div class="line-numbers active-line-number" style="left:0px;width:44px;">29</div></div><div style="position:absolute;top:550px;width:100%;height:22px;"><div class="line-numbers" style="left:0px;width:44px;">26</div></div><div style="position:absolute;top:572px;width:100%;height:22px;"><div class="line-numbers" style="left:0px;width:44px;">27</div></div></div><div class="glyph-margin-widgets" style="position: absolute; top: 0px;"></div></div><div class="monaco-scrollable-element editor-scrollable vs" role="presentation" data-mprt="5" style="position: absolute; overflow: hidden; left: 70px; height: 199px; width: 679px;"><div class="lines-content monaco-editor-background" style="position: absolute; overflow: hidden; width: 1e+06px; height: 1e+06px; transform: translate3d(0px, 0px, 0px); contain: strict; top: -550px; left: 0px;"><div class="view-overlays" role="presentation" aria-hidden="true" style="position: absolute; font-family: Consolas, &quot;Courier New&quot;, monospace; font-weight: normal; font-size: 16px; font-feature-settings: &quot;liga&quot; 0, &quot;calt&quot; 0; font-variation-settings: normal; line-height: 22px; letter-spacing: 0px; height: 0px; width: 679px;"><div style="position:absolute;top:682px;width:100%;height:22px;"><div class="core-guide core-guide-indent lvl-0 indent-active vertical" style="left:0px;height:22px;width:8.796875px"></div></div><div style="position:absolute;top:704px;width:100%;height:22px;"><div class="core-guide core-guide-indent lvl-0 indent-active vertical" style="left:0px;height:22px;width:8.796875px"></div><div class="core-guide core-guide-indent lvl-1 vertical" style="left:17.59375px;height:22px;width:8.796875px"></div></div><div style="position:absolute;top:726px;width:100%;height:22px;"><div class="core-guide core-guide-indent lvl-0 indent-active vertical" style="left:0px;height:22px;width:8.796875px"></div><div class="core-guide core-guide-indent lvl-1 vertical" style="left:17.59375px;height:22px;width:8.796875px"></div></div><div style="position:absolute;top:748px;width:100%;height:22px;"><div class="core-guide core-guide-indent lvl-0 indent-active vertical" style="left:0px;height:22px;width:8.796875px"></div></div><div style="position:absolute;top:638px;width:100%;height:22px;"><div class="core-guide core-guide-indent lvl-0 indent-active vertical" style="left:0px;height:22px;width:8.796875px"></div></div><div style="position:absolute;top:660px;width:100%;height:22px;"><div class="core-guide core-guide-indent lvl-0 indent-active vertical" style="left:0px;height:22px;width:8.796875px"></div><div class="core-guide core-guide-indent lvl-1 vertical" style="left:17.59375px;height:22px;width:8.796875px"></div></div><div style="position:absolute;top:594px;width:100%;height:22px;"></div><div style="position:absolute;top:616px;width:100%;height:22px;"><div class="current-line" style="width:679px; height:22px;"></div></div><div style="position:absolute;top:550px;width:100%;height:22px;"><div class="core-guide core-guide-indent lvl-0 vertical" style="left:0px;height:22px;width:8.796875px"></div><div class="core-guide core-guide-indent lvl-1 vertical" style="left:17.59375px;height:22px;width:8.796875px"></div></div><div style="position:absolute;top:572px;width:100%;height:22px;"><div class="core-guide core-guide-indent lvl-0 vertical" style="left:0px;height:22px;width:8.796875px"></div></div></div><div role="presentation" aria-hidden="true" class="view-rulers"></div><div class="view-zones" role="presentation" aria-hidden="true" style="position: absolute;"></div><div class="view-lines monaco-mouse-cursor-text" role="presentation" aria-hidden="true" data-mprt="7" style="position: absolute; font-family: Consolas, &quot;Courier New&quot;, monospace; font-weight: normal; font-size: 16px; font-feature-settings: &quot;liga&quot; 0, &quot;calt&quot; 0; font-variation-settings: normal; line-height: 22px; letter-spacing: 0px; width: 679px; height: 946px;"><div style="top:682px;height:22px;" class="view-line"><span><span class="mtk1">&nbsp;&nbsp;</span><span class="mtk1 bracket-highlighting-2">}</span><span class="mtk1">&nbsp;</span><span class="mtk6">else</span><span class="mtk1">&nbsp;</span><span class="mtk1 bracket-highlighting-2">{</span></span></div><div style="top:704px;height:22px;" class="view-line"><span><span class="mtk1">&nbsp;&nbsp;&nbsp;&nbsp;hucre&nbsp;/=&nbsp;s;</span></span></div><div style="top:726px;height:22px;" class="view-line"><span><span class="mtk1">&nbsp;&nbsp;&nbsp;&nbsp;?hucre</span></span></div><div style="top:748px;height:22px;" class="view-line"><span><span class="mtk1">&nbsp;&nbsp;</span><span class="mtk1 bracket-highlighting-2">}</span><span class="mtk1">;</span></span></div><div style="top:638px;height:22px;" class="view-line"><span><span class="mtk1">&nbsp;&nbsp;</span><span class="mtk6">if</span><span class="mtk1">&nbsp;</span><span class="mtk1 bracket-highlighting-2">(</span><span class="mtk1">s&nbsp;==&nbsp;</span><span class="mtk7">0</span><span class="mtk1 bracket-highlighting-2">)</span><span class="mtk1">&nbsp;</span><span class="mtk1 bracket-highlighting-2">{</span></span></div><div style="top:660px;height:22px;" class="view-line"><span><span class="mtk1">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="mtk6">null</span></span></div><div style="top:594px;height:22px;" class="view-line"><span><span class="mtk8">//&nbsp;bölme</span></span></div><div style="top:616px;height:22px;" class="view-line"><span><span class="mtk6">public</span><span class="mtk1">&nbsp;</span><span class="mtk6">func</span><span class="mtk1">&nbsp;bolme&nbsp;</span><span class="mtk1 bracket-highlighting-1">(</span><span class="mtk1">s&nbsp;:&nbsp;</span><span class="mtk6">Int</span><span class="mtk1 bracket-highlighting-1">)</span><span class="mtk1">&nbsp;:&nbsp;</span><span class="mtk6">async</span><span class="mtk1">&nbsp;?</span><span class="mtk6">Int</span><span class="mtk1">&nbsp;</span><span class="mtk1 bracket-highlighting-1">{</span></span></div><div style="top:550px;height:22px;" class="view-line"><span><span class="mtk1">&nbsp;&nbsp;&nbsp;&nbsp;hucre&nbsp;&nbsp;</span></span></div><div style="top:572px;height:22px;" class="view-line"><span><span class="mtk1">&nbsp;&nbsp;</span><span class="mtk1 bracket-highlighting-1">}</span><span class="mtk1">;</span></span></div></div><div data-mprt="1" class="contentWidgets" style="position: absolute; top: 0px;"></div><div role="presentation" aria-hidden="true" class="cursors-layer cursor-line-style cursor-solid"><div class="cursor monaco-mouse-cursor-text " style="height: 22px; top: 616px; left: 368px; font-family: Consolas, &quot;Courier New&quot;, monospace; font-weight: normal; font-size: 16px; font-feature-settings: &quot;liga&quot; 0, &quot;calt&quot; 0; font-variation-settings: normal; line-height: 22px; letter-spacing: 0px; display: block; visibility: hidden; padding-left: 1px; width: 2px;"></div></div></div><div role="presentation" aria-hidden="true" class="invisible scrollbar horizontal" style="position: absolute; width: 665px; height: 12px; left: 0px; bottom: 0px;"><div class="slider" style="position: absolute; top: 0px; left: 0px; height: 12px; transform: translate3d(0px, 0px, 0px); contain: strict; width: 665px;"></div></div><canvas class="decorationsOverviewRuler" aria-hidden="true" width="14" height="199" style="position: absolute; transform: translate3d(0px, 0px, 0px); contain: strict; top: 0px; right: 0px; width: 14px; height: 199px; display: block;"></canvas><div role="presentation" aria-hidden="true" class="invisible scrollbar vertical fade" style="position: absolute; width: 14px; height: 199px; right: 0px; top: 0px;"><div class="slider" style="position: absolute; top: 116px; left: 0px; width: 14px; transform: translate3d(0px, 0px, 0px); contain: strict; height: 41px;"></div></div></div><div role="presentation" aria-hidden="true" style="width: 749px;" class="scroll-decoration"></div><textarea data-mprt="6" class="inputarea monaco-mouse-cursor-text" wrap="on" autocorrect="off" autocapitalize="off" autocomplete="off" spellcheck="false" aria-label="Editor content;Press Alt+F1 for Accessibility Options." aria-required="false" tabindex="0" role="textbox" aria-roledescription="editor" aria-multiline="true" aria-autocomplete="both" style="tab-size: 17.5938px; font-family: Consolas, &quot;Courier New&quot;, monospace; font-weight: normal; font-size: 16px; font-feature-settings: &quot;liga&quot; 0, &quot;calt&quot; 0; font-variation-settings: normal; line-height: 22px; letter-spacing: 0px; top: 66px; left: 70px; width: 660px; height: 1px;" aria-haspopup="false"></textarea><div class="monaco-editor-background textAreaCover line-numbers" style="position: absolute; top: 0px; left: 0px; width: 0px; height: 0px;"></div><div data-mprt="4" class="overlayWidgets" style="width: 749px;"></div><div data-mprt="8" class="minimap slider-mouseover" role="presentation" aria-hidden="true" style="position: absolute; left: 0px; width: 0px; height: 199px;"><div class="minimap-shadow-hidden" style="height: 199px;"></div><canvas width="0" height="199" style="position: absolute; left: 0px; width: 0px; height: 199px;"></canvas><canvas class="minimap-decorations-layer" width="0" height="199" style="position: absolute; left: 0px; width: 0px; height: 199px;"></canvas><div class="minimap-slider" style="position: absolute; transform: translate3d(0px, 0px, 0px); contain: strict; width: 0px;"><div class="minimap-slider-horizontal" style="position: absolute; width: 0px; height: 0px;"></div></div></div><div role="presentation" aria-hidden="true" class="blockDecorations-container"></div></div><div data-mprt="2" class="overflowingContentWidgets"><div widgetid="editor.contrib.resizableContentHoverWidget" style="position: fixed; height: 77px; width: 279px; z-index: 50; display: none; visibility: hidden; max-width: 1366px; top: 106px; left: 389.891px;"><div class="monaco-sash vertical" style="left: 277px;"></div><div class="monaco-sash vertical disabled" style="left: -2px;"></div><div class="monaco-sash orthogonal-edge-north horizontal" style="top: -2px;"><div class="orthogonal-drag-handle end"></div></div><div class="monaco-sash orthogonal-edge-south horizontal disabled" style="top: 75px;"><div class="orthogonal-drag-handle end"></div></div><div class="monaco-hover hidden" tabindex="0" role="tooltip" style="max-width: 500px; max-height: 250px; --vscode-hover-maxWidth: 500px; width: 279px; height: 77px;"><div class="monaco-scrollable-element " role="presentation" style="position: relative; overflow: hidden;"><div class="monaco-hover-content" style="overflow: hidden; font-size: 16px; line-height: 1.375; max-width: 500px; max-height: 250px; width: 279px; height: 77px;"><div class="hover-row"><div class="marker hover-contents" style="font-family: Consolas, &quot;Courier New&quot;, monospace; font-weight: normal; font-size: 16px; font-feature-settings: &quot;liga&quot; 0, &quot;calt&quot; 0; font-variation-settings: normal; line-height: 22px; letter-spacing: 0px;"><span style="white-space: pre-wrap;">unbound type int<br>Did you mean type Int?</span><span style="opacity: 0.6; padding-left: 6px;">(M0029)</span></div></div><div class="hover-row status-bar"><div class="actions"><div class="action-container" tabindex="0"><a class="action" role="button"><span>View Problem (Alt+F8)</span></a></div><div>No quick fixes available</div></div></div></div><div role="presentation" aria-hidden="true" class="invisible scrollbar horizontal" style="position: absolute; width: 0px; height: 10px; left: 0px; bottom: 0px;"><div class="slider" style="position: absolute; top: 0px; left: 0px; height: 10px; transform: translate3d(0px, 0px, 0px); contain: strict; width: 0px;"></div></div><div role="presentation" aria-hidden="true" class="invisible scrollbar vertical" style="position: absolute; width: 10px; height: 0px; right: 0px; top: 0px;"><div class="slider" style="position: absolute; top: 0px; left: 0px; width: 10px; transform: translate3d(0px, 0px, 0px); contain: strict; height: 0px;"></div></div><div class="shadow"></div><div class="shadow"></div><div class="shadow"></div></div></div></div><div class="editor-widget suggest-widget" widgetid="editor.widget.suggestWidget" style="position: fixed; display: none; visibility: hidden; max-width: 1366px; height: 24px; width: 430px; top: 321px; left: 319.891px;"><div class="monaco-sash vertical" style="left: 428px;"></div><div class="monaco-sash vertical disabled" style="left: -2px;"></div><div class="monaco-sash orthogonal-edge-north horizontal disabled" style="top: -2px;"><div class="orthogonal-drag-handle end"></div></div><div class="monaco-sash orthogonal-edge-south horizontal" style="top: 22px;"><div class="orthogonal-drag-handle end"></div></div><div class="message" aria-hidden="true" style="display: none;"></div><div class="tree" aria-hidden="true" style="height: 24px; display: none;"><div class="monaco-list list_id_1 selection-none" tabindex="0" role="listbox" aria-label="Suggest"><div class="monaco-scrollable-element " role="presentation" style="position: relative; overflow: hidden;"><div class="monaco-list-rows" style="transform: translate3d(0px, 0px, 0px); overflow: hidden; contain: strict; height: 0px; left: 0px; top: 0px;"></div><div role="presentation" aria-hidden="true" class="invisible scrollbar horizontal" style="position: absolute; width: 0px; height: 10px; left: 0px; bottom: 0px;"><div class="slider" style="position: absolute; top: 0px; left: 0px; height: 10px; transform: translate3d(0px, 0px, 0px); contain: strict; width: 0px;"></div></div><div role="presentation" aria-hidden="true" class="invisible scrollbar vertical" style="position: absolute; width: 10px; height: 24px; right: 0px; top: 0px;"><div class="slider" style="position: absolute; top: 0px; left: 0px; width: 10px; transform: translate3d(0px, 0px, 0px); contain: strict; height: 24px;"></div></div></div><style type="text/css" media="screen">.monaco-list.list_id_1:focus .monaco-list-row.focused { background-color: var(--vscode-list-focusBackground); }
+.monaco-list.list_id_1:focus .monaco-list-row.focused:hover { background-color: var(--vscode-list-focusBackground); }
+.monaco-list.list_id_1:focus .monaco-list-row.focused { color: var(--vscode-list-focusForeground); }
+.monaco-list.list_id_1:focus .monaco-list-row.selected { background-color: var(--vscode-list-activeSelectionBackground); }
+.monaco-list.list_id_1:focus .monaco-list-row.selected:hover { background-color: var(--vscode-list-activeSelectionBackground); }
+.monaco-list.list_id_1:focus .monaco-list-row.selected { color: var(--vscode-list-activeSelectionForeground); }
+.monaco-list.list_id_1:focus .monaco-list-row.selected .codicon { color: var(--vscode-list-activeSelectionIconForeground); }
+
+				.monaco-drag-image,
+				.monaco-list.list_id_1:focus .monaco-list-row.selected.focused { background-color: var(--vscode-list-activeSelectionBackground); }
+			
+
+				.monaco-drag-image,
+				.monaco-list.list_id_1:focus .monaco-list-row.selected.focused { color: var(--vscode-list-activeSelectionForeground); }
+			
+.monaco-list.list_id_1 .monaco-list-row.focused .codicon { color:  var(--vscode-list-inactiveSelectionIconForeground); }
+.monaco-list.list_id_1 .monaco-list-row.focused { background-color:  var(--vscode-editorSuggestWidget-selectedBackground); }
+.monaco-list.list_id_1 .monaco-list-row.focused:hover { background-color:  var(--vscode-editorSuggestWidget-selectedBackground); }
+.monaco-list.list_id_1 .monaco-list-row.selected { background-color:  var(--vscode-list-inactiveSelectionBackground); }
+.monaco-list.list_id_1 .monaco-list-row.selected:hover { background-color:  var(--vscode-list-inactiveSelectionBackground); }
+.monaco-list.list_id_1 .monaco-list-row.selected { color: var(--vscode-list-inactiveSelectionForeground); }
+.monaco-list.list_id_1:not(.drop-target):not(.dragging) .monaco-list-row:hover:not(.selected):not(.focused) { background-color: var(--vscode-list-hoverBackground); }
+.monaco-list.list_id_1:not(.drop-target):not(.dragging) .monaco-list-row:hover:not(.selected):not(.focused) { color:  var(--vscode-list-hoverForeground); }
+.monaco-list.list_id_1:focus .monaco-list-row.focused.selected { outline: 1px solid var(--vscode-list-focusAndSelectionOutline, var(--vscode-contrastActiveBorder, var(--vscode-list-focusOutline))); outline-offset: -1px;}
+
+				.monaco-drag-image,
+				.monaco-list.list_id_1:focus .monaco-list-row.focused { outline: 1px solid var(--vscode-list-focusOutline); outline-offset: -1px; }
+				.monaco-workbench.context-menu-visible .monaco-list.list_id_1.last-focused .monaco-list-row.focused { outline: 1px solid var(--vscode-list-focusOutline); outline-offset: -1px; }
+			
+.monaco-list.list_id_1 .monaco-list-row.focused.selected { outline: 1px dotted var(--vscode-contrastActiveBorder, var(--vscode-contrastActiveBorder)); outline-offset: -1px; }
+.monaco-list.list_id_1 .monaco-list-row.selected { outline: 1px dotted var(--vscode-contrastActiveBorder); outline-offset: -1px; }
+.monaco-list.list_id_1 .monaco-list-row.focused { outline: 1px dotted var(--vscode-contrastActiveBorder); outline-offset: -1px; }
+.monaco-list.list_id_1 .monaco-list-row:hover { outline: 1px dashed var(--vscode-contrastActiveBorder); outline-offset: -1px; }
+
+				.monaco-list.list_id_1.drop-target,
+				.monaco-list.list_id_1 .monaco-list-rows.drop-target,
+				.monaco-list.list_id_1 .monaco-list-row.drop-target { background-color: var(--vscode-list-dropBackground) !important; color: inherit !important; }
+			
+
+				.monaco-table > .monaco-split-view2,
+				.monaco-table > .monaco-split-view2 .monaco-sash.vertical::before,
+				.monaco-workbench:not(.reduce-motion) .monaco-table:hover > .monaco-split-view2,
+				.monaco-workbench:not(.reduce-motion) .monaco-table:hover > .monaco-split-view2 .monaco-sash.vertical::before {
+					border-color: var(--vscode-tree-tableColumnsBorder);
+				}
+
+				.monaco-workbench:not(.reduce-motion) .monaco-table > .monaco-split-view2,
+				.monaco-workbench:not(.reduce-motion) .monaco-table > .monaco-split-view2 .monaco-sash.vertical::before {
+					border-color: transparent;
+				}
+			
+
+				.monaco-table .monaco-list-row[data-parity=odd]:not(.focused):not(.selected):not(:hover) .monaco-table-tr,
+				.monaco-table .monaco-list:not(:focus) .monaco-list-row[data-parity=odd].focused:not(.selected):not(:hover) .monaco-table-tr,
+				.monaco-table .monaco-list:not(.focused) .monaco-list-row[data-parity=odd].focused:not(.selected):not(:hover) .monaco-table-tr {
+					background-color: var(--vscode-tree-tableOddRowsBackground);
+				}
+			</style></div></div><div class="suggest-status-bar" aria-hidden="true" style="height: 22px; display: none;"><div class="monaco-action-bar animated left"><ul class="actions-container" role="presentation"><li class="action-item menu-entry" role="presentation" title="Insert (Enter)"><a class="action-label" role="button" aria-label="Insert (Enter)" aria-checked="" tabindex="0">Insert (⏎)</a></li></ul></div><div class="monaco-action-bar animated right"><ul class="actions-container" role="presentation"><li class="action-item menu-entry" role="presentation" title="show more (Ctrl+Space)"><a class="action-label" role="button" aria-label="show more (Ctrl+Space)" aria-checked="" tabindex="0">show more (Ctrl+Space)</a></li></ul></div></div></div></div></div></div></section></div><header class="sc-blHHSb sc-ixGGxD gpFTzw cDSFLL"><button class="sc-dpBQxM gCJgbT">Log</button><button class="sc-dpBQxM jRxJka">Terminal</button><div class="sc-kLhKbu dsvRXz"><button class="sc-dstKZu ZtWvj"><img src="data:image/svg+xml,%3csvg%20width=&#39;12&#39;%20height=&#39;8&#39;%20viewBox=&#39;0%200%2012%208&#39;%20fill=&#39;none&#39;%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%3e%3cpath%20d=&#39;M6.11523%207.16211C6.42578%207.15625%206.67773%207.04492%206.92383%206.79297L11.2305%202.38086C11.418%202.19336%2011.5059%201.97656%2011.5059%201.70703C11.5059%201.16797%2011.0664%200.722656%2010.5332%200.722656C10.2695%200.722656%2010.0176%200.833984%209.8125%201.03906L6.12109%204.86523L2.41797%201.03906C2.21875%200.839844%201.9668%200.722656%201.69727%200.722656C1.16406%200.722656%200.724609%201.16797%200.724609%201.70703C0.724609%201.9707%200.818359%202.19336%201%202.38672L5.30664%206.79297C5.56445%207.04492%205.81055%207.16211%206.11523%207.16211Z&#39;%20fill=&#39;%23818284&#39;/%3e%3c/svg%3e" alt="Caret icon" class="sc-keTIit ABxuI"></button></div></header><div class="sc-khLCKb eoeQRg" style="display: block;"><div><pre style="white-space: normal; margin: 0px;">[23:42:41] moc version 0.13.3</pre></div><div><pre style="white-space: normal; margin: 0px;">[23:42:41] base library version moc-0.13.3</pre></div><div><pre style="white-space: normal; margin: 0px;">[23:42:43] WebContainer is not supported in this browser. Frontend build is disabled.</pre></div><div><pre style="white-space: normal; margin: 0px;">[00:36:53] Error [M0001] in file Main.mo:37:2   unexpected token 'public', expected one of token or &lt;phrase&gt; sequence:
+  }
+  seplist(&lt;dec&gt;,&lt;semicolon&gt;)</pre></div><div><pre style="white-space: normal; margin: 0px;">[00:36:53] cannot deploy: syntax error</pre></div><div><pre style="white-space: normal; margin: 0px;">[00:37:43] Error [M0001] in file Main.mo:48:0   unexpected token '}', expected one of token or &lt;phrase&gt; sequence:
+  &lt;eof&gt;
+  seplist(&lt;dec&gt;,&lt;semicolon&gt;)</pre></div><div><pre style="white-space: normal; margin: 0px;">[00:37:43] cannot deploy: syntax error</pre></div><div><pre style="white-space: normal; margin: 0px;">[00:38:49] Compiling code...</pre></div><div><pre style="white-space: normal; margin: 0px;">[00:38:50] Compiled Wasm size: 217KB</pre></div><div><pre style="white-space: normal; margin: 0px;">[00:38:50] Deploying code...</pre></div><div><pre style="white-space: normal; margin: 0px;">[00:38:50] Requesting a new canister id...</pre></div><div><pre style="white-space: normal; margin: 0px;">[00:38:53] Got canister id 363tq-3yaaa-aaaab-qacma-cai</pre></div><div><pre style="white-space: normal; margin: 0px;">[00:38:59] Code installed at canister id 363tq-3yaaa-aaaab-qacma-cai</pre></div><div><pre style="white-space: normal; margin: 0px;">[00:42:52] Sharing project code...</pre></div><div><pre style="white-space: normal; margin: 0px;">[00:42:54] Use this link to access the code:
+https://m7sm4-2iaaa-aaaab-qabra-cai.raw.ic0.app/?tag=1033679881</pre></div></div><div class="sc-jwIPbr YjnRg"><div dir="ltr" class="terminal xterm xterm-dom-renderer-owner-1"><div class="xterm-viewport" style="background-color: rgb(255, 255, 255);"><div class="xterm-scroll-area" style="height: 204px;"></div></div><div class="xterm-screen" style="width: 1131px; height: 204px;"><div class="xterm-helpers"><textarea class="xterm-helper-textarea" aria-label="Terminal input" aria-multiline="false" autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="left: 0px; top: 17px; width: 7.7px; height: 17px; line-height: 17px; z-index: -5;"></textarea><div class="composition-view"></div><div class="xterm-width-cache-measure-container" aria-hidden="true" style="white-space: pre; font-kerning: none; font-family: monospace; font-size: 14px;"><span class="xterm-char-measure-element" style="font-weight: normal;">uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu</span><span class="xterm-char-measure-element" style="font-weight: bold;"></span><span class="xterm-char-measure-element" style="font-style: italic; font-weight: normal;"></span><span class="xterm-char-measure-element" style="font-weight: bold; font-style: italic;"></span></div></div><style>.xterm-dom-renderer-owner-1 .xterm-rows span { display: inline-block; height: 100%; vertical-align: top;}</style><style>.xterm-dom-renderer-owner-1 .xterm-rows { color: #000000; font-family: monospace; font-size: 14px; font-kerning: none; white-space: pre}.xterm-dom-renderer-owner-1 .xterm-rows .xterm-dim { color: #00000080;}.xterm-dom-renderer-owner-1 span:not(.xterm-bold) { font-weight: normal;}.xterm-dom-renderer-owner-1 span.xterm-bold { font-weight: bold;}.xterm-dom-renderer-owner-1 span.xterm-italic { font-style: italic;}@keyframes blink_underline_1 { 50% {  border-bottom-style: hidden; }}@keyframes blink_bar_1 { 50% {  box-shadow: none; }}@keyframes blink_block_1 { 0% {  background-color: #000000;  color: #000000; } 50% {  background-color: inherit;  color: #000000; }}.xterm-dom-renderer-owner-1 .xterm-rows.xterm-focus .xterm-cursor.xterm-cursor-blink.xterm-cursor-underline { animation: blink_underline_1 1s step-end infinite;}.xterm-dom-renderer-owner-1 .xterm-rows.xterm-focus .xterm-cursor.xterm-cursor-blink.xterm-cursor-bar { animation: blink_bar_1 1s step-end infinite;}.xterm-dom-renderer-owner-1 .xterm-rows.xterm-focus .xterm-cursor.xterm-cursor-blink.xterm-cursor-block { animation: blink_block_1 1s step-end infinite;}.xterm-dom-renderer-owner-1 .xterm-rows .xterm-cursor.xterm-cursor-block { background-color: #000000; color: #000000;}.xterm-dom-renderer-owner-1 .xterm-rows .xterm-cursor.xterm-cursor-block:not(.xterm-cursor-blink) { background-color: #000000 !important; color: #000000 !important;}.xterm-dom-renderer-owner-1 .xterm-rows .xterm-cursor.xterm-cursor-outline { outline: 1px solid #000000; outline-offset: -1px;}.xterm-dom-renderer-owner-1 .xterm-rows .xterm-cursor.xterm-cursor-bar { box-shadow: 1px 0 0 #000000 inset;}.xterm-dom-renderer-owner-1 .xterm-rows .xterm-cursor.xterm-cursor-underline { border-bottom: 1px #000000; border-bottom-style: solid; height: calc(100% - 1px);}.xterm-dom-renderer-owner-1 .xterm-selection { position: absolute; top: 0; left: 0; z-index: 1; pointer-events: none;}.xterm-dom-renderer-owner-1.focus .xterm-selection div { position: absolute; background-color: #aaaaaa;}.xterm-dom-renderer-owner-1 .xterm-selection div { position: absolute; background-color: #aaaaaa;}.xterm-dom-renderer-owner-1 .xterm-fg-0 { color: #2e3436; }.xterm-dom-renderer-owner-1 .xterm-fg-0.xterm-dim { color: #2e343680; }.xterm-dom-renderer-owner-1 .xterm-bg-0 { background-color: #2e3436; }.xterm-dom-renderer-owner-1 .xterm-fg-1 { color: #cc0000; }.xterm-dom-renderer-owner-1 .xterm-fg-1.xterm-dim { color: #cc000080; }.xterm-dom-renderer-owner-1 .xterm-bg-1 { background-color: #cc0000; }.xterm-dom-renderer-owner-1 .xterm-fg-2 { color: #4e9a06; }.xterm-dom-renderer-owner-1 .xterm-fg-2.xterm-dim { color: #4e9a0680; }.xterm-dom-renderer-owner-1 .xterm-bg-2 { background-color: #4e9a06; }.xterm-dom-renderer-owner-1 .xterm-fg-3 { color: #c4a000; }.xterm-dom-renderer-owner-1 .xterm-fg-3.xterm-dim { color: #c4a00080; }.xterm-dom-renderer-owner-1 .xterm-bg-3 { background-color: #c4a000; }.xterm-dom-renderer-owner-1 .xterm-fg-4 { color: #3465a4; }.xterm-dom-renderer-owner-1 .xterm-fg-4.xterm-dim { color: #3465a480; }.xterm-dom-renderer-owner-1 .xterm-bg-4 { background-color: #3465a4; }.xterm-dom-renderer-owner-1 .xterm-fg-5 { color: #75507b; }.xterm-dom-renderer-owner-1 .xterm-fg-5.xterm-dim { color: #75507b80; }.xterm-dom-renderer-owner-1 .xterm-bg-5 { background-color: #75507b; }.xterm-dom-renderer-owner-1 .xterm-fg-6 { color: #06989a; }.xterm-dom-renderer-owner-1 .xterm-fg-6.xterm-dim { color: #06989a80; }.xterm-dom-renderer-owner-1 .xterm-bg-6 { background-color: #06989a; }.xterm-dom-renderer-owner-1 .xterm-fg-7 { color: #d3d7cf; }.xterm-dom-renderer-owner-1 .xterm-fg-7.xterm-dim { color: #d3d7cf80; }.xterm-dom-renderer-owner-1 .xterm-bg-7 { background-color: #d3d7cf; }.xterm-dom-renderer-owner-1 .xterm-fg-8 { color: #555753; }.xterm-dom-renderer-owner-1 .xterm-fg-8.xterm-dim { color: #55575380; }.xterm-dom-renderer-owner-1 .xterm-bg-8 { background-color: #555753; }.xterm-dom-renderer-owner-1 .xterm-fg-9 { color: #ef2929; }.xterm-dom-renderer-owner-1 .xterm-fg-9.xterm-dim { color: #ef292980; }.xterm-dom-renderer-owner-1 .xterm-bg-9 { background-color: #ef2929; }.xterm-dom-renderer-owner-1 .xterm-fg-10 { color: #8ae234; }.xterm-dom-renderer-owner-1 .xterm-fg-10.xterm-dim { color: #8ae23480; }.xterm-dom-renderer-owner-1 .xterm-bg-10 { background-color: #8ae234; }.xterm-dom-renderer-owner-1 .xterm-fg-11 { color: #fce94f; }.xterm-dom-renderer-owner-1 .xterm-fg-11.xterm-dim { color: #fce94f80; }.xterm-dom-renderer-owner-1 .xterm-bg-11 { background-color: #fce94f; }.xterm-dom-renderer-owner-1 .xterm-fg-12 { color: #729fcf; }.xterm-dom-renderer-owner-1 .xterm-fg-12.xterm-dim { color: #729fcf80; }.xterm-dom-renderer-owner-1 .xterm-bg-12 { background-color: #729fcf; }.xterm-dom-renderer-owner-1 .xterm-fg-13 { color: #ad7fa8; }.xterm-dom-renderer-owner-1 .xterm-fg-13.xterm-dim { color: #ad7fa880; }.xterm-dom-renderer-owner-1 .xterm-bg-13 { background-color: #ad7fa8; }.xterm-dom-renderer-owner-1 .xterm-fg-14 { color: #34e2e2; }.xterm-dom-renderer-owner-1 .xterm-fg-14.xterm-dim { color: #34e2e280; }.xterm-dom-renderer-owner-1 .xterm-bg-14 { background-color: #34e2e2; }.xterm-dom-renderer-owner-1 .xterm-fg-15 { color: #eeeeec; }.xterm-dom-renderer-owner-1 .xterm-fg-15.xterm-dim { color: #eeeeec80; }.xterm-dom-renderer-owner-1 .xterm-bg-15 { background-color: #eeeeec; }.xterm-dom-renderer-owner-1 .xterm-fg-16 { color: #000000; }.xterm-dom-renderer-owner-1 .xterm-fg-16.xterm-dim { color: #00000080; }.xterm-dom-renderer-owner-1 .xterm-bg-16 { background-color: #000000; }.xterm-dom-renderer-owner-1 .xterm-fg-17 { color: #00005f; }.xterm-dom-renderer-owner-1 .xterm-fg-17.xterm-dim { color: #00005f80; }.xterm-dom-renderer-owner-1 .xterm-bg-17 { background-color: #00005f; }.xterm-dom-renderer-owner-1 .xterm-fg-18 { color: #000087; }.xterm-dom-renderer-owner-1 .xterm-fg-18.xterm-dim { color: #00008780; }.xterm-dom-renderer-owner-1 .xterm-bg-18 { background-color: #000087; }.xterm-dom-renderer-owner-1 .xterm-fg-19 { color: #0000af; }.xterm-dom-renderer-owner-1 .xterm-fg-19.xterm-dim { color: #0000af80; }.xterm-dom-renderer-owner-1 .xterm-bg-19 { background-color: #0000af; }.xterm-dom-renderer-owner-1 .xterm-fg-20 { color: #0000d7; }.xterm-dom-renderer-owner-1 .xterm-fg-20.xterm-dim { color: #0000d780; }.xterm-dom-renderer-owner-1 .xterm-bg-20 { background-color: #0000d7; }.xterm-dom-renderer-owner-1 .xterm-fg-21 { color: #0000ff; }.xterm-dom-renderer-owner-1 .xterm-fg-21.xterm-dim { color: #0000ff80; }.xterm-dom-renderer-owner-1 .xterm-bg-21 { background-color: #0000ff; }.xterm-dom-renderer-owner-1 .xterm-fg-22 { color: #005f00; }.xterm-dom-renderer-owner-1 .xterm-fg-22.xterm-dim { color: #005f0080; }.xterm-dom-renderer-owner-1 .xterm-bg-22 { background-color: #005f00; }.xterm-dom-renderer-owner-1 .xterm-fg-23 { color: #005f5f; }.xterm-dom-renderer-owner-1 .xterm-fg-23.xterm-dim { color: #005f5f80; }.xterm-dom-renderer-owner-1 .xterm-bg-23 { background-color: #005f5f; }.xterm-dom-renderer-owner-1 .xterm-fg-24 { color: #005f87; }.xterm-dom-renderer-owner-1 .xterm-fg-24.xterm-dim { color: #005f8780; }.xterm-dom-renderer-owner-1 .xterm-bg-24 { background-color: #005f87; }.xterm-dom-renderer-owner-1 .xterm-fg-25 { color: #005faf; }.xterm-dom-renderer-owner-1 .xterm-fg-25.xterm-dim { color: #005faf80; }.xterm-dom-renderer-owner-1 .xterm-bg-25 { background-color: #005faf; }.xterm-dom-renderer-owner-1 .xterm-fg-26 { color: #005fd7; }.xterm-dom-renderer-owner-1 .xterm-fg-26.xterm-dim { color: #005fd780; }.xterm-dom-renderer-owner-1 .xterm-bg-26 { background-color: #005fd7; }.xterm-dom-renderer-owner-1 .xterm-fg-27 { color: #005fff; }.xterm-dom-renderer-owner-1 .xterm-fg-27.xterm-dim { color: #005fff80; }.xterm-dom-renderer-owner-1 .xterm-bg-27 { background-color: #005fff; }.xterm-dom-renderer-owner-1 .xterm-fg-28 { color: #008700; }.xterm-dom-renderer-owner-1 .xterm-fg-28.xterm-dim { color: #00870080; }.xterm-dom-renderer-owner-1 .xterm-bg-28 { background-color: #008700; }.xterm-dom-renderer-owner-1 .xterm-fg-29 { color: #00875f; }.xterm-dom-renderer-owner-1 .xterm-fg-29.xterm-dim { color: #00875f80; }.xterm-dom-renderer-owner-1 .xterm-bg-29 { background-color: #00875f; }.xterm-dom-renderer-owner-1 .xterm-fg-30 { color: #008787; }.xterm-dom-renderer-owner-1 .xterm-fg-30.xterm-dim { color: #00878780; }.xterm-dom-renderer-owner-1 .xterm-bg-30 { background-color: #008787; }.xterm-dom-renderer-owner-1 .xterm-fg-31 { color: #0087af; }.xterm-dom-renderer-owner-1 .xterm-fg-31.xterm-dim { color: #0087af80; }.xterm-dom-renderer-owner-1 .xterm-bg-31 { background-color: #0087af; }.xterm-dom-renderer-owner-1 .xterm-fg-32 { color: #0087d7; }.xterm-dom-renderer-owner-1 .xterm-fg-32.xterm-dim { color: #0087d780; }.xterm-dom-renderer-owner-1 .xterm-bg-32 { background-color: #0087d7; }.xterm-dom-renderer-owner-1 .xterm-fg-33 { color: #0087ff; }.xterm-dom-renderer-owner-1 .xterm-fg-33.xterm-dim { color: #0087ff80; }.xterm-dom-renderer-owner-1 .xterm-bg-33 { background-color: #0087ff; }.xterm-dom-renderer-owner-1 .xterm-fg-34 { color: #00af00; }.xterm-dom-renderer-owner-1 .xterm-fg-34.xterm-dim { color: #00af0080; }.xterm-dom-renderer-owner-1 .xterm-bg-34 { background-color: #00af00; }.xterm-dom-renderer-owner-1 .xterm-fg-35 { color: #00af5f; }.xterm-dom-renderer-owner-1 .xterm-fg-35.xterm-dim { color: #00af5f80; }.xterm-dom-renderer-owner-1 .xterm-bg-35 { background-color: #00af5f; }.xterm-dom-renderer-owner-1 .xterm-fg-36 { color: #00af87; }.xterm-dom-renderer-owner-1 .xterm-fg-36.xterm-dim { color: #00af8780; }.xterm-dom-renderer-owner-1 .xterm-bg-36 { background-color: #00af87; }.xterm-dom-renderer-owner-1 .xterm-fg-37 { color: #00afaf; }.xterm-dom-renderer-owner-1 .xterm-fg-37.xterm-dim { color: #00afaf80; }.xterm-dom-renderer-owner-1 .xterm-bg-37 { background-color: #00afaf; }.xterm-dom-renderer-owner-1 .xterm-fg-38 { color: #00afd7; }.xterm-dom-renderer-owner-1 .xterm-fg-38.xterm-dim { color: #00afd780; }.xterm-dom-renderer-owner-1 .xterm-bg-38 { background-color: #00afd7; }.xterm-dom-renderer-owner-1 .xterm-fg-39 { color: #00afff; }.xterm-dom-renderer-owner-1 .xterm-fg-39.xterm-dim { color: #00afff80; }.xterm-dom-renderer-owner-1 .xterm-bg-39 { background-color: #00afff; }.xterm-dom-renderer-owner-1 .xterm-fg-40 { color: #00d700; }.xterm-dom-renderer-owner-1 .xterm-fg-40.xterm-dim { color: #00d70080; }.xterm-dom-renderer-owner-1 .xterm-bg-40 { background-color: #00d700; }.xterm-dom-renderer-owner-1 .xterm-fg-41 { color: #00d75f; }.xterm-dom-renderer-owner-1 .xterm-fg-41.xterm-dim { color: #00d75f80; }.xterm-dom-renderer-owner-1 .xterm-bg-41 { background-color: #00d75f; }.xterm-dom-renderer-owner-1 .xterm-fg-42 { color: #00d787; }.xterm-dom-renderer-owner-1 .xterm-fg-42.xterm-dim { color: #00d78780; }.xterm-dom-renderer-owner-1 .xterm-bg-42 { background-color: #00d787; }.xterm-dom-renderer-owner-1 .xterm-fg-43 { color: #00d7af; }.xterm-dom-renderer-owner-1 .xterm-fg-43.xterm-dim { color: #00d7af80; }.xterm-dom-renderer-owner-1 .xterm-bg-43 { background-color: #00d7af; }.xterm-dom-renderer-owner-1 .xterm-fg-44 { color: #00d7d7; }.xterm-dom-renderer-owner-1 .xterm-fg-44.xterm-dim { color: #00d7d780; }.xterm-dom-renderer-owner-1 .xterm-bg-44 { background-color: #00d7d7; }.xterm-dom-renderer-owner-1 .xterm-fg-45 { color: #00d7ff; }.xterm-dom-renderer-owner-1 .xterm-fg-45.xterm-dim { color: #00d7ff80; }.xterm-dom-renderer-owner-1 .xterm-bg-45 { background-color: #00d7ff; }.xterm-dom-renderer-owner-1 .xterm-fg-46 { color: #00ff00; }.xterm-dom-renderer-owner-1 .xterm-fg-46.xterm-dim { color: #00ff0080; }.xterm-dom-renderer-owner-1 .xterm-bg-46 { background-color: #00ff00; }.xterm-dom-renderer-owner-1 .xterm-fg-47 { color: #00ff5f; }.xterm-dom-renderer-owner-1 .xterm-fg-47.xterm-dim { color: #00ff5f80; }.xterm-dom-renderer-owner-1 .xterm-bg-47 { background-color: #00ff5f; }.xterm-dom-renderer-owner-1 .xterm-fg-48 { color: #00ff87; }.xterm-dom-renderer-owner-1 .xterm-fg-48.xterm-dim { color: #00ff8780; }.xterm-dom-renderer-owner-1 .xterm-bg-48 { background-color: #00ff87; }.xterm-dom-renderer-owner-1 .xterm-fg-49 { color: #00ffaf; }.xterm-dom-renderer-owner-1 .xterm-fg-49.xterm-dim { color: #00ffaf80; }.xterm-dom-renderer-owner-1 .xterm-bg-49 { background-color: #00ffaf; }.xterm-dom-renderer-owner-1 .xterm-fg-50 { color: #00ffd7; }.xterm-dom-renderer-owner-1 .xterm-fg-50.xterm-dim { color: #00ffd780; }.xterm-dom-renderer-owner-1 .xterm-bg-50 { background-color: #00ffd7; }.xterm-dom-renderer-owner-1 .xterm-fg-51 { color: #00ffff; }.xterm-dom-renderer-owner-1 .xterm-fg-51.xterm-dim { color: #00ffff80; }.xterm-dom-renderer-owner-1 .xterm-bg-51 { background-color: #00ffff; }.xterm-dom-renderer-owner-1 .xterm-fg-52 { color: #5f0000; }.xterm-dom-renderer-owner-1 .xterm-fg-52.xterm-dim { color: #5f000080; }.xterm-dom-renderer-owner-1 .xterm-bg-52 { background-color: #5f0000; }.xterm-dom-renderer-owner-1 .xterm-fg-53 { color: #5f005f; }.xterm-dom-renderer-owner-1 .xterm-fg-53.xterm-dim { color: #5f005f80; }.xterm-dom-renderer-owner-1 .xterm-bg-53 { background-color: #5f005f; }.xterm-dom-renderer-owner-1 .xterm-fg-54 { color: #5f0087; }.xterm-dom-renderer-owner-1 .xterm-fg-54.xterm-dim { color: #5f008780; }.xterm-dom-renderer-owner-1 .xterm-bg-54 { background-color: #5f0087; }.xterm-dom-renderer-owner-1 .xterm-fg-55 { color: #5f00af; }.xterm-dom-renderer-owner-1 .xterm-fg-55.xterm-dim { color: #5f00af80; }.xterm-dom-renderer-owner-1 .xterm-bg-55 { background-color: #5f00af; }.xterm-dom-renderer-owner-1 .xterm-fg-56 { color: #5f00d7; }.xterm-dom-renderer-owner-1 .xterm-fg-56.xterm-dim { color: #5f00d780; }.xterm-dom-renderer-owner-1 .xterm-bg-56 { background-color: #5f00d7; }.xterm-dom-renderer-owner-1 .xterm-fg-57 { color: #5f00ff; }.xterm-dom-renderer-owner-1 .xterm-fg-57.xterm-dim { color: #5f00ff80; }.xterm-dom-renderer-owner-1 .xterm-bg-57 { background-color: #5f00ff; }.xterm-dom-renderer-owner-1 .xterm-fg-58 { color: #5f5f00; }.xterm-dom-renderer-owner-1 .xterm-fg-58.xterm-dim { color: #5f5f0080; }.xterm-dom-renderer-owner-1 .xterm-bg-58 { background-color: #5f5f00; }.xterm-dom-renderer-owner-1 .xterm-fg-59 { color: #5f5f5f; }.xterm-dom-renderer-owner-1 .xterm-fg-59.xterm-dim { color: #5f5f5f80; }.xterm-dom-renderer-owner-1 .xterm-bg-59 { background-color: #5f5f5f; }.xterm-dom-renderer-owner-1 .xterm-fg-60 { color: #5f5f87; }.xterm-dom-renderer-owner-1 .xterm-fg-60.xterm-dim { color: #5f5f8780; }.xterm-dom-renderer-owner-1 .xterm-bg-60 { background-color: #5f5f87; }.xterm-dom-renderer-owner-1 .xterm-fg-61 { color: #5f5faf; }.xterm-dom-renderer-owner-1 .xterm-fg-61.xterm-dim { color: #5f5faf80; }.xterm-dom-renderer-owner-1 .xterm-bg-61 { background-color: #5f5faf; }.xterm-dom-renderer-owner-1 .xterm-fg-62 { color: #5f5fd7; }.xterm-dom-renderer-owner-1 .xterm-fg-62.xterm-dim { color: #5f5fd780; }.xterm-dom-renderer-owner-1 .xterm-bg-62 { background-color: #5f5fd7; }.xterm-dom-renderer-owner-1 .xterm-fg-63 { color: #5f5fff; }.xterm-dom-renderer-owner-1 .xterm-fg-63.xterm-dim { color: #5f5fff80; }.xterm-dom-renderer-owner-1 .xterm-bg-63 { background-color: #5f5fff; }.xterm-dom-renderer-owner-1 .xterm-fg-64 { color: #5f8700; }.xterm-dom-renderer-owner-1 .xterm-fg-64.xterm-dim { color: #5f870080; }.xterm-dom-renderer-owner-1 .xterm-bg-64 { background-color: #5f8700; }.xterm-dom-renderer-owner-1 .xterm-fg-65 { color: #5f875f; }.xterm-dom-renderer-owner-1 .xterm-fg-65.xterm-dim { color: #5f875f80; }.xterm-dom-renderer-owner-1 .xterm-bg-65 { background-color: #5f875f; }.xterm-dom-renderer-owner-1 .xterm-fg-66 { color: #5f8787; }.xterm-dom-renderer-owner-1 .xterm-fg-66.xterm-dim { color: #5f878780; }.xterm-dom-renderer-owner-1 .xterm-bg-66 { background-color: #5f8787; }.xterm-dom-renderer-owner-1 .xterm-fg-67 { color: #5f87af; }.xterm-dom-renderer-owner-1 .xterm-fg-67.xterm-dim { color: #5f87af80; }.xterm-dom-renderer-owner-1 .xterm-bg-67 { background-color: #5f87af; }.xterm-dom-renderer-owner-1 .xterm-fg-68 { color: #5f87d7; }.xterm-dom-renderer-owner-1 .xterm-fg-68.xterm-dim { color: #5f87d780; }.xterm-dom-renderer-owner-1 .xterm-bg-68 { background-color: #5f87d7; }.xterm-dom-renderer-owner-1 .xterm-fg-69 { color: #5f87ff; }.xterm-dom-renderer-owner-1 .xterm-fg-69.xterm-dim { color: #5f87ff80; }.xterm-dom-renderer-owner-1 .xterm-bg-69 { background-color: #5f87ff; }.xterm-dom-renderer-owner-1 .xterm-fg-70 { color: #5faf00; }.xterm-dom-renderer-owner-1 .xterm-fg-70.xterm-dim { color: #5faf0080; }.xterm-dom-renderer-owner-1 .xterm-bg-70 { background-color: #5faf00; }.xterm-dom-renderer-owner-1 .xterm-fg-71 { color: #5faf5f; }.xterm-dom-renderer-owner-1 .xterm-fg-71.xterm-dim { color: #5faf5f80; }.xterm-dom-renderer-owner-1 .xterm-bg-71 { background-color: #5faf5f; }.xterm-dom-renderer-owner-1 .xterm-fg-72 { color: #5faf87; }.xterm-dom-renderer-owner-1 .xterm-fg-72.xterm-dim { color: #5faf8780; }.xterm-dom-renderer-owner-1 .xterm-bg-72 { background-color: #5faf87; }.xterm-dom-renderer-owner-1 .xterm-fg-73 { color: #5fafaf; }.xterm-dom-renderer-owner-1 .xterm-fg-73.xterm-dim { color: #5fafaf80; }.xterm-dom-renderer-owner-1 .xterm-bg-73 { background-color: #5fafaf; }.xterm-dom-renderer-owner-1 .xterm-fg-74 { color: #5fafd7; }.xterm-dom-renderer-owner-1 .xterm-fg-74.xterm-dim { color: #5fafd780; }.xterm-dom-renderer-owner-1 .xterm-bg-74 { background-color: #5fafd7; }.xterm-dom-renderer-owner-1 .xterm-fg-75 { color: #5fafff; }.xterm-dom-renderer-owner-1 .xterm-fg-75.xterm-dim { color: #5fafff80; }.xterm-dom-renderer-owner-1 .xterm-bg-75 { background-color: #5fafff; }.xterm-dom-renderer-owner-1 .xterm-fg-76 { color: #5fd700; }.xterm-dom-renderer-owner-1 .xterm-fg-76.xterm-dim { color: #5fd70080; }.xterm-dom-renderer-owner-1 .xterm-bg-76 { background-color: #5fd700; }.xterm-dom-renderer-owner-1 .xterm-fg-77 { color: #5fd75f; }.xterm-dom-renderer-owner-1 .xterm-fg-77.xterm-dim { color: #5fd75f80; }.xterm-dom-renderer-owner-1 .xterm-bg-77 { background-color: #5fd75f; }.xterm-dom-renderer-owner-1 .xterm-fg-78 { color: #5fd787; }.xterm-dom-renderer-owner-1 .xterm-fg-78.xterm-dim { color: #5fd78780; }.xterm-dom-renderer-owner-1 .xterm-bg-78 { background-color: #5fd787; }.xterm-dom-renderer-owner-1 .xterm-fg-79 { color: #5fd7af; }.xterm-dom-renderer-owner-1 .xterm-fg-79.xterm-dim { color: #5fd7af80; }.xterm-dom-renderer-owner-1 .xterm-bg-79 { background-color: #5fd7af; }.xterm-dom-renderer-owner-1 .xterm-fg-80 { color: #5fd7d7; }.xterm-dom-renderer-owner-1 .xterm-fg-80.xterm-dim { color: #5fd7d780; }.xterm-dom-renderer-owner-1 .xterm-bg-80 { background-color: #5fd7d7; }.xterm-dom-renderer-owner-1 .xterm-fg-81 { color: #5fd7ff; }.xterm-dom-renderer-owner-1 .xterm-fg-81.xterm-dim { color: #5fd7ff80; }.xterm-dom-renderer-owner-1 .xterm-bg-81 { background-color: #5fd7ff; }.xterm-dom-renderer-owner-1 .xterm-fg-82 { color: #5fff00; }.xterm-dom-renderer-owner-1 .xterm-fg-82.xterm-dim { color: #5fff0080; }.xterm-dom-renderer-owner-1 .xterm-bg-82 { background-color: #5fff00; }.xterm-dom-renderer-owner-1 .xterm-fg-83 { color: #5fff5f; }.xterm-dom-renderer-owner-1 .xterm-fg-83.xterm-dim { color: #5fff5f80; }.xterm-dom-renderer-owner-1 .xterm-bg-83 { background-color: #5fff5f; }.xterm-dom-renderer-owner-1 .xterm-fg-84 { color: #5fff87; }.xterm-dom-renderer-owner-1 .xterm-fg-84.xterm-dim { color: #5fff8780; }.xterm-dom-renderer-owner-1 .xterm-bg-84 { background-color: #5fff87; }.xterm-dom-renderer-owner-1 .xterm-fg-85 { color: #5fffaf; }.xterm-dom-renderer-owner-1 .xterm-fg-85.xterm-dim { color: #5fffaf80; }.xterm-dom-renderer-owner-1 .xterm-bg-85 { background-color: #5fffaf; }.xterm-dom-renderer-owner-1 .xterm-fg-86 { color: #5fffd7; }.xterm-dom-renderer-owner-1 .xterm-fg-86.xterm-dim { color: #5fffd780; }.xterm-dom-renderer-owner-1 .xterm-bg-86 { background-color: #5fffd7; }.xterm-dom-renderer-owner-1 .xterm-fg-87 { color: #5fffff; }.xterm-dom-renderer-owner-1 .xterm-fg-87.xterm-dim { color: #5fffff80; }.xterm-dom-renderer-owner-1 .xterm-bg-87 { background-color: #5fffff; }.xterm-dom-renderer-owner-1 .xterm-fg-88 { color: #870000; }.xterm-dom-renderer-owner-1 .xterm-fg-88.xterm-dim { color: #87000080; }.xterm-dom-renderer-owner-1 .xterm-bg-88 { background-color: #870000; }.xterm-dom-renderer-owner-1 .xterm-fg-89 { color: #87005f; }.xterm-dom-renderer-owner-1 .xterm-fg-89.xterm-dim { color: #87005f80; }.xterm-dom-renderer-owner-1 .xterm-bg-89 { background-color: #87005f; }.xterm-dom-renderer-owner-1 .xterm-fg-90 { color: #870087; }.xterm-dom-renderer-owner-1 .xterm-fg-90.xterm-dim { color: #87008780; }.xterm-dom-renderer-owner-1 .xterm-bg-90 { background-color: #870087; }.xterm-dom-renderer-owner-1 .xterm-fg-91 { color: #8700af; }.xterm-dom-renderer-owner-1 .xterm-fg-91.xterm-dim { color: #8700af80; }.xterm-dom-renderer-owner-1 .xterm-bg-91 { background-color: #8700af; }.xterm-dom-renderer-owner-1 .xterm-fg-92 { color: #8700d7; }.xterm-dom-renderer-owner-1 .xterm-fg-92.xterm-dim { color: #8700d780; }.xterm-dom-renderer-owner-1 .xterm-bg-92 { background-color: #8700d7; }.xterm-dom-renderer-owner-1 .xterm-fg-93 { color: #8700ff; }.xterm-dom-renderer-owner-1 .xterm-fg-93.xterm-dim { color: #8700ff80; }.xterm-dom-renderer-owner-1 .xterm-bg-93 { background-color: #8700ff; }.xterm-dom-renderer-owner-1 .xterm-fg-94 { color: #875f00; }.xterm-dom-renderer-owner-1 .xterm-fg-94.xterm-dim { color: #875f0080; }.xterm-dom-renderer-owner-1 .xterm-bg-94 { background-color: #875f00; }.xterm-dom-renderer-owner-1 .xterm-fg-95 { color: #875f5f; }.xterm-dom-renderer-owner-1 .xterm-fg-95.xterm-dim { color: #875f5f80; }.xterm-dom-renderer-owner-1 .xterm-bg-95 { background-color: #875f5f; }.xterm-dom-renderer-owner-1 .xterm-fg-96 { color: #875f87; }.xterm-dom-renderer-owner-1 .xterm-fg-96.xterm-dim { color: #875f8780; }.xterm-dom-renderer-owner-1 .xterm-bg-96 { background-color: #875f87; }.xterm-dom-renderer-owner-1 .xterm-fg-97 { color: #875faf; }.xterm-dom-renderer-owner-1 .xterm-fg-97.xterm-dim { color: #875faf80; }.xterm-dom-renderer-owner-1 .xterm-bg-97 { background-color: #875faf; }.xterm-dom-renderer-owner-1 .xterm-fg-98 { color: #875fd7; }.xterm-dom-renderer-owner-1 .xterm-fg-98.xterm-dim { color: #875fd780; }.xterm-dom-renderer-owner-1 .xterm-bg-98 { background-color: #875fd7; }.xterm-dom-renderer-owner-1 .xterm-fg-99 { color: #875fff; }.xterm-dom-renderer-owner-1 .xterm-fg-99.xterm-dim { color: #875fff80; }.xterm-dom-renderer-owner-1 .xterm-bg-99 { background-color: #875fff; }.xterm-dom-renderer-owner-1 .xterm-fg-100 { color: #878700; }.xterm-dom-renderer-owner-1 .xterm-fg-100.xterm-dim { color: #87870080; }.xterm-dom-renderer-owner-1 .xterm-bg-100 { background-color: #878700; }.xterm-dom-renderer-owner-1 .xterm-fg-101 { color: #87875f; }.xterm-dom-renderer-owner-1 .xterm-fg-101.xterm-dim { color: #87875f80; }.xterm-dom-renderer-owner-1 .xterm-bg-101 { background-color: #87875f; }.xterm-dom-renderer-owner-1 .xterm-fg-102 { color: #878787; }.xterm-dom-renderer-owner-1 .xterm-fg-102.xterm-dim { color: #87878780; }.xterm-dom-renderer-owner-1 .xterm-bg-102 { background-color: #878787; }.xterm-dom-renderer-owner-1 .xterm-fg-103 { color: #8787af; }.xterm-dom-renderer-owner-1 .xterm-fg-103.xterm-dim { color: #8787af80; }.xterm-dom-renderer-owner-1 .xterm-bg-103 { background-color: #8787af; }.xterm-dom-renderer-owner-1 .xterm-fg-104 { color: #8787d7; }.xterm-dom-renderer-owner-1 .xterm-fg-104.xterm-dim { color: #8787d780; }.xterm-dom-renderer-owner-1 .xterm-bg-104 { background-color: #8787d7; }.xterm-dom-renderer-owner-1 .xterm-fg-105 { color: #8787ff; }.xterm-dom-renderer-owner-1 .xterm-fg-105.xterm-dim { color: #8787ff80; }.xterm-dom-renderer-owner-1 .xterm-bg-105 { background-color: #8787ff; }.xterm-dom-renderer-owner-1 .xterm-fg-106 { color: #87af00; }.xterm-dom-renderer-owner-1 .xterm-fg-106.xterm-dim { color: #87af0080; }.xterm-dom-renderer-owner-1 .xterm-bg-106 { background-color: #87af00; }.xterm-dom-renderer-owner-1 .xterm-fg-107 { color: #87af5f; }.xterm-dom-renderer-owner-1 .xterm-fg-107.xterm-dim { color: #87af5f80; }.xterm-dom-renderer-owner-1 .xterm-bg-107 { background-color: #87af5f; }.xterm-dom-renderer-owner-1 .xterm-fg-108 { color: #87af87; }.xterm-dom-renderer-owner-1 .xterm-fg-108.xterm-dim { color: #87af8780; }.xterm-dom-renderer-owner-1 .xterm-bg-108 { background-color: #87af87; }.xterm-dom-renderer-owner-1 .xterm-fg-109 { color: #87afaf; }.xterm-dom-renderer-owner-1 .xterm-fg-109.xterm-dim { color: #87afaf80; }.xterm-dom-renderer-owner-1 .xterm-bg-109 { background-color: #87afaf; }.xterm-dom-renderer-owner-1 .xterm-fg-110 { color: #87afd7; }.xterm-dom-renderer-owner-1 .xterm-fg-110.xterm-dim { color: #87afd780; }.xterm-dom-renderer-owner-1 .xterm-bg-110 { background-color: #87afd7; }.xterm-dom-renderer-owner-1 .xterm-fg-111 { color: #87afff; }.xterm-dom-renderer-owner-1 .xterm-fg-111.xterm-dim { color: #87afff80; }.xterm-dom-renderer-owner-1 .xterm-bg-111 { background-color: #87afff; }.xterm-dom-renderer-owner-1 .xterm-fg-112 { color: #87d700; }.xterm-dom-renderer-owner-1 .xterm-fg-112.xterm-dim { color: #87d70080; }.xterm-dom-renderer-owner-1 .xterm-bg-112 { background-color: #87d700; }.xterm-dom-renderer-owner-1 .xterm-fg-113 { color: #87d75f; }.xterm-dom-renderer-owner-1 .xterm-fg-113.xterm-dim { color: #87d75f80; }.xterm-dom-renderer-owner-1 .xterm-bg-113 { background-color: #87d75f; }.xterm-dom-renderer-owner-1 .xterm-fg-114 { color: #87d787; }.xterm-dom-renderer-owner-1 .xterm-fg-114.xterm-dim { color: #87d78780; }.xterm-dom-renderer-owner-1 .xterm-bg-114 { background-color: #87d787; }.xterm-dom-renderer-owner-1 .xterm-fg-115 { color: #87d7af; }.xterm-dom-renderer-owner-1 .xterm-fg-115.xterm-dim { color: #87d7af80; }.xterm-dom-renderer-owner-1 .xterm-bg-115 { background-color: #87d7af; }.xterm-dom-renderer-owner-1 .xterm-fg-116 { color: #87d7d7; }.xterm-dom-renderer-owner-1 .xterm-fg-116.xterm-dim { color: #87d7d780; }.xterm-dom-renderer-owner-1 .xterm-bg-116 { background-color: #87d7d7; }.xterm-dom-renderer-owner-1 .xterm-fg-117 { color: #87d7ff; }.xterm-dom-renderer-owner-1 .xterm-fg-117.xterm-dim { color: #87d7ff80; }.xterm-dom-renderer-owner-1 .xterm-bg-117 { background-color: #87d7ff; }.xterm-dom-renderer-owner-1 .xterm-fg-118 { color: #87ff00; }.xterm-dom-renderer-owner-1 .xterm-fg-118.xterm-dim { color: #87ff0080; }.xterm-dom-renderer-owner-1 .xterm-bg-118 { background-color: #87ff00; }.xterm-dom-renderer-owner-1 .xterm-fg-119 { color: #87ff5f; }.xterm-dom-renderer-owner-1 .xterm-fg-119.xterm-dim { color: #87ff5f80; }.xterm-dom-renderer-owner-1 .xterm-bg-119 { background-color: #87ff5f; }.xterm-dom-renderer-owner-1 .xterm-fg-120 { color: #87ff87; }.xterm-dom-renderer-owner-1 .xterm-fg-120.xterm-dim { color: #87ff8780; }.xterm-dom-renderer-owner-1 .xterm-bg-120 { background-color: #87ff87; }.xterm-dom-renderer-owner-1 .xterm-fg-121 { color: #87ffaf; }.xterm-dom-renderer-owner-1 .xterm-fg-121.xterm-dim { color: #87ffaf80; }.xterm-dom-renderer-owner-1 .xterm-bg-121 { background-color: #87ffaf; }.xterm-dom-renderer-owner-1 .xterm-fg-122 { color: #87ffd7; }.xterm-dom-renderer-owner-1 .xterm-fg-122.xterm-dim { color: #87ffd780; }.xterm-dom-renderer-owner-1 .xterm-bg-122 { background-color: #87ffd7; }.xterm-dom-renderer-owner-1 .xterm-fg-123 { color: #87ffff; }.xterm-dom-renderer-owner-1 .xterm-fg-123.xterm-dim { color: #87ffff80; }.xterm-dom-renderer-owner-1 .xterm-bg-123 { background-color: #87ffff; }.xterm-dom-renderer-owner-1 .xterm-fg-124 { color: #af0000; }.xterm-dom-renderer-owner-1 .xterm-fg-124.xterm-dim { color: #af000080; }.xterm-dom-renderer-owner-1 .xterm-bg-124 { background-color: #af0000; }.xterm-dom-renderer-owner-1 .xterm-fg-125 { color: #af005f; }.xterm-dom-renderer-owner-1 .xterm-fg-125.xterm-dim { color: #af005f80; }.xterm-dom-renderer-owner-1 .xterm-bg-125 { background-color: #af005f; }.xterm-dom-renderer-owner-1 .xterm-fg-126 { color: #af0087; }.xterm-dom-renderer-owner-1 .xterm-fg-126.xterm-dim { color: #af008780; }.xterm-dom-renderer-owner-1 .xterm-bg-126 { background-color: #af0087; }.xterm-dom-renderer-owner-1 .xterm-fg-127 { color: #af00af; }.xterm-dom-renderer-owner-1 .xterm-fg-127.xterm-dim { color: #af00af80; }.xterm-dom-renderer-owner-1 .xterm-bg-127 { background-color: #af00af; }.xterm-dom-renderer-owner-1 .xterm-fg-128 { color: #af00d7; }.xterm-dom-renderer-owner-1 .xterm-fg-128.xterm-dim { color: #af00d780; }.xterm-dom-renderer-owner-1 .xterm-bg-128 { background-color: #af00d7; }.xterm-dom-renderer-owner-1 .xterm-fg-129 { color: #af00ff; }.xterm-dom-renderer-owner-1 .xterm-fg-129.xterm-dim { color: #af00ff80; }.xterm-dom-renderer-owner-1 .xterm-bg-129 { background-color: #af00ff; }.xterm-dom-renderer-owner-1 .xterm-fg-130 { color: #af5f00; }.xterm-dom-renderer-owner-1 .xterm-fg-130.xterm-dim { color: #af5f0080; }.xterm-dom-renderer-owner-1 .xterm-bg-130 { background-color: #af5f00; }.xterm-dom-renderer-owner-1 .xterm-fg-131 { color: #af5f5f; }.xterm-dom-renderer-owner-1 .xterm-fg-131.xterm-dim { color: #af5f5f80; }.xterm-dom-renderer-owner-1 .xterm-bg-131 { background-color: #af5f5f; }.xterm-dom-renderer-owner-1 .xterm-fg-132 { color: #af5f87; }.xterm-dom-renderer-owner-1 .xterm-fg-132.xterm-dim { color: #af5f8780; }.xterm-dom-renderer-owner-1 .xterm-bg-132 { background-color: #af5f87; }.xterm-dom-renderer-owner-1 .xterm-fg-133 { color: #af5faf; }.xterm-dom-renderer-owner-1 .xterm-fg-133.xterm-dim { color: #af5faf80; }.xterm-dom-renderer-owner-1 .xterm-bg-133 { background-color: #af5faf; }.xterm-dom-renderer-owner-1 .xterm-fg-134 { color: #af5fd7; }.xterm-dom-renderer-owner-1 .xterm-fg-134.xterm-dim { color: #af5fd780; }.xterm-dom-renderer-owner-1 .xterm-bg-134 { background-color: #af5fd7; }.xterm-dom-renderer-owner-1 .xterm-fg-135 { color: #af5fff; }.xterm-dom-renderer-owner-1 .xterm-fg-135.xterm-dim { color: #af5fff80; }.xterm-dom-renderer-owner-1 .xterm-bg-135 { background-color: #af5fff; }.xterm-dom-renderer-owner-1 .xterm-fg-136 { color: #af8700; }.xterm-dom-renderer-owner-1 .xterm-fg-136.xterm-dim { color: #af870080; }.xterm-dom-renderer-owner-1 .xterm-bg-136 { background-color: #af8700; }.xterm-dom-renderer-owner-1 .xterm-fg-137 { color: #af875f; }.xterm-dom-renderer-owner-1 .xterm-fg-137.xterm-dim { color: #af875f80; }.xterm-dom-renderer-owner-1 .xterm-bg-137 { background-color: #af875f; }.xterm-dom-renderer-owner-1 .xterm-fg-138 { color: #af8787; }.xterm-dom-renderer-owner-1 .xterm-fg-138.xterm-dim { color: #af878780; }.xterm-dom-renderer-owner-1 .xterm-bg-138 { background-color: #af8787; }.xterm-dom-renderer-owner-1 .xterm-fg-139 { color: #af87af; }.xterm-dom-renderer-owner-1 .xterm-fg-139.xterm-dim { color: #af87af80; }.xterm-dom-renderer-owner-1 .xterm-bg-139 { background-color: #af87af; }.xterm-dom-renderer-owner-1 .xterm-fg-140 { color: #af87d7; }.xterm-dom-renderer-owner-1 .xterm-fg-140.xterm-dim { color: #af87d780; }.xterm-dom-renderer-owner-1 .xterm-bg-140 { background-color: #af87d7; }.xterm-dom-renderer-owner-1 .xterm-fg-141 { color: #af87ff; }.xterm-dom-renderer-owner-1 .xterm-fg-141.xterm-dim { color: #af87ff80; }.xterm-dom-renderer-owner-1 .xterm-bg-141 { background-color: #af87ff; }.xterm-dom-renderer-owner-1 .xterm-fg-142 { color: #afaf00; }.xterm-dom-renderer-owner-1 .xterm-fg-142.xterm-dim { color: #afaf0080; }.xterm-dom-renderer-owner-1 .xterm-bg-142 { background-color: #afaf00; }.xterm-dom-renderer-owner-1 .xterm-fg-143 { color: #afaf5f; }.xterm-dom-renderer-owner-1 .xterm-fg-143.xterm-dim { color: #afaf5f80; }.xterm-dom-renderer-owner-1 .xterm-bg-143 { background-color: #afaf5f; }.xterm-dom-renderer-owner-1 .xterm-fg-144 { color: #afaf87; }.xterm-dom-renderer-owner-1 .xterm-fg-144.xterm-dim { color: #afaf8780; }.xterm-dom-renderer-owner-1 .xterm-bg-144 { background-color: #afaf87; }.xterm-dom-renderer-owner-1 .xterm-fg-145 { color: #afafaf; }.xterm-dom-renderer-owner-1 .xterm-fg-145.xterm-dim { color: #afafaf80; }.xterm-dom-renderer-owner-1 .xterm-bg-145 { background-color: #afafaf; }.xterm-dom-renderer-owner-1 .xterm-fg-146 { color: #afafd7; }.xterm-dom-renderer-owner-1 .xterm-fg-146.xterm-dim { color: #afafd780; }.xterm-dom-renderer-owner-1 .xterm-bg-146 { background-color: #afafd7; }.xterm-dom-renderer-owner-1 .xterm-fg-147 { color: #afafff; }.xterm-dom-renderer-owner-1 .xterm-fg-147.xterm-dim { color: #afafff80; }.xterm-dom-renderer-owner-1 .xterm-bg-147 { background-color: #afafff; }.xterm-dom-renderer-owner-1 .xterm-fg-148 { color: #afd700; }.xterm-dom-renderer-owner-1 .xterm-fg-148.xterm-dim { color: #afd70080; }.xterm-dom-renderer-owner-1 .xterm-bg-148 { background-color: #afd700; }.xterm-dom-renderer-owner-1 .xterm-fg-149 { color: #afd75f; }.xterm-dom-renderer-owner-1 .xterm-fg-149.xterm-dim { color: #afd75f80; }.xterm-dom-renderer-owner-1 .xterm-bg-149 { background-color: #afd75f; }.xterm-dom-renderer-owner-1 .xterm-fg-150 { color: #afd787; }.xterm-dom-renderer-owner-1 .xterm-fg-150.xterm-dim { color: #afd78780; }.xterm-dom-renderer-owner-1 .xterm-bg-150 { background-color: #afd787; }.xterm-dom-renderer-owner-1 .xterm-fg-151 { color: #afd7af; }.xterm-dom-renderer-owner-1 .xterm-fg-151.xterm-dim { color: #afd7af80; }.xterm-dom-renderer-owner-1 .xterm-bg-151 { background-color: #afd7af; }.xterm-dom-renderer-owner-1 .xterm-fg-152 { color: #afd7d7; }.xterm-dom-renderer-owner-1 .xterm-fg-152.xterm-dim { color: #afd7d780; }.xterm-dom-renderer-owner-1 .xterm-bg-152 { background-color: #afd7d7; }.xterm-dom-renderer-owner-1 .xterm-fg-153 { color: #afd7ff; }.xterm-dom-renderer-owner-1 .xterm-fg-153.xterm-dim { color: #afd7ff80; }.xterm-dom-renderer-owner-1 .xterm-bg-153 { background-color: #afd7ff; }.xterm-dom-renderer-owner-1 .xterm-fg-154 { color: #afff00; }.xterm-dom-renderer-owner-1 .xterm-fg-154.xterm-dim { color: #afff0080; }.xterm-dom-renderer-owner-1 .xterm-bg-154 { background-color: #afff00; }.xterm-dom-renderer-owner-1 .xterm-fg-155 { color: #afff5f; }.xterm-dom-renderer-owner-1 .xterm-fg-155.xterm-dim { color: #afff5f80; }.xterm-dom-renderer-owner-1 .xterm-bg-155 { background-color: #afff5f; }.xterm-dom-renderer-owner-1 .xterm-fg-156 { color: #afff87; }.xterm-dom-renderer-owner-1 .xterm-fg-156.xterm-dim { color: #afff8780; }.xterm-dom-renderer-owner-1 .xterm-bg-156 { background-color: #afff87; }.xterm-dom-renderer-owner-1 .xterm-fg-157 { color: #afffaf; }.xterm-dom-renderer-owner-1 .xterm-fg-157.xterm-dim { color: #afffaf80; }.xterm-dom-renderer-owner-1 .xterm-bg-157 { background-color: #afffaf; }.xterm-dom-renderer-owner-1 .xterm-fg-158 { color: #afffd7; }.xterm-dom-renderer-owner-1 .xterm-fg-158.xterm-dim { color: #afffd780; }.xterm-dom-renderer-owner-1 .xterm-bg-158 { background-color: #afffd7; }.xterm-dom-renderer-owner-1 .xterm-fg-159 { color: #afffff; }.xterm-dom-renderer-owner-1 .xterm-fg-159.xterm-dim { color: #afffff80; }.xterm-dom-renderer-owner-1 .xterm-bg-159 { background-color: #afffff; }.xterm-dom-renderer-owner-1 .xterm-fg-160 { color: #d70000; }.xterm-dom-renderer-owner-1 .xterm-fg-160.xterm-dim { color: #d7000080; }.xterm-dom-renderer-owner-1 .xterm-bg-160 { background-color: #d70000; }.xterm-dom-renderer-owner-1 .xterm-fg-161 { color: #d7005f; }.xterm-dom-renderer-owner-1 .xterm-fg-161.xterm-dim { color: #d7005f80; }.xterm-dom-renderer-owner-1 .xterm-bg-161 { background-color: #d7005f; }.xterm-dom-renderer-owner-1 .xterm-fg-162 { color: #d70087; }.xterm-dom-renderer-owner-1 .xterm-fg-162.xterm-dim { color: #d7008780; }.xterm-dom-renderer-owner-1 .xterm-bg-162 { background-color: #d70087; }.xterm-dom-renderer-owner-1 .xterm-fg-163 { color: #d700af; }.xterm-dom-renderer-owner-1 .xterm-fg-163.xterm-dim { color: #d700af80; }.xterm-dom-renderer-owner-1 .xterm-bg-163 { background-color: #d700af; }.xterm-dom-renderer-owner-1 .xterm-fg-164 { color: #d700d7; }.xterm-dom-renderer-owner-1 .xterm-fg-164.xterm-dim { color: #d700d780; }.xterm-dom-renderer-owner-1 .xterm-bg-164 { background-color: #d700d7; }.xterm-dom-renderer-owner-1 .xterm-fg-165 { color: #d700ff; }.xterm-dom-renderer-owner-1 .xterm-fg-165.xterm-dim { color: #d700ff80; }.xterm-dom-renderer-owner-1 .xterm-bg-165 { background-color: #d700ff; }.xterm-dom-renderer-owner-1 .xterm-fg-166 { color: #d75f00; }.xterm-dom-renderer-owner-1 .xterm-fg-166.xterm-dim { color: #d75f0080; }.xterm-dom-renderer-owner-1 .xterm-bg-166 { background-color: #d75f00; }.xterm-dom-renderer-owner-1 .xterm-fg-167 { color: #d75f5f; }.xterm-dom-renderer-owner-1 .xterm-fg-167.xterm-dim { color: #d75f5f80; }.xterm-dom-renderer-owner-1 .xterm-bg-167 { background-color: #d75f5f; }.xterm-dom-renderer-owner-1 .xterm-fg-168 { color: #d75f87; }.xterm-dom-renderer-owner-1 .xterm-fg-168.xterm-dim { color: #d75f8780; }.xterm-dom-renderer-owner-1 .xterm-bg-168 { background-color: #d75f87; }.xterm-dom-renderer-owner-1 .xterm-fg-169 { color: #d75faf; }.xterm-dom-renderer-owner-1 .xterm-fg-169.xterm-dim { color: #d75faf80; }.xterm-dom-renderer-owner-1 .xterm-bg-169 { background-color: #d75faf; }.xterm-dom-renderer-owner-1 .xterm-fg-170 { color: #d75fd7; }.xterm-dom-renderer-owner-1 .xterm-fg-170.xterm-dim { color: #d75fd780; }.xterm-dom-renderer-owner-1 .xterm-bg-170 { background-color: #d75fd7; }.xterm-dom-renderer-owner-1 .xterm-fg-171 { color: #d75fff; }.xterm-dom-renderer-owner-1 .xterm-fg-171.xterm-dim { color: #d75fff80; }.xterm-dom-renderer-owner-1 .xterm-bg-171 { background-color: #d75fff; }.xterm-dom-renderer-owner-1 .xterm-fg-172 { color: #d78700; }.xterm-dom-renderer-owner-1 .xterm-fg-172.xterm-dim { color: #d7870080; }.xterm-dom-renderer-owner-1 .xterm-bg-172 { background-color: #d78700; }.xterm-dom-renderer-owner-1 .xterm-fg-173 { color: #d7875f; }.xterm-dom-renderer-owner-1 .xterm-fg-173.xterm-dim { color: #d7875f80; }.xterm-dom-renderer-owner-1 .xterm-bg-173 { background-color: #d7875f; }.xterm-dom-renderer-owner-1 .xterm-fg-174 { color: #d78787; }.xterm-dom-renderer-owner-1 .xterm-fg-174.xterm-dim { color: #d7878780; }.xterm-dom-renderer-owner-1 .xterm-bg-174 { background-color: #d78787; }.xterm-dom-renderer-owner-1 .xterm-fg-175 { color: #d787af; }.xterm-dom-renderer-owner-1 .xterm-fg-175.xterm-dim { color: #d787af80; }.xterm-dom-renderer-owner-1 .xterm-bg-175 { background-color: #d787af; }.xterm-dom-renderer-owner-1 .xterm-fg-176 { color: #d787d7; }.xterm-dom-renderer-owner-1 .xterm-fg-176.xterm-dim { color: #d787d780; }.xterm-dom-renderer-owner-1 .xterm-bg-176 { background-color: #d787d7; }.xterm-dom-renderer-owner-1 .xterm-fg-177 { color: #d787ff; }.xterm-dom-renderer-owner-1 .xterm-fg-177.xterm-dim { color: #d787ff80; }.xterm-dom-renderer-owner-1 .xterm-bg-177 { background-color: #d787ff; }.xterm-dom-renderer-owner-1 .xterm-fg-178 { color: #d7af00; }.xterm-dom-renderer-owner-1 .xterm-fg-178.xterm-dim { color: #d7af0080; }.xterm-dom-renderer-owner-1 .xterm-bg-178 { background-color: #d7af00; }.xterm-dom-renderer-owner-1 .xterm-fg-179 { color: #d7af5f; }.xterm-dom-renderer-owner-1 .xterm-fg-179.xterm-dim { color: #d7af5f80; }.xterm-dom-renderer-owner-1 .xterm-bg-179 { background-color: #d7af5f; }.xterm-dom-renderer-owner-1 .xterm-fg-180 { color: #d7af87; }.xterm-dom-renderer-owner-1 .xterm-fg-180.xterm-dim { color: #d7af8780; }.xterm-dom-renderer-owner-1 .xterm-bg-180 { background-color: #d7af87; }.xterm-dom-renderer-owner-1 .xterm-fg-181 { color: #d7afaf; }.xterm-dom-renderer-owner-1 .xterm-fg-181.xterm-dim { color: #d7afaf80; }.xterm-dom-renderer-owner-1 .xterm-bg-181 { background-color: #d7afaf; }.xterm-dom-renderer-owner-1 .xterm-fg-182 { color: #d7afd7; }.xterm-dom-renderer-owner-1 .xterm-fg-182.xterm-dim { color: #d7afd780; }.xterm-dom-renderer-owner-1 .xterm-bg-182 { background-color: #d7afd7; }.xterm-dom-renderer-owner-1 .xterm-fg-183 { color: #d7afff; }.xterm-dom-renderer-owner-1 .xterm-fg-183.xterm-dim { color: #d7afff80; }.xterm-dom-renderer-owner-1 .xterm-bg-183 { background-color: #d7afff; }.xterm-dom-renderer-owner-1 .xterm-fg-184 { color: #d7d700; }.xterm-dom-renderer-owner-1 .xterm-fg-184.xterm-dim { color: #d7d70080; }.xterm-dom-renderer-owner-1 .xterm-bg-184 { background-color: #d7d700; }.xterm-dom-renderer-owner-1 .xterm-fg-185 { color: #d7d75f; }.xterm-dom-renderer-owner-1 .xterm-fg-185.xterm-dim { color: #d7d75f80; }.xterm-dom-renderer-owner-1 .xterm-bg-185 { background-color: #d7d75f; }.xterm-dom-renderer-owner-1 .xterm-fg-186 { color: #d7d787; }.xterm-dom-renderer-owner-1 .xterm-fg-186.xterm-dim { color: #d7d78780; }.xterm-dom-renderer-owner-1 .xterm-bg-186 { background-color: #d7d787; }.xterm-dom-renderer-owner-1 .xterm-fg-187 { color: #d7d7af; }.xterm-dom-renderer-owner-1 .xterm-fg-187.xterm-dim { color: #d7d7af80; }.xterm-dom-renderer-owner-1 .xterm-bg-187 { background-color: #d7d7af; }.xterm-dom-renderer-owner-1 .xterm-fg-188 { color: #d7d7d7; }.xterm-dom-renderer-owner-1 .xterm-fg-188.xterm-dim { color: #d7d7d780; }.xterm-dom-renderer-owner-1 .xterm-bg-188 { background-color: #d7d7d7; }.xterm-dom-renderer-owner-1 .xterm-fg-189 { color: #d7d7ff; }.xterm-dom-renderer-owner-1 .xterm-fg-189.xterm-dim { color: #d7d7ff80; }.xterm-dom-renderer-owner-1 .xterm-bg-189 { background-color: #d7d7ff; }.xterm-dom-renderer-owner-1 .xterm-fg-190 { color: #d7ff00; }.xterm-dom-renderer-owner-1 .xterm-fg-190.xterm-dim { color: #d7ff0080; }.xterm-dom-renderer-owner-1 .xterm-bg-190 { background-color: #d7ff00; }.xterm-dom-renderer-owner-1 .xterm-fg-191 { color: #d7ff5f; }.xterm-dom-renderer-owner-1 .xterm-fg-191.xterm-dim { color: #d7ff5f80; }.xterm-dom-renderer-owner-1 .xterm-bg-191 { background-color: #d7ff5f; }.xterm-dom-renderer-owner-1 .xterm-fg-192 { color: #d7ff87; }.xterm-dom-renderer-owner-1 .xterm-fg-192.xterm-dim { color: #d7ff8780; }.xterm-dom-renderer-owner-1 .xterm-bg-192 { background-color: #d7ff87; }.xterm-dom-renderer-owner-1 .xterm-fg-193 { color: #d7ffaf; }.xterm-dom-renderer-owner-1 .xterm-fg-193.xterm-dim { color: #d7ffaf80; }.xterm-dom-renderer-owner-1 .xterm-bg-193 { background-color: #d7ffaf; }.xterm-dom-renderer-owner-1 .xterm-fg-194 { color: #d7ffd7; }.xterm-dom-renderer-owner-1 .xterm-fg-194.xterm-dim { color: #d7ffd780; }.xterm-dom-renderer-owner-1 .xterm-bg-194 { background-color: #d7ffd7; }.xterm-dom-renderer-owner-1 .xterm-fg-195 { color: #d7ffff; }.xterm-dom-renderer-owner-1 .xterm-fg-195.xterm-dim { color: #d7ffff80; }.xterm-dom-renderer-owner-1 .xterm-bg-195 { background-color: #d7ffff; }.xterm-dom-renderer-owner-1 .xterm-fg-196 { color: #ff0000; }.xterm-dom-renderer-owner-1 .xterm-fg-196.xterm-dim { color: #ff000080; }.xterm-dom-renderer-owner-1 .xterm-bg-196 { background-color: #ff0000; }.xterm-dom-renderer-owner-1 .xterm-fg-197 { color: #ff005f; }.xterm-dom-renderer-owner-1 .xterm-fg-197.xterm-dim { color: #ff005f80; }.xterm-dom-renderer-owner-1 .xterm-bg-197 { background-color: #ff005f; }.xterm-dom-renderer-owner-1 .xterm-fg-198 { color: #ff0087; }.xterm-dom-renderer-owner-1 .xterm-fg-198.xterm-dim { color: #ff008780; }.xterm-dom-renderer-owner-1 .xterm-bg-198 { background-color: #ff0087; }.xterm-dom-renderer-owner-1 .xterm-fg-199 { color: #ff00af; }.xterm-dom-renderer-owner-1 .xterm-fg-199.xterm-dim { color: #ff00af80; }.xterm-dom-renderer-owner-1 .xterm-bg-199 { background-color: #ff00af; }.xterm-dom-renderer-owner-1 .xterm-fg-200 { color: #ff00d7; }.xterm-dom-renderer-owner-1 .xterm-fg-200.xterm-dim { color: #ff00d780; }.xterm-dom-renderer-owner-1 .xterm-bg-200 { background-color: #ff00d7; }.xterm-dom-renderer-owner-1 .xterm-fg-201 { color: #ff00ff; }.xterm-dom-renderer-owner-1 .xterm-fg-201.xterm-dim { color: #ff00ff80; }.xterm-dom-renderer-owner-1 .xterm-bg-201 { background-color: #ff00ff; }.xterm-dom-renderer-owner-1 .xterm-fg-202 { color: #ff5f00; }.xterm-dom-renderer-owner-1 .xterm-fg-202.xterm-dim { color: #ff5f0080; }.xterm-dom-renderer-owner-1 .xterm-bg-202 { background-color: #ff5f00; }.xterm-dom-renderer-owner-1 .xterm-fg-203 { color: #ff5f5f; }.xterm-dom-renderer-owner-1 .xterm-fg-203.xterm-dim { color: #ff5f5f80; }.xterm-dom-renderer-owner-1 .xterm-bg-203 { background-color: #ff5f5f; }.xterm-dom-renderer-owner-1 .xterm-fg-204 { color: #ff5f87; }.xterm-dom-renderer-owner-1 .xterm-fg-204.xterm-dim { color: #ff5f8780; }.xterm-dom-renderer-owner-1 .xterm-bg-204 { background-color: #ff5f87; }.xterm-dom-renderer-owner-1 .xterm-fg-205 { color: #ff5faf; }.xterm-dom-renderer-owner-1 .xterm-fg-205.xterm-dim { color: #ff5faf80; }.xterm-dom-renderer-owner-1 .xterm-bg-205 { background-color: #ff5faf; }.xterm-dom-renderer-owner-1 .xterm-fg-206 { color: #ff5fd7; }.xterm-dom-renderer-owner-1 .xterm-fg-206.xterm-dim { color: #ff5fd780; }.xterm-dom-renderer-owner-1 .xterm-bg-206 { background-color: #ff5fd7; }.xterm-dom-renderer-owner-1 .xterm-fg-207 { color: #ff5fff; }.xterm-dom-renderer-owner-1 .xterm-fg-207.xterm-dim { color: #ff5fff80; }.xterm-dom-renderer-owner-1 .xterm-bg-207 { background-color: #ff5fff; }.xterm-dom-renderer-owner-1 .xterm-fg-208 { color: #ff8700; }.xterm-dom-renderer-owner-1 .xterm-fg-208.xterm-dim { color: #ff870080; }.xterm-dom-renderer-owner-1 .xterm-bg-208 { background-color: #ff8700; }.xterm-dom-renderer-owner-1 .xterm-fg-209 { color: #ff875f; }.xterm-dom-renderer-owner-1 .xterm-fg-209.xterm-dim { color: #ff875f80; }.xterm-dom-renderer-owner-1 .xterm-bg-209 { background-color: #ff875f; }.xterm-dom-renderer-owner-1 .xterm-fg-210 { color: #ff8787; }.xterm-dom-renderer-owner-1 .xterm-fg-210.xterm-dim { color: #ff878780; }.xterm-dom-renderer-owner-1 .xterm-bg-210 { background-color: #ff8787; }.xterm-dom-renderer-owner-1 .xterm-fg-211 { color: #ff87af; }.xterm-dom-renderer-owner-1 .xterm-fg-211.xterm-dim { color: #ff87af80; }.xterm-dom-renderer-owner-1 .xterm-bg-211 { background-color: #ff87af; }.xterm-dom-renderer-owner-1 .xterm-fg-212 { color: #ff87d7; }.xterm-dom-renderer-owner-1 .xterm-fg-212.xterm-dim { color: #ff87d780; }.xterm-dom-renderer-owner-1 .xterm-bg-212 { background-color: #ff87d7; }.xterm-dom-renderer-owner-1 .xterm-fg-213 { color: #ff87ff; }.xterm-dom-renderer-owner-1 .xterm-fg-213.xterm-dim { color: #ff87ff80; }.xterm-dom-renderer-owner-1 .xterm-bg-213 { background-color: #ff87ff; }.xterm-dom-renderer-owner-1 .xterm-fg-214 { color: #ffaf00; }.xterm-dom-renderer-owner-1 .xterm-fg-214.xterm-dim { color: #ffaf0080; }.xterm-dom-renderer-owner-1 .xterm-bg-214 { background-color: #ffaf00; }.xterm-dom-renderer-owner-1 .xterm-fg-215 { color: #ffaf5f; }.xterm-dom-renderer-owner-1 .xterm-fg-215.xterm-dim { color: #ffaf5f80; }.xterm-dom-renderer-owner-1 .xterm-bg-215 { background-color: #ffaf5f; }.xterm-dom-renderer-owner-1 .xterm-fg-216 { color: #ffaf87; }.xterm-dom-renderer-owner-1 .xterm-fg-216.xterm-dim { color: #ffaf8780; }.xterm-dom-renderer-owner-1 .xterm-bg-216 { background-color: #ffaf87; }.xterm-dom-renderer-owner-1 .xterm-fg-217 { color: #ffafaf; }.xterm-dom-renderer-owner-1 .xterm-fg-217.xterm-dim { color: #ffafaf80; }.xterm-dom-renderer-owner-1 .xterm-bg-217 { background-color: #ffafaf; }.xterm-dom-renderer-owner-1 .xterm-fg-218 { color: #ffafd7; }.xterm-dom-renderer-owner-1 .xterm-fg-218.xterm-dim { color: #ffafd780; }.xterm-dom-renderer-owner-1 .xterm-bg-218 { background-color: #ffafd7; }.xterm-dom-renderer-owner-1 .xterm-fg-219 { color: #ffafff; }.xterm-dom-renderer-owner-1 .xterm-fg-219.xterm-dim { color: #ffafff80; }.xterm-dom-renderer-owner-1 .xterm-bg-219 { background-color: #ffafff; }.xterm-dom-renderer-owner-1 .xterm-fg-220 { color: #ffd700; }.xterm-dom-renderer-owner-1 .xterm-fg-220.xterm-dim { color: #ffd70080; }.xterm-dom-renderer-owner-1 .xterm-bg-220 { background-color: #ffd700; }.xterm-dom-renderer-owner-1 .xterm-fg-221 { color: #ffd75f; }.xterm-dom-renderer-owner-1 .xterm-fg-221.xterm-dim { color: #ffd75f80; }.xterm-dom-renderer-owner-1 .xterm-bg-221 { background-color: #ffd75f; }.xterm-dom-renderer-owner-1 .xterm-fg-222 { color: #ffd787; }.xterm-dom-renderer-owner-1 .xterm-fg-222.xterm-dim { color: #ffd78780; }.xterm-dom-renderer-owner-1 .xterm-bg-222 { background-color: #ffd787; }.xterm-dom-renderer-owner-1 .xterm-fg-223 { color: #ffd7af; }.xterm-dom-renderer-owner-1 .xterm-fg-223.xterm-dim { color: #ffd7af80; }.xterm-dom-renderer-owner-1 .xterm-bg-223 { background-color: #ffd7af; }.xterm-dom-renderer-owner-1 .xterm-fg-224 { color: #ffd7d7; }.xterm-dom-renderer-owner-1 .xterm-fg-224.xterm-dim { color: #ffd7d780; }.xterm-dom-renderer-owner-1 .xterm-bg-224 { background-color: #ffd7d7; }.xterm-dom-renderer-owner-1 .xterm-fg-225 { color: #ffd7ff; }.xterm-dom-renderer-owner-1 .xterm-fg-225.xterm-dim { color: #ffd7ff80; }.xterm-dom-renderer-owner-1 .xterm-bg-225 { background-color: #ffd7ff; }.xterm-dom-renderer-owner-1 .xterm-fg-226 { color: #ffff00; }.xterm-dom-renderer-owner-1 .xterm-fg-226.xterm-dim { color: #ffff0080; }.xterm-dom-renderer-owner-1 .xterm-bg-226 { background-color: #ffff00; }.xterm-dom-renderer-owner-1 .xterm-fg-227 { color: #ffff5f; }.xterm-dom-renderer-owner-1 .xterm-fg-227.xterm-dim { color: #ffff5f80; }.xterm-dom-renderer-owner-1 .xterm-bg-227 { background-color: #ffff5f; }.xterm-dom-renderer-owner-1 .xterm-fg-228 { color: #ffff87; }.xterm-dom-renderer-owner-1 .xterm-fg-228.xterm-dim { color: #ffff8780; }.xterm-dom-renderer-owner-1 .xterm-bg-228 { background-color: #ffff87; }.xterm-dom-renderer-owner-1 .xterm-fg-229 { color: #ffffaf; }.xterm-dom-renderer-owner-1 .xterm-fg-229.xterm-dim { color: #ffffaf80; }.xterm-dom-renderer-owner-1 .xterm-bg-229 { background-color: #ffffaf; }.xterm-dom-renderer-owner-1 .xterm-fg-230 { color: #ffffd7; }.xterm-dom-renderer-owner-1 .xterm-fg-230.xterm-dim { color: #ffffd780; }.xterm-dom-renderer-owner-1 .xterm-bg-230 { background-color: #ffffd7; }.xterm-dom-renderer-owner-1 .xterm-fg-231 { color: #ffffff; }.xterm-dom-renderer-owner-1 .xterm-fg-231.xterm-dim { color: #ffffff80; }.xterm-dom-renderer-owner-1 .xterm-bg-231 { background-color: #ffffff; }.xterm-dom-renderer-owner-1 .xterm-fg-232 { color: #080808; }.xterm-dom-renderer-owner-1 .xterm-fg-232.xterm-dim { color: #08080880; }.xterm-dom-renderer-owner-1 .xterm-bg-232 { background-color: #080808; }.xterm-dom-renderer-owner-1 .xterm-fg-233 { color: #121212; }.xterm-dom-renderer-owner-1 .xterm-fg-233.xterm-dim { color: #12121280; }.xterm-dom-renderer-owner-1 .xterm-bg-233 { background-color: #121212; }.xterm-dom-renderer-owner-1 .xterm-fg-234 { color: #1c1c1c; }.xterm-dom-renderer-owner-1 .xterm-fg-234.xterm-dim { color: #1c1c1c80; }.xterm-dom-renderer-owner-1 .xterm-bg-234 { background-color: #1c1c1c; }.xterm-dom-renderer-owner-1 .xterm-fg-235 { color: #262626; }.xterm-dom-renderer-owner-1 .xterm-fg-235.xterm-dim { color: #26262680; }.xterm-dom-renderer-owner-1 .xterm-bg-235 { background-color: #262626; }.xterm-dom-renderer-owner-1 .xterm-fg-236 { color: #303030; }.xterm-dom-renderer-owner-1 .xterm-fg-236.xterm-dim { color: #30303080; }.xterm-dom-renderer-owner-1 .xterm-bg-236 { background-color: #303030; }.xterm-dom-renderer-owner-1 .xterm-fg-237 { color: #3a3a3a; }.xterm-dom-renderer-owner-1 .xterm-fg-237.xterm-dim { color: #3a3a3a80; }.xterm-dom-renderer-owner-1 .xterm-bg-237 { background-color: #3a3a3a; }.xterm-dom-renderer-owner-1 .xterm-fg-238 { color: #444444; }.xterm-dom-renderer-owner-1 .xterm-fg-238.xterm-dim { color: #44444480; }.xterm-dom-renderer-owner-1 .xterm-bg-238 { background-color: #444444; }.xterm-dom-renderer-owner-1 .xterm-fg-239 { color: #4e4e4e; }.xterm-dom-renderer-owner-1 .xterm-fg-239.xterm-dim { color: #4e4e4e80; }.xterm-dom-renderer-owner-1 .xterm-bg-239 { background-color: #4e4e4e; }.xterm-dom-renderer-owner-1 .xterm-fg-240 { color: #585858; }.xterm-dom-renderer-owner-1 .xterm-fg-240.xterm-dim { color: #58585880; }.xterm-dom-renderer-owner-1 .xterm-bg-240 { background-color: #585858; }.xterm-dom-renderer-owner-1 .xterm-fg-241 { color: #626262; }.xterm-dom-renderer-owner-1 .xterm-fg-241.xterm-dim { color: #62626280; }.xterm-dom-renderer-owner-1 .xterm-bg-241 { background-color: #626262; }.xterm-dom-renderer-owner-1 .xterm-fg-242 { color: #6c6c6c; }.xterm-dom-renderer-owner-1 .xterm-fg-242.xterm-dim { color: #6c6c6c80; }.xterm-dom-renderer-owner-1 .xterm-bg-242 { background-color: #6c6c6c; }.xterm-dom-renderer-owner-1 .xterm-fg-243 { color: #767676; }.xterm-dom-renderer-owner-1 .xterm-fg-243.xterm-dim { color: #76767680; }.xterm-dom-renderer-owner-1 .xterm-bg-243 { background-color: #767676; }.xterm-dom-renderer-owner-1 .xterm-fg-244 { color: #808080; }.xterm-dom-renderer-owner-1 .xterm-fg-244.xterm-dim { color: #80808080; }.xterm-dom-renderer-owner-1 .xterm-bg-244 { background-color: #808080; }.xterm-dom-renderer-owner-1 .xterm-fg-245 { color: #8a8a8a; }.xterm-dom-renderer-owner-1 .xterm-fg-245.xterm-dim { color: #8a8a8a80; }.xterm-dom-renderer-owner-1 .xterm-bg-245 { background-color: #8a8a8a; }.xterm-dom-renderer-owner-1 .xterm-fg-246 { color: #949494; }.xterm-dom-renderer-owner-1 .xterm-fg-246.xterm-dim { color: #94949480; }.xterm-dom-renderer-owner-1 .xterm-bg-246 { background-color: #949494; }.xterm-dom-renderer-owner-1 .xterm-fg-247 { color: #9e9e9e; }.xterm-dom-renderer-owner-1 .xterm-fg-247.xterm-dim { color: #9e9e9e80; }.xterm-dom-renderer-owner-1 .xterm-bg-247 { background-color: #9e9e9e; }.xterm-dom-renderer-owner-1 .xterm-fg-248 { color: #a8a8a8; }.xterm-dom-renderer-owner-1 .xterm-fg-248.xterm-dim { color: #a8a8a880; }.xterm-dom-renderer-owner-1 .xterm-bg-248 { background-color: #a8a8a8; }.xterm-dom-renderer-owner-1 .xterm-fg-249 { color: #b2b2b2; }.xterm-dom-renderer-owner-1 .xterm-fg-249.xterm-dim { color: #b2b2b280; }.xterm-dom-renderer-owner-1 .xterm-bg-249 { background-color: #b2b2b2; }.xterm-dom-renderer-owner-1 .xterm-fg-250 { color: #bcbcbc; }.xterm-dom-renderer-owner-1 .xterm-fg-250.xterm-dim { color: #bcbcbc80; }.xterm-dom-renderer-owner-1 .xterm-bg-250 { background-color: #bcbcbc; }.xterm-dom-renderer-owner-1 .xterm-fg-251 { color: #c6c6c6; }.xterm-dom-renderer-owner-1 .xterm-fg-251.xterm-dim { color: #c6c6c680; }.xterm-dom-renderer-owner-1 .xterm-bg-251 { background-color: #c6c6c6; }.xterm-dom-renderer-owner-1 .xterm-fg-252 { color: #d0d0d0; }.xterm-dom-renderer-owner-1 .xterm-fg-252.xterm-dim { color: #d0d0d080; }.xterm-dom-renderer-owner-1 .xterm-bg-252 { background-color: #d0d0d0; }.xterm-dom-renderer-owner-1 .xterm-fg-253 { color: #dadada; }.xterm-dom-renderer-owner-1 .xterm-fg-253.xterm-dim { color: #dadada80; }.xterm-dom-renderer-owner-1 .xterm-bg-253 { background-color: #dadada; }.xterm-dom-renderer-owner-1 .xterm-fg-254 { color: #e4e4e4; }.xterm-dom-renderer-owner-1 .xterm-fg-254.xterm-dim { color: #e4e4e480; }.xterm-dom-renderer-owner-1 .xterm-bg-254 { background-color: #e4e4e4; }.xterm-dom-renderer-owner-1 .xterm-fg-255 { color: #eeeeee; }.xterm-dom-renderer-owner-1 .xterm-fg-255.xterm-dim { color: #eeeeee80; }.xterm-dom-renderer-owner-1 .xterm-bg-255 { background-color: #eeeeee; }.xterm-dom-renderer-owner-1 .xterm-fg-257 { color: #ffffff; }.xterm-dom-renderer-owner-1 .xterm-fg-257.xterm-dim { color: #ffffff80; }.xterm-dom-renderer-owner-1 .xterm-bg-257 { background-color: #000000; }</style><div class="xterm-rows" aria-hidden="true" style="line-height: normal; letter-spacing: 7.7px;"><div style="width: 1131px; height: 17px; line-height: 17px; overflow: hidden;"><span style="letter-spacing: 0.00637755px;">WebContainer fails to initialize. Frontend build is disabled.</span></div><div style="width: 1131px; height: 17px; line-height: 17px; overflow: hidden;"><span style="letter-spacing: 0.00637755px;"> </span></div><div style="width: 1131px; height: 17px; line-height: 17px; overflow: hidden;"></div><div style="width: 1131px; height: 17px; line-height: 17px; overflow: hidden;"></div><div style="width: 1131px; height: 17px; line-height: 17px; overflow: hidden;"></div><div style="width: 1131px; height: 17px; line-height: 17px; overflow: hidden;"></div><div style="width: 1131px; height: 17px; line-height: 17px; overflow: hidden;"></div><div style="width: 1131px; height: 17px; line-height: 17px; overflow: hidden;"></div><div style="width: 1131px; height: 17px; line-height: 17px; overflow: hidden;"></div><div style="width: 1131px; height: 17px; line-height: 17px; overflow: hidden;"></div><div style="width: 1131px; height: 17px; line-height: 17px; overflow: hidden;"></div><div style="width: 1131px; height: 17px; line-height: 17px; overflow: hidden;"></div></div><div class="xterm-selection" aria-hidden="true"></div><div class="xterm-decoration-container"></div></div></div></div></div><div class="sc-gtLWhw cHnyNc"><header class="sc-blHHSb gpFTzw"><button class="sc-ivxoEo dntrQW"><img src="data:image/svg+xml,%3csvg%20width=&#39;14&#39;%20height=&#39;14&#39;%20viewBox=&#39;0%200%2014%2014&#39;%20fill=&#39;none&#39;%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%3e%3cpath%20d=&#39;M3.18359%2013.1338H11.4209C12.9932%2013.1338%2013.8613%2012.2656%2013.8613%2010.707V2.44238C13.8613%200.876953%2012.9932%200.015625%2011.4209%200.015625H3.18359C1.61133%200.015625%200.743164%200.876953%200.743164%202.44238V10.707C0.743164%2012.2725%201.61133%2013.1338%203.18359%2013.1338ZM3.39551%2011.3018C2.85547%2011.3018%202.5752%2011.042%202.5752%2010.4746V2.6748C2.5752%202.10059%202.85547%201.84766%203.39551%201.84766H11.209C11.7422%201.84766%2012.0293%202.10059%2012.0293%202.6748V10.4746C12.0293%2011.042%2011.7422%2011.3018%2011.209%2011.3018H3.39551ZM5.82227%209.90039C6.05469%2010.1328%206.54688%2010.126%206.7998%209.88672L9.46582%207.3916C9.92383%206.9541%209.93066%206.18848%209.46582%205.75781L6.7998%203.2627C6.51953%202.99609%206.0957%203.00293%205.83594%203.24219C5.54883%203.50879%205.54199%203.97363%205.82227%204.2334L8.31738%206.57129L5.82227%208.91602C5.54883%209.16895%205.52832%209.61328%205.82227%209.90039Z&#39;%20fill=&#39;%23ADADAF&#39;/%3e%3c/svg%3e" alt="Collapse icon" class="sc-fAUdSK ftukUQ">CANDID UI</button><button class="sc-ivxoEo dntrQW"><img src="data:image/svg+xml,%3csvg%20width=&#39;22&#39;%20height=&#39;23&#39;%20viewBox=&#39;0%200%2022%2023&#39;%20fill=&#39;none&#39;%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%3e%3cpath%20d=&#39;M3.95312%2022.0078H18.1445C20.6875%2022.0078%2022%2020.6953%2022%2018.1875V3.92578C22%201.41797%2020.6875%200.105469%2018.1445%200.105469H3.95312C1.42188%200.105469%200.0976562%201.40625%200.0976562%203.92578V18.1875C0.0976562%2020.6953%201.42188%2022.0078%203.95312%2022.0078ZM4.10547%2019.6758C3.02734%2019.6758%202.42969%2019.1133%202.42969%2017.9766V4.13672C2.42969%203%203.02734%202.4375%204.10547%202.4375H17.9922C19.0586%202.4375%2019.668%203%2019.668%204.13672V17.9766C19.668%2019.1133%2019.0586%2019.6758%2017.9922%2019.6758H4.10547ZM14.7109%2014.1094C15.2969%2014.1094%2015.6836%2013.6758%2015.6836%2013.043V7.59375C15.6836%206.77344%2015.2266%206.41016%2014.4883%206.41016H9.00391C8.37109%206.41016%207.94922%206.78516%207.94922%207.37109C7.94922%207.96875%208.37109%208.34375%209.01562%208.34375H10.9961L12.5781%208.15625L10.8555%209.73828L6.75391%2013.8398C6.55469%2014.0391%206.42578%2014.3086%206.42578%2014.5898C6.42578%2015.2227%206.85938%2015.6328%207.45703%2015.6328C7.78516%2015.6328%208.04297%2015.5156%208.25391%2015.3047L12.3438%2011.2148L13.9141%209.51562L13.7383%2011.1914V13.0547C13.7383%2013.6992%2014.125%2014.1094%2014.7109%2014.1094Z&#39;%20fill=&#39;%23ADADAF&#39;/%3e%3c/svg%3e" class="sc-dntaoT kvBeSw"></button></header><iframe src="./Motoko Playground - DFINITY_files/saved_resource.html" sandbox="allow-scripts allow-same-origin allow-forms allow-popups" class="sc-egkSDF bzMgqQ"></iframe></div></div></main></div>
+  
+
+<div class="ReactModalPortal"></div><div class="ReactModalPortal"></div><div class="ReactModalPortal"></div><div class="ReactModalPortal"></div><div class="ReactModalPortal"></div><div class="ReactModalPortal"></div><div class="ReactModalPortal"></div><script src="./Motoko Playground - DFINITY_files/loader.js.indir"></script><div class="monaco-aria-container"><div class="monaco-alert" role="alert" aria-atomic="true"></div><div class="monaco-alert" role="alert" aria-atomic="true"></div><div class="monaco-status" aria-live="polite" aria-atomic="true"></div><div class="monaco-status" aria-live="polite" aria-atomic="true"></div></div><iframe allow="cross-origin-isolated" src="./Motoko Playground - DFINITY_files/headless.html" style="display: none;"></iframe></body></html>
